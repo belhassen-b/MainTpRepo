@@ -1,0 +1,1 @@
+// Declarations des vaiables

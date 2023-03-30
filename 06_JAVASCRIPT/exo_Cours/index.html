@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+<header>
+    <div class="m-3 ">
+        <h1>TP-POO - Liste de contacts</h1>
+        <hr>
+        <p>Mise en application de la théorie POO en Javascript</p>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="row my-3">
+            <div id="result"></div>
+        </div>
+
+        <hr>
+        <div class="row  col">
+            <table class="table col mr-2 ">
+                <thead class="table-dark border border-dark text-center">
+                <tr>
+                    <th>Titre</th>
+                    <th>Prix</th>
+                    <th>Description</th>
+                    <th>Stock</th>
+                </tr>
+                </thead>
+                <tbody class="border border-dark text-center" id="table-data1">
+
+                </tbody>
+            </table>
+            <table class="table col">
+                <thead class="table-dark border border-dark text-center">
+                <tr>
+                    <th>Titre</th>
+                    <th>Prix</th>
+                    <th>Description</th>
+                    <th>Domaine</th>
+                </tr>
+                </thead>
+                <tbody class="border border-dark text-center" id="table-data2">
+
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <form id="myForm" method="POST" class="">
+            <div class="border border-info row d-flex px-0">
+                <div class="row d-flex">
+                    <div class="form-group form-radio col">
+                        <input type="radio" name="produit" class="radio" value="produit" id="produit"> <label
+                            class="form-check-label" for="produit">produit</label>
+                        <input type="radio" name="services" class="radio" value="services" id="services"> <label
+                            class="form-check-label" for="services">services</label></div>
+                </div>
+                <div class="form-group col-6 pb-2 px-0">
+
+                    <input type="text" class="form-control" id="titre" placeholder="titre" required=""
+                           autocomplete="off" pattern="[a-zA-Z]+"></div>
+                <div class="form-group col-6 p-0 "><input type="text" class="form-control" id="prix" placeholder="prix"
+                                                          required="" autocomplete="off" pattern="[a-zA-Z]+"></div>
+
+                <div class="form-group p-0 "><input type="text" class="form-control" id="description"
+                                                    placeholder="description"
+                                                    required="" autocomplete="off" pattern="[a-zA-Z]+"></div>
+                <div class="form-group p-0 "><input type="text" class="form-control" id="domaine"
+                                                    placeholder="domaine"
+                                                    required="" autocomplete="off" pattern="[a-zA-Z]+"></div>
+                <div class="form-group p-0 "><input type="text" class="form-control" id="stock" placeholder="stock"
+                                                    required="" autocomplete="off" pattern="[a-zA-Z]+"></div>
+
+            </div>
+            <button type="submit" id="submit" class="btn btn-success">Ajouter</button>
+        </form>
+    </div>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+<script src="main.js" type="module"></script>
+</body>
+</html>

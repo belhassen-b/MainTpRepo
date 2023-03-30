@@ -1,0 +1,10 @@
+html, body{
+  padding: 0;
+  margin:0;
+}
+
+
+body > main > div.container-fluid.py-5.d-flex.justify-content-center
+{
+  background-image: url('https://random.imagecdn.app/1400/800');
+}

@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+#solution {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #031634;
+  height: 55px;
+}
+#collapseExample {
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #031634;
+  font-size: 0.8rem;
+}
+
+#rdmButton {
+  background-color: #2B3036 ;
+  border: none;
+  color: white;
+  text-decoration: none;
+}
+

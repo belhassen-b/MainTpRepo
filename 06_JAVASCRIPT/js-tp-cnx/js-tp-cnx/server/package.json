@@ -1,0 +1,27 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "L'entreprise **DWAPS Formation** a été créée le 1er Octobre 2015.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV='production' node -r dotenv/config index.js",
+    "dev": "NODE_ENV='developpment' nodemon -r dotenv/config",
+    "nodemon": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "connect-multiparty": "^2.2.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.24.0",
+    "mongoose": "^5.6.9"
+  }
+}

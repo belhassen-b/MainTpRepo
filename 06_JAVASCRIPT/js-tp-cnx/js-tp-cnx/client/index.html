@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>TITLE</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+
+    <div class="signup">
+      <h1>Inscription</h1>
+      <form name="formSignUp">
+        <h3></h3>
+        <input type="text" name="firstname" placeholder="firstname">
+        <input type="text" name="lastname" placeholder="lastname">
+        <input type="text" name="pseudo" placeholder="pseudo">
+        <input type="email" name="email" placeholder="email">
+        <input type="password" name="password" placeholder="password">
+        <button type="submit">Go !</button>
+      </form>
+    </div>
+
+    <div class="login">
+      <h1>Connexion</h1>
+      <form name="formLogIn">
+        <h3></h3>
+        <input type="email" name="email" placeholder="email">
+        <input type="password" name="password" placeholder="password">
+        <button type="submit">Go !</button>
+      </form>
+    </div>
+
+    <br><br>
+    <button class="get-users">Liste des utilisateurs inscrits</button>
+    <div class="users"></div>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

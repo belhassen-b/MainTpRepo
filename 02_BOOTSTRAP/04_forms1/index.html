@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exo - Forms A</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand"><i class="bi bi-globe2"></i> eLibrary</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#libraryNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="libraryNavbar" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="navbar-item"><a href="#" class="nav-link active">Accueil</a></li>
+            <li class="navbar-item"><a href="#" class="nav-link">Educatifs</a></li>
+            <li class="navbar-item"><a href="#" class="nav-link">Romans</a></li>
+            <li class="navbar-item"><a href="#" class="nav-link">Comics</a></li>
+            <li class="navbar-item"><a href="#" class="nav-link">Magazines</a></li>
+          </ul>
+          <div class="ms-auto me-2 navbar-item dropdown">
+            <!-- a.nav-link.dropdown-toggle[href="#" data-bs-toggle="dropdown"]>i.bi.bi-gear -->
+            <a href="#" class="nav-link text-light dropdown-toggle my-2" data-bs-toggle="dropdown"><i class="bi bi-gear"></i> Gestion</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">Ajouter un ouvrage</a></li>
+              <li><a href="#" class="dropdown-item">Modifier un ouvrage</a></li>
+              <li><a href="#" class="dropdown-item">Supprimer un ouvrage</a></li>
+            </ul>
+          </div>
+          <form class="d-flex">
+            <input type="text" class="form-control me-2" placeholder="Title, Author, ...">
+            <button class="btn btn-outline-light">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container p-4 my-3 mx-auto col-md-4 offset-md-4 bg-dark rounded text-light">
+        <h2 class="display-2">-Inscription-</h2>
+        <hr>
+        <form>
+          <div class="mb-3 d-flex align-items-center">
+            <label for="firstname" class="form-label" style="width: 200px;">Prenom :</label>
+            <input type="text" class="form-control" id="firstname" name="firstname" required>
+          </div>
+          <div class="mb-3 d-flex align-items-center">
+            <label for="lastname" class="form-label" style="width: 200px;">Nom :</label>
+            <input type="text" class="form-control" id="lastname" name="lastname" required>
+          </div>
+          <div class="mb-3 d-flex align-items-center">
+            <label for="mail" class="form-label" style="width: 200px;">Email :</label>
+            <input type="email" class="form-control" id="mail" name="mail" required>
+          </div>
+          <div class="mb-3 d-flex align-items-center">
+            <label for="username" class="form-label" style="width: 200px;">Pseudo :</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+          </div>
+          <div class="mb-3 d-flex align-items-center">
+            <label for="password" class="form-label" style="width: 200px;">Mot de passe :</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div class="mb-3 d-flex align-items-center">
+            <label for="passwordConf" class="form-label" style="width: 200px;">Confirmation :</label>
+            <input type="password" class="form-control" id="passwordConf" name="passwordConf" required>
+          </div>
+          <hr>
+          <button class="btn btn-outline-light d-block ms-auto">
+            <i class="bi bi-send"></i> Envoyer
+          </button>
+        </form>
+     </div>
+  </main>
+  <footer class="bg-dark py-3 text-light d-flex justify-content-center">
+    Copyrights
+  </footer>
+</body>
+</html>

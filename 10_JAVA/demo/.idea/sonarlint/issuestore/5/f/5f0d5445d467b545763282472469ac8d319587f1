@@ -1,0 +1,50 @@
+
+Y
+java:S4973;"<Strings and Boxed types should be compared using "equals()".(¢Ğâ»8ÉÎŒ¾ò0
+^
+java:S4973?"<Strings and Boxed types should be compared using "equals()".(Ä¸¹¸ÿÿÿÿÿ8ËÎŒ¾ò0
+d
+java:S2184+"BCast one of the operands of this addition operation to a "double".(Ğ˜š¦øÿÿÿÿ8ÌÎŒ¾ò0
+V
+java:S1118":Add a private constructor to hide the implicit public one.(Õ³øD8’ÏŒ¾ò0
+^
+java:S1854%"<Remove this useless assignment to local variable "express6".(¶Äæôüÿÿÿÿ8“ÏŒ¾ò0
+Y
+java:S1854$"<Remove this useless assignment to local variable "express5".(Î™ü¼8“ÏŒ¾ò0
+Y
+java:S1854#"<Remove this useless assignment to local variable "express4".(°øÄ©8”ÏŒ¾ò0
+X
+java:S1854""<Remove this useless assignment to local variable "express3".(×Àøg8”ÏŒ¾ò0
+^
+java:S1854!"<Remove this useless assignment to local variable "express2".(·Î¸Âúÿÿÿÿ8”ÏŒ¾ò0
+^
+java:S1854 "<Remove this useless assignment to local variable "express1".(©şÂûûÿÿÿÿ8”ÏŒ¾ò0
+]	java:S125"<This block of commented-out lines of code should be removed.(Ö†ú×ÿÿÿÿÿ8•ÏŒ¾ò0
+O
+java:S1481 "-Remove this unused "express1" local variable.(©şÂûûÿÿÿÿ8˜ÏŒ¾ò0
+O
+java:S1481!"-Remove this unused "express2" local variable.(·Î¸Âúÿÿÿÿ8˜ÏŒ¾ò0
+I
+java:S1481""-Remove this unused "express3" local variable.(×Àøg8˜ÏŒ¾ò0
+J
+java:S1481#"-Remove this unused "express4" local variable.(°øÄ©8™ÏŒ¾ò0
+J
+java:S1481$"-Remove this unused "express5" local variable.(Î™ü¼8™ÏŒ¾ò0
+O
+java:S1481%"-Remove this unused "express6" local variable.(¶Äæôüÿÿÿÿ8šÏŒ¾ò0
+T	java:S106*"9Replace this use of System.out or System.err by a logger.(ÚŠèK8›ÏŒ¾ò0
+U	java:S106,"9Replace this use of System.out or System.err by a logger.(´©ÕÎ8ÏŒ¾ò0
+Z	java:S1064"9Replace this use of System.out or System.err by a logger.(Ç®­±øÿÿÿÿ8ŸÏŒ¾ò0
+U	java:S1066"9Replace this use of System.out or System.err by a logger.(£«ÅÅ8 ÏŒ¾ò0
+U	java:S106;"9Replace this use of System.out or System.err by a logger.(¢Ğâ»8 ÏŒ¾ò0
+Z	java:S106?"9Replace this use of System.out or System.err by a logger.(Ä¸¹¸ÿÿÿÿÿ8¡ÏŒ¾ò0
+Z	java:S106B"9Replace this use of System.out or System.err by a logger.(ãŸã˜øÿÿÿÿ8³Á¾ò0
+T	java:S106F"9Replace this use of System.out or System.err by a logger.(¸ø©@8Ñ«ÜÀò0
+U	java:S106G"9Replace this use of System.out or System.err by a logger.(¡ä¸‹8»üáÀò0
+
+java:S2159G"qUse "Arrays.equals(array1, array2)" or the "==" operator instead of using the "Object.equals(Object obj)" method.(¡ä¸‹8„£âÀò0
+U	java:S106H"9Replace this use of System.out or System.err by a logger.(ƒîŞĞ8ã×äÀò0
+T	java:S106K"9Replace this use of System.out or System.err by a logger.(¸ø©@8Ò†êÀò0
+Z	java:S106P"9Replace this use of System.out or System.err by a logger.(ÏœÅüÿÿÿÿ8¿Š¾Áò0
+Z	java:S106R"9Replace this use of System.out or System.err by a logger.(ˆü§ùøÿÿÿÿ8ÅŠ¾Áò0
+U	java:S106U"9Replace this use of System.out or System.err by a logger.(”¹šŠ8€ŒÈÁò0

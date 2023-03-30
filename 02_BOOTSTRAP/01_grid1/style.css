@@ -1,0 +1,15 @@
+.col:nth-child(4n-3) >.bg-perso {
+  background-color: red;
+}
+
+.col:nth-child(4n-2) >.bg-perso {
+  background-color: green;
+}
+
+.col:nth-child(4n-1) >.bg-perso {
+  background-color: blue;
+}
+
+.col:nth-child(4n) >.bg-perso {
+  background-color: gray;
+}

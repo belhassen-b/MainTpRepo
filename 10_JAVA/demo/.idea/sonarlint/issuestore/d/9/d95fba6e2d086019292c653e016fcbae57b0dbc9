@@ -1,0 +1,37 @@
+
+\
+java:S1118":Add a private constructor to hide the implicit public one.(–˜´øÿÿÿÿ8œï€¼ò0
+S
+java:S1854"7Remove this useless assignment to local variable "num".(È¦¨I8¥ı¼ò0
+W
+java:S1854"5Remove this useless assignment to local variable "d".(´õ™¥üÿÿÿÿ8ï€¼ò0
+R
+java:S1854"5Remove this useless assignment to local variable "l".(™ºğ8ï€¼ò0
+R
+java:S1854"5Remove this useless assignment to local variable "d".(¡ì†«8ï€¼ò0
+W
+java:S1854"5Remove this useless assignment to local variable "d".(‡ÙÚ¼ıÿÿÿÿ8ï€¼ò0
+R
+java:S1854"5Remove this useless assignment to local variable "l".(ºöãâ8ï€¼ò0
+W
+java:S1854"5Remove this useless assignment to local variable "c".(¦À­Çùÿÿÿÿ8ï€¼ò0
+W
+java:S1854"5Remove this useless assignment to local variable "s".(†Í´ûÿÿÿÿ8ï€¼ò0
+H
+java:S1481"&Remove this unused "s" local variable.(¼„ºñüÿÿÿÿ8 ï€¼ò0
+Z	java:S106
+"9Replace this use of System.out or System.err by a logger.(€¨¨¦ÿÿÿÿÿ8 ï€¼ò0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(õÆ¡úÿÿÿÿ8¡ï€¼ò0
+>
+java:S1116"Remove this empty statement.(Åñ­õşÿÿÿÿ8¢ï€¼ò0
+H
+java:S1481"&Remove this unused "c" local variable.(¦À­Çùÿÿÿÿ8£ï€¼ò0
+K
+java:S1481")Remove this unused "bool" local variable.(ıªËîşÿÿÿÿ8£ï€¼ò0
+C
+java:S1481"&Remove this unused "l" local variable.(ºöãâ8£ï€¼ò0
+H
+java:S1481"&Remove this unused "d" local variable.(‡ÙÚ¼ıÿÿÿÿ8£ï€¼ò0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(—€îşÿÿÿÿ8ºë¼ò0
+D
+java:S1481"(Remove this unused "num" local variable.(È¦¨I8°ı¼ò0

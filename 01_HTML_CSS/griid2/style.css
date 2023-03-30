@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: purple;
+    display: grid;
+    grid-template: 2fr 1fr / 1fr;
+}
+header > nav {
+    background-color: blue;
+}
+body {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    grid-template: 3fr 10fr 2fr / 1fr;
+}
+main{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    padding: 1vh 1vh 3vh 1vh;
+}
+main > div {
+    display: inherit;
+    grid-template: inherit;
+    padding: 1vh;
+    gap: 0.5vh;
+}
+#gridContainer1 > div{
+    background-color: red;
+}
+#gridContainer2 > div{
+    background-color: yellow;
+}
+#gridContainer3 > div{
+    background-color: green;
+}
+#gridContainer4> div{
+    background-color: deeppink;
+}
+footer {
+    background-color: gray;
+}

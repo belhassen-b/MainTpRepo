@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo - Forms C</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand"
+            ><i class="bi bi-globe2"></i> eLibrary</a
+          >
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#libraryNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="libraryNavbar" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="navbar-item">
+                <a href="#" class="nav-link active">Accueil</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Educatifs</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Romans</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Comics</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Magazines</a>
+              </li>
+            </ul>
+            <div class="ms-auto me-2 navbar-item dropdown">
+              <!-- a.nav-link.dropdown-toggle[href="#" data-bs-toggle="dropdown"]>i.bi.bi-gear -->
+              <a
+                href="#"
+                class="nav-link text-light dropdown-toggle my-2"
+                data-bs-toggle="dropdown"
+                ><i class="bi bi-gear"></i> Gestion</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item">Ajouter un ouvrage</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Modifier un ouvrage</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Supprimer un ouvrage</a>
+                </li>
+              </ul>
+            </div>
+            <form class="d-flex">
+              <input
+                type="text"
+                class="form-control me-2"
+                placeholder="Title, Author, ..."
+              />
+              <button class="btn btn-outline-light">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container my-3 p-4 bg-dark text-light col-md-4 offset-md-4 rounded">
+        <h5 class="display-5">- Connexion -</h5>
+        <hr>
+        <form>
+          <label for="username" class="form-label">Adresse mail: </label>
+          <div class="mb-3 input-group">
+            <input type="text" class="form-control w-50" id="username" name="username">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control w-25" id="host" name="host">
+            <select name="domain" id="domain" class="form-select">
+              <option value="net">.net</option>
+              <option value="fr">.fr</option>
+              <option value="com">.com</option>
+            </select>
+          </div>
+          <label for="password" class="form-label">Password: </label>
+          <div class="mb-3 input-group">
+            <i class="bi bi-incognito input-group-text"></i>
+            <input type="password" name="password" id="password" class="form-control">
+          </div>
+          <div class="d-flex justify-content-end">
+            <label for="rememberMe">Se souvenir de moi ?</label>
+            <input type="checkbox" name="rememberMe" id="rememberMe" class="ms-2 form-check-input">
+          </div>
+          <hr>
+          <button class="btn btn-outline-light d-block ms-auto"><i class="bi bi-send"></i> Envoyer</button>
+        </form>
+      </div>
+    </main>
+    <footer class="bg-dark py-3 text-light d-flex justify-content-center">
+      Copyrights
+    </footer>
+  </body>
+</html>

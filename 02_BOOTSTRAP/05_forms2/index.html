@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo - Forms B</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand"
+            ><i class="bi bi-globe2"></i> eLibrary</a
+          >
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#libraryNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="libraryNavbar" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="navbar-item">
+                <a href="#" class="nav-link active">Accueil</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Educatifs</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Romans</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Comics</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Magazines</a>
+              </li>
+            </ul>
+            <div class="ms-auto me-2 navbar-item dropdown">
+              <!-- a.nav-link.dropdown-toggle[href="#" data-bs-toggle="dropdown"]>i.bi.bi-gear -->
+              <a
+                href="#"
+                class="nav-link text-light dropdown-toggle my-2"
+                data-bs-toggle="dropdown"
+                ><i class="bi bi-gear"></i> Gestion</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item">Ajouter un ouvrage</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Modifier un ouvrage</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Supprimer un ouvrage</a>
+                </li>
+              </ul>
+            </div>
+            <form class="d-flex">
+              <input
+                type="text"
+                class="form-control me-2"
+                placeholder="Title, Author, ..."
+              />
+              <button class="btn btn-outline-light">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div
+        class="container my-3 p-4 rounded bg-dark text-light col-md-8 offset-md-2"
+      >
+        <h5 class="display-5">- Ajouter un Livre -</h5>
+        <hr />
+        <form>
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <div class="mb-3">
+                <label for="title" class="form-label">Titre :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  name="title"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="author" class="form-label">Auteur :</label>
+                <select class="form-select" id="author" name="author" required>
+                  <option value="">Sélectionnez un auteur</option>
+                  <option value="1">Auteur 1</option>
+                  <option value="2">Auteur 2</option>
+                  <option value="3">Auteur 3</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="coverPic" class="form-label">Couverture :</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="coverPic"
+                  name="coverPic"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="score" class="form-label">Score :</label>
+                <input
+                  type="range"
+                  name="score"
+                  id="score"
+                  min="1"
+                  max="5"
+                  step="1"
+                  class="form-range"
+                />
+                <div class="d-flex justify-content-between">
+                  <span>Nul</span>
+                  <span>Mauvais</span>
+                  <span>Normal</span
+                  ><span>Bon</span>
+                  <span>Bestseller</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="mb-3">
+                <label for="isbn" class="form-label">ISBN :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="isbn"
+                  name="isbn"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="bookType" class="form-label">Genre :</label>
+                <select class="form-select" id="bookType" name="bookType" required multiple>
+                  <option value="1">Type 1</option>
+                  <option value="2">Type 2</option>
+                  <option value="3">Type 3</option>
+                  <option value="4">Type 4</option>
+                  <option value="5">Type 5</option>
+                  <option value="6">Type 6</option>
+                  <option value="7">Type 7</option>
+                  <option value="8">Type 8</option>
+                  <option value="9">Type 9</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="price" class="form-label">Prix :</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="price"
+                  name="price"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="language" class="form-label">Langue :</label>
+                <select class="form-select" id="language" name="language" required>
+                  <option value="">Sélectionnez une langue</option>
+                  <option value="1">Langue 1</option>
+                  <option value="2">Langue 2</option>
+                  <option value="3">Langue 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3 w-100">
+              <label for="desc" class="form-label">Description :</label>
+              <textarea name="desc" id="desc" rows="10" class="form-control" style="resize: none;"></textarea>
+            </div>
+          </div>
+          <hr />
+          <button class="d-block ms-auto btn btn-outline-light">
+            <i class="bi bi-plus-circle"></i> Ajouter
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer class="bg-dark py-3 text-light d-flex justify-content-center">
+      Copyrights
+    </footer>
+  </body>
+</html>

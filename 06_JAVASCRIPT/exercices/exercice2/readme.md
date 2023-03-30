@@ -1,0 +1,4 @@
+- Réalisez le programme permettant d’obtenir la somme de deux variables numérique. 
+- Procédez à l’addition de ces deux variables. 
+- Procédez à la concaténation de ces deux variables. 
+- Effectuez l’affichage du résultat dans la console. 
