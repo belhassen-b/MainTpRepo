@@ -17,16 +17,16 @@ public class Ex9 {
             compteur++;
         }
 
-        boolean pair = false;
+        boolean pair = true;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 == 0) {
-                pair = true;
+            if (arr[i] % 2 != 0) {
+                pair = false;
             }
         }
-        if (pair) {
-            System.out.println("Tous les éléments sont pairs");
-        } else {
+        if (!pair) {
             System.out.println("Au moins un élément est impair");
+        } else {
+            System.out.println("Tous les éléments sont pairs");
         }
     }
 }
