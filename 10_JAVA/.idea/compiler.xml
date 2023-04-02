@@ -8,19 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Serie2" />
         <module name="Serie3" />
-        <module name="Serie5_Tp-Vendredi-31-03-2023" />
+        <module name="Tp-Vendredi-31-03-2023" />
         <module name="Exercices" />
         <module name="demo" />
         <module name="Serie4" />
+        <module name="Serie5" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="demo" target="17" />
-      <module name="Exercices" target="17" />
-      <module name="Serie2" target="17" />
-      <module name="Serie3" target="17" />
-      <module name="Serie4" target="17" />
-      <module name="Serie5_Tp-Vendredi-31-03-2023" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
