@@ -4,6 +4,9 @@ import org.example.TpClasseChaise.Chaise;
 import org.example.heritage.CompteEpargne;
 import org.example.heritage.ComptePayant;
 import org.example.heritage.CompteSimple;
+import org.example.personne.Person;
+import org.example.personne.Student;
+import org.example.personne.Teacher;
 
 import java.util.Scanner;
 
@@ -31,91 +34,122 @@ public class Main {
 //        System.out.println("Je suis une Chaise  avec " + chaise2.getNbrePieds() + " pieds en " + chaise2.getMateriaux() + " de couleur " + chaise2.getCouleur());
 //        System.out.println( "---------------------------------------------------------------");
 //        System.out.println();
-        System.out.println("Bienvenue dans votre banque");
-        System.out.println("merci de faire votre choix");
-        System.out.println("1- Compte simple");
-        System.out.println("2- Compte payant");
-        System.out.println("3- Compte épargne");
-        System.out.println("4- Quitter");
-        System.out.println("Votre choix : ");
-        Scanner sc = new Scanner(System.in);
-        int choix = sc.nextInt();
-        double retrait;
 
-        switch (choix) {
-            case 1:
-                System.out.println("--------------- Affichage d'un nouveau compte Simple ---------------");
-                CompteSimple compteSimple = new CompteSimple(1000, 500);
-                //affichage du compte avec chaque opération
-                System.out.println("Solde du compte : " + compteSimple.getSolde());
-                System.out.println("Montant du découvert autorisé : " + compteSimple.getDecouvert());
-                System.out.println();
-                System.out.println("Saisir le montant du versement :");
-                double versement = sc.nextDouble();
-                compteSimple.versement(versement );
-                System.out.println("versement de " + versement);
-                System.out.println("Solde du compte : " + compteSimple.getSolde());
-                System.out.println();
-                System.out.println("Saisir le montant du retrait :");
-                retrait = sc.nextDouble();
-                compteSimple.retrait(retrait);
-                System.out.println("retrait de " + retrait);
-                if (compteSimple.getSolde() > 0) {
-                    System.out.println("Solde du compte : " + compteSimple.getSolde());
-                } else {
-                    System.out.println("Vous avez dépassé votre découvert autorisé");
-                }
-                System.out.println();
-                break;
-            case 2:
-                System.out.println("--------------- Affichage d'un nouveau compte Payant ---------------");
-                ComptePayant comptePayant = new ComptePayant(1000, 500, 1000);
-                System.out.println("Solde du compte : " + comptePayant.getSolde());
-                System.out.println("Montant du découvert autorisé : " + comptePayant.getDecouvert());
-                System.out.println();
-                System.out.println("Saisir le montant du versement :");
-                versement = sc.nextDouble();
-                comptePayant.versement(versement);
-                System.out.println("versement de " + versement);
-                System.out.println("Solde du compte : " + comptePayant.getSolde());
-                System.out.println();
-                System.out.println("Saisir le montant du retrait :");
-                retrait = sc.nextDouble();
-                comptePayant.retrait(retrait);
-                System.out.println("retrait de " + retrait);
-                if (comptePayant.getSolde() > 0) {
-                    System.out.println("Solde du compte : " + comptePayant.getSolde());
-                } else {
-                    System.out.println("Vous avez dépassé votre découvert autorisé");
-                }
-                System.out.println();
-                break;
-            case 3:
-                System.out.println("--------------- Affichage d'un nouveau compte Epargne ---------------");
-                CompteEpargne compteEpargne = new CompteEpargne(1000, 500, 1000);
-                System.out.println("Solde du compte : " + compteEpargne.getSolde());
-                System.out.println("Montant du découvert autorisé : " + compteEpargne.getDecouvert());
-                System.out.println();
-                System.out.println("Saisir le montant du versement :");
-                versement = sc.nextDouble();
-                compteEpargne.versement(versement);
-                System.out.println("versement de " + versement);
-                System.out.println("Solde du compte : " + compteEpargne.getSolde());
-                System.out.println();
-                System.out.println("Saisir le montant du retrait :");
-                retrait = sc.nextDouble();
-                System.out.println("retrait de " + retrait);
-                if (compteEpargne.getSolde() > 0) {
-                    System.out.println("Solde du compte : " + compteEpargne.getSolde());
-                } else {
-                    System.out.println("Vous avez dépassé votre découvert autorisé");
-                }
-                System.out.println();
-                break;
-            case 4:
-                System.out.println("Au revoir");
-                break;
 
-        }
+
+
+//
+//        Tp Banque
+//        System.out.println("Bienvenue dans votre banque");
+//        System.out.println("merci de faire votre choix");
+//        System.out.println("1- Compte simple");
+//        System.out.println("2- Compte payant");
+//        System.out.println("3- Compte épargne");
+//        System.out.println("4- Quitter");
+//        System.out.println("Votre choix : ");
+//        Scanner sc = new Scanner(System.in);
+//        int choix = sc.nextInt();
+//        double retrait;
+//
+//        switch (choix) {
+//            case 1:
+//                System.out.println("--------------- Affichage d'un nouveau compte Simple ---------------");
+//                CompteSimple compteSimple = new CompteSimple(1000, 500);
+//                //affichage du compte avec chaque opération
+//                System.out.println("Solde du compte : " + compteSimple.getSolde());
+//                System.out.println("Montant du découvert autorisé : " + compteSimple.getDecouvert());
+//                System.out.println();
+//                System.out.println("Saisir le montant du versement :");
+//                double versement = sc.nextDouble();
+//                compteSimple.versement(versement );
+//                System.out.println("versement de " + versement);
+//                System.out.println("Solde du compte : " + compteSimple.getSolde());
+//                System.out.println();
+//                System.out.println("Saisir le montant du retrait :");
+//                retrait = sc.nextDouble();
+//                compteSimple.retrait(retrait);
+//                System.out.println("retrait de " + retrait);
+//                if (compteSimple.getSolde() > 0) {
+//                    System.out.println("Solde du compte : " + compteSimple.getSolde());
+//                } else {
+//                    System.out.println("Vous avez dépassé votre découvert autorisé");
+//                }
+//                System.out.println();
+//                break;
+//            case 2:
+//                System.out.println("--------------- Affichage d'un nouveau compte Payant ---------------");
+//                ComptePayant comptePayant = new ComptePayant(1000, 500, 1000);
+//                System.out.println("Solde du compte : " + comptePayant.getSolde());
+//                System.out.println("Montant du découvert autorisé : " + comptePayant.getDecouvert());
+//                System.out.println();
+//                System.out.println("Saisir le montant du versement :");
+//                versement = sc.nextDouble();
+//                comptePayant.versement(versement);
+//                System.out.println("versement de " + versement);
+//                System.out.println("Solde du compte : " + comptePayant.getSolde());
+//                System.out.println();
+//                System.out.println("Saisir le montant du retrait :");
+//                retrait = sc.nextDouble();
+//                comptePayant.retrait(retrait);
+//                System.out.println("retrait de " + retrait);
+//                if (comptePayant.getSolde() > 0) {
+//                    System.out.println("Solde du compte : " + comptePayant.getSolde());
+//                } else {
+//                    System.out.println("Vous avez dépassé votre découvert autorisé");
+//                }
+//                System.out.println();
+//                break;
+//            case 3:
+//                System.out.println("--------------- Affichage d'un nouveau compte Epargne ---------------");
+//                CompteEpargne compteEpargne = new CompteEpargne(1000, 500, 1000);
+//                System.out.println("Solde du compte : " + compteEpargne.getSolde());
+//                System.out.println("Montant du découvert autorisé : " + compteEpargne.getDecouvert());
+//                System.out.println();
+//                System.out.println("Saisir le montant du versement :");
+//                versement = sc.nextDouble();
+//                compteEpargne.versement(versement);
+//                System.out.println("versement de " + versement);
+//                System.out.println("Solde du compte : " + compteEpargne.getSolde());
+//                System.out.println();
+//                System.out.println("Saisir le montant du retrait :");
+//                retrait = sc.nextDouble();
+//                System.out.println("retrait de " + retrait);
+//                if (compteEpargne.getSolde() > 0) {
+//                    System.out.println("Solde du compte : " + compteEpargne.getSolde());
+//                } else {
+//                    System.out.println("Vous avez dépassé votre découvert autorisé");
+//                }
+//                System.out.println();
+//                break;
+//            case 4:
+//                System.out.println("Au revoir");
+//                break;
+//
+//        }
+
+
+        // Tp Personne
+
+        Person p1 = new Person("Doe", "John", 25);
+
+//        p1.SayHello();
+
+        System.out.println();
+
+        Student Student1 = new Student("Doey", "Tony", 15);
+        Student1.SayHello();
+        Student1.GoToClasses();
+        Student1.DisplayAge();
+        System.out.println();
+
+        Teacher Teacher1 = new Teacher("Newton", "John",50, "Maths");
+        Teacher1.SayHello();
+        Teacher1.Explain();
+        System.out.println( );
+
+
+
+
+
     }
 }
