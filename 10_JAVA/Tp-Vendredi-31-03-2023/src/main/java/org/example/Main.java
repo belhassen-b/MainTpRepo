@@ -26,7 +26,7 @@ public class Main {
 //        Ex15.Tableau2d3();
 //        Ex16.Tableau2d4();
 //        Ex17.justePrix();
-        Ex18.pendu();
+//        Ex18.pendu();
 
     }
 }

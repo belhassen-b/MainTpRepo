@@ -9,11 +9,17 @@
         <module name="Serie2" />
         <module name="Serie3" />
         <module name="Tp-Vendredi-31-03-2023" />
+        <module name="ExoCours04-04-2023" />
         <module name="Exercices" />
         <module name="demo" />
         <module name="Serie4" />
         <module name="Serie5" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ExoCours04-04-2023" options="--add-exports java.base/sun.security.pkcs=ALL-UNNAMED" />
+    </option>
   </component>
 </project>
