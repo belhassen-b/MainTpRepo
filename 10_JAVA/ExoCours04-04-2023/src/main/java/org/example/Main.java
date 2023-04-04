@@ -1,16 +1,8 @@
 package org.example;
 
-import org.example.TpClasseChaise.Chaise;
-import org.example.heritage.CompteEpargne;
-import org.example.heritage.ComptePayant;
-import org.example.heritage.CompteSimple;
-import org.example.personne.Person;
-import org.example.personne.Student;
-import org.example.personne.Teacher;
-
-import java.util.Scanner;
-
-import static sun.security.pkcs.PKCS9Attribute.getName;
+//import org.example.personne.Person;
+import org.example.house.House;
+        import org.example.house.Person;
 
 public class Main {
     public static void main(String[] args) {
@@ -130,23 +122,31 @@ public class Main {
 
         // Tp Personne
 
-        Person p1 = new Person("Doe", "John", 25);
+//        Person p1 = new Person("Doe", "John", 25);
 
 //        p1.SayHello();
 
-        System.out.println();
+//        System.out.println();
+//
+//        Student Student1 = new Student("Doey", "Tony", 15);
+//        Student1.SayHello();
+//        Student1.GoToClasses();
+//        Student1.DisplayAge();
+//        System.out.println();
+//
+//        Teacher Teacher1 = new Teacher("Newton", "John",50, "Maths");
+//        Teacher1.SayHello();
+//        Teacher1.Explain();
+//        System.out.println( );
 
-        Student Student1 = new Student("Doey", "Tony", 15);
-        Student1.SayHello();
-        Student1.GoToClasses();
-        Student1.DisplayAge();
-        System.out.println();
 
-        Teacher Teacher1 = new Teacher("Newton", "John",50, "Maths");
-        Teacher1.SayHello();
-        Teacher1.Explain();
-        System.out.println( );
+        // tp House
 
+        Person p1 = new Person("Thomas");
+        House Appartement = new House(50, 1 , "Verte");
+        System.out.println("Je m'appelle "+ p1.getName() );
+        Appartement.DisplayHouse();
+        Appartement.DisplayDoor();
 
 
 
