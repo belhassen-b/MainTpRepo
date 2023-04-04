@@ -1,8 +1,7 @@
 package org.example;
 
-//import org.example.personne.Person;
 import org.example.house.House;
-        import org.example.house.Person;
+import org.example.personne.Person;
 
 public class Main {
     public static void main(String[] args) {
@@ -120,12 +119,12 @@ public class Main {
 //        }
 
 
-        // Tp Personne
-
+//         Tp Personne
+//
 //        Person p1 = new Person("Doe", "John", 25);
-
+//
 //        p1.SayHello();
-
+//
 //        System.out.println();
 //
 //        Student Student1 = new Student("Doey", "Tony", 15);
@@ -134,7 +133,7 @@ public class Main {
 //        Student1.DisplayAge();
 //        System.out.println();
 //
-//        Teacher Teacher1 = new Teacher("Newton", "John",50, "Maths");
+//        Teacher Teacher1 = new Teacher("Newton", "John",40, "Maths");
 //        Teacher1.SayHello();
 //        Teacher1.Explain();
 //        System.out.println( );
@@ -147,6 +146,8 @@ public class Main {
         System.out.println("Je m'appelle "+ p1.getName() );
         Appartement.DisplayHouse();
         Appartement.DisplayDoor();
+
+
 
 
 

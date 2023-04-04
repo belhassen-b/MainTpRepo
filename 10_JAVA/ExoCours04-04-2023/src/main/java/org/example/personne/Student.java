@@ -4,11 +4,11 @@ public class Student  extends Person{
 
 
     public Student(String name, String surname, int age) {
-        super(name, surname, age);
+        super(name);
     }
 
     public void GoToClasses(){
-        System.out.println("I'm going to classes");
+        System.out.println("I'm going to class");
     }
 
     public void DisplayAge(){

@@ -9,7 +9,7 @@ public class Teacher  extends Person{
     }
 
     public Teacher(String name, String surname, int age, String subject) {
-        super(name, surname, age);
+        super(name);
         this.subject = subject;
     }
 }
