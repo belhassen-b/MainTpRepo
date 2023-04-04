@@ -40,6 +40,8 @@ public class Main {
         System.out.println("Votre choix : ");
         Scanner sc = new Scanner(System.in);
         int choix = sc.nextInt();
+        double retrait;
+
         switch (choix) {
             case 1:
                 System.out.println("--------------- Affichage d'un nouveau compte Simple ---------------");
@@ -48,45 +50,66 @@ public class Main {
                 System.out.println("Solde du compte : " + compteSimple.getSolde());
                 System.out.println("Montant du découvert autorisé : " + compteSimple.getDecouvert());
                 System.out.println();
-                compteSimple.versement(1000);
-                System.out.println("versement de 1000");
+                System.out.println("Saisir le montant du versement :");
+                double versement = sc.nextDouble();
+                compteSimple.versement(versement );
+                System.out.println("versement de " + versement);
                 System.out.println("Solde du compte : " + compteSimple.getSolde());
                 System.out.println();
-                compteSimple.retrait(2000);
-                System.out.println("retrait de 2000");
-                System.out.println("Solde du compte : " + compteSimple.getSolde());
+                System.out.println("Saisir le montant du retrait :");
+                retrait = sc.nextDouble();
+                compteSimple.retrait(retrait);
+                System.out.println("retrait de " + retrait);
+                if (compteSimple.getSolde() > 0) {
+                    System.out.println("Solde du compte : " + compteSimple.getSolde());
+                } else {
+                    System.out.println("Vous avez dépassé votre découvert autorisé");
+                }
                 System.out.println();
                 break;
             case 2:
                 System.out.println("--------------- Affichage d'un nouveau compte Payant ---------------");
-                ComptePayant comptePayant = new ComptePayant(1000, 500);
-                //affichage du compte avec chaque opération
+                ComptePayant comptePayant = new ComptePayant(1000, 500, 1000);
                 System.out.println("Solde du compte : " + comptePayant.getSolde());
-//                System.out.println("Montant du découvert autorisé : " + comptePayant.getDecouvert());
-//                System.out.println();
-                comptePayant.versement(1000);
-                System.out.println("versement de 1000");
+                System.out.println("Montant du découvert autorisé : " + comptePayant.getDecouvert());
+                System.out.println();
+                System.out.println("Saisir le montant du versement :");
+                versement = sc.nextDouble();
+                comptePayant.versement(versement);
+                System.out.println("versement de " + versement);
                 System.out.println("Solde du compte : " + comptePayant.getSolde());
                 System.out.println();
-                comptePayant.retrait(2000);
-                System.out.println("retrait de 2000");
-                System.out.println("Solde du compte : " + comptePayant.getSolde());
+                System.out.println("Saisir le montant du retrait :");
+                retrait = sc.nextDouble();
+                comptePayant.retrait(retrait);
+                System.out.println("retrait de " + retrait);
+                if (comptePayant.getSolde() > 0) {
+                    System.out.println("Solde du compte : " + comptePayant.getSolde());
+                } else {
+                    System.out.println("Vous avez dépassé votre découvert autorisé");
+                }
                 System.out.println();
                 break;
             case 3:
                 System.out.println("--------------- Affichage d'un nouveau compte Epargne ---------------");
-                CompteEpargne compteEpargne = new CompteEpargne(1000, 500);
-                //affichage du compte avec chaque opération
+                CompteEpargne compteEpargne = new CompteEpargne(1000, 500, 1000);
                 System.out.println("Solde du compte : " + compteEpargne.getSolde());
-//                System.out.println("Montant du découvert autorisé : " + compteEpargne.getDecouvert());
+                System.out.println("Montant du découvert autorisé : " + compteEpargne.getDecouvert());
                 System.out.println();
-                compteEpargne.versement(1000);
-                System.out.println("versement de 1000");
+                System.out.println("Saisir le montant du versement :");
+                versement = sc.nextDouble();
+                compteEpargne.versement(versement);
+                System.out.println("versement de " + versement);
                 System.out.println("Solde du compte : " + compteEpargne.getSolde());
                 System.out.println();
-                compteEpargne.retrait(2000);
-                System.out.println("retrait de 2000");
-                System.out.println("Solde du compte : " + compteEpargne.getSolde());
+                System.out.println("Saisir le montant du retrait :");
+                retrait = sc.nextDouble();
+                System.out.println("retrait de " + retrait);
+                if (compteEpargne.getSolde() > 0) {
+                    System.out.println("Solde du compte : " + compteEpargne.getSolde());
+                } else {
+                    System.out.println("Vous avez dépassé votre découvert autorisé");
+                }
                 System.out.println();
                 break;
             case 4:

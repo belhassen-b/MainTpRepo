@@ -23,7 +23,12 @@ public class CompteSimple extends CompteBancaire{
 
     public void retrait(double montant) {
               this.setSolde(this.getSolde() - montant);
+              if (this.getSolde() < this.getDecouvert()) {
+                  System.out.println("Solde insuffisant");
+              }
         }
+
+
 
     @Override
     public String toString() {
@@ -34,7 +39,4 @@ public class CompteSimple extends CompteBancaire{
                 '}';
     }
 
-    public static void main(String[] args) {
-
-    }
 }
