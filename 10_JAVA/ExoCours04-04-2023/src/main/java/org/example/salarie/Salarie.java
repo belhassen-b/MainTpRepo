@@ -2,7 +2,7 @@ package org.example.salarie;
 
 public class Salarie implements Commun{
     public static tabSalarie[] tabSalarie = new tabSalarie[10];
-    public String matricule;
+    public static String matricule;
     public String categorie;
     public String service;
     public static String nom;
@@ -27,16 +27,16 @@ public class Salarie implements Commun{
 
     }
 
-//    static int compteur = 0;
-//
-//    {
-//        compteur++;
-//        matricule = compteur;
-//    }
+    static int compteur = 0;
+
+    {
+        compteur++;
+        matricule = "M" + compteur;
+    }
 
 
 
-    public String getMatricule() {
+    public static String getMatricule() {
         return matricule;
     }
 
@@ -94,10 +94,7 @@ public class Salarie implements Commun{
 
     }
 
-    @Override
-    public void retour() {
 
-    }
 }
 
 

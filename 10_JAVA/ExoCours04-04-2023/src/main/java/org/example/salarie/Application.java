@@ -18,13 +18,15 @@ public class Application {
         new Manager("M002", "B", "Comptabilité", "Pierre", 2500.0, 0, 0.2, 0.0F);
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("===== Gestion des salariés =====");
-        System.out.println("1. Ajouter un salarié");
-        System.out.println("2. Afficher le salaire des salariés");
-        System.out.println("3. Rechercher un salarié");
-        System.out.println("4. Quitter");
 
-        double sommeSalaire = 0;
+            System.out.println("===== Gestion des salariés =====");
+            System.out.println("1. Ajouter un salarié");
+            System.out.println("2. Afficher le salaire des salariés");
+            System.out.println("3. Rechercher un salarié");
+            System.out.println("4. Quitter");
+            System.out.println("Entrez votre choix : ");
+
+
         int choix = sc.nextInt();
 
         switch (choix) {
@@ -47,12 +49,11 @@ public class Application {
 
 
         double salaire = 0;
-
-
         double chiffreAffaire = 0;
 
         Salarie salarie = new Salarie();
         Commercial commercial = new Commercial();
+        public void
         if (choix == 1) {
             System.out.println("=== Ajouter un salarié ===");
             System.out.println("1. Salarié");
