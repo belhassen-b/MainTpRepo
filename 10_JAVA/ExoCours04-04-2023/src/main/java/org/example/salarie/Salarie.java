@@ -1,37 +1,46 @@
 package org.example.salarie;
 
 public class Salarie {
-    public int matricule = 0;
+    public static tabSalarie[] tabSalarie = new tabSalarie[10];
+    public String matricule;
     public String categorie;
     public String service;
-    public String nom;
+    public static String nom;
 
     public Double salaire;
+
+    public static int distance = 0;
 
     private static int i = 0;
 
     public static Double sommeSalaire = 0.0;
 
-    public Salarie(int matricule, String categorie, String service, String nom, Double salaire) {
+    public Salarie(String nom, String matricule, String categorie, String service, double salaire) {
+        this.nom = nom;
         this.matricule = matricule;
         this.categorie = categorie;
         this.service = service;
-        this.nom = nom;
         this.salaire = salaire;
     }
 
-    static int compteur = 0;
+    public Salarie() {
 
-    {
-        compteur++;
-        matricule = compteur;
     }
 
-    public int getMatricule() {
+//    static int compteur = 0;
+//
+//    {
+//        compteur++;
+//        matricule = compteur;
+//    }
+
+
+
+    public String getMatricule() {
         return matricule;
     }
 
-    public void setMatricule(int matricule) {
+    public void setMatricule(String matricule) {
         this.matricule = matricule;
     }
 
@@ -51,7 +60,7 @@ public class Salarie {
         this.service = service;
     }
 
-    public String getNom() {
+    public static String getNom() {
         return nom;
     }
 
@@ -67,10 +76,15 @@ public class Salarie {
         this.salaire = salaire;
     }
 
+
     public void afficherSalaire() {
         System.out.println("Le salaire de " + nom + " matricule " + matricule +" est de " + salaire + " euros");
     }
+    public void forEach(Object o) {
+        System.out.println("Le salaire de " + nom + " est de " + salaire + " euros");
+    }
 }
+
 
 
 
