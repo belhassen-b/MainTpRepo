@@ -1,6 +1,6 @@
 package org.example.salarie;
 
-public class Commercial extends Salarie {
+public class Commercial extends Salarie implements Commun {
 
     private int distance;
 

@@ -1,6 +1,6 @@
 package org.example.salarie;
 
-public class Salarie {
+public class Salarie implements Commun{
     public static tabSalarie[] tabSalarie = new tabSalarie[10];
     public String matricule;
     public String categorie;
@@ -82,6 +82,21 @@ public class Salarie {
     }
     public void forEach(Object o) {
         System.out.println("Le salaire de " + nom + " est de " + salaire + " euros");
+    }
+
+    @Override
+    public void afficher() {
+
+    }
+
+    @Override
+    public void seDeplacer() {
+
+    }
+
+    @Override
+    public void retour() {
+
     }
 }
 
