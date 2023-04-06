@@ -25,7 +25,7 @@ public class Hotel {
 
         Random rdm = new Random();
         for (int i = 1; i <= 20; i++) {
-            double tarif = 50.0 + 50.0 * rdm.nextDouble();
+            double tarif = 50.0 + 50.0 * rdm.nextFloat();
             int capacite = 1 + rdm.nextInt(3);
             listeChambres.add(new Chambre(i, tarif, capacite));
         }

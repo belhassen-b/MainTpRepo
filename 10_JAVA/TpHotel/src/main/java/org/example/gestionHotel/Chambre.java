@@ -2,6 +2,8 @@ package org.example.gestionHotel;
 
 import org.example.gestionHotel.enums.Statut;
 
+import java.text.DecimalFormat;
+
 public class Chambre {
     private int idChambre;
     private double tarif;
@@ -22,14 +24,16 @@ public class Chambre {
     public int getIdChambre() {
         return idChambre;
     }
+    private static final DecimalFormat df = new DecimalFormat("0.00");
+
 
     public void setIdChambre(int idChambre) {
         this.idChambre = idChambre;
     }
 
 
-    public double getTarif() {
-        return tarif;
+    public String getTarif() {
+        return df.format(tarif);
     }
 
     public void setTarif(double tarif) {
@@ -45,7 +49,7 @@ public class Chambre {
     }
 
     public void afficherDetail(){
-        System.out.println("Chambre " + idChambre + " (" + statut + ") : " + capacite + " personne(s) - " + tarif + " €/nuit");
+        System.out.println("Chambre " + idChambre + " (" + statut + ") : " + capacite + " personne(s) - " + df.format(tarif) + " €/nuit");
     }
 
     public boolean estLibre(){
