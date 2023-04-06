@@ -9,13 +9,3 @@
 +src/main/java/org/example/model/Maison.java,0\4\04b913505c978403cb74fb61bc48940018b7ed5f
 `
 0src/main/java/org/example/variable/Variable.java,d\9\d95fba6e2d086019292c653e016fcbae57b0dbc9
-S
-#src/main/java/org/example/Main.java,0\b\0ba1b9c7a4878802f938e331cc2d8a042087ec6b
-Z
-*src/main/java/org/example/enums/Month.java,1\7\1771d127647bc99d7daedf697e426e55925ef35f
-b
-2src/main/java/org/example/methode/MethodParam.java,f\9\f992111953f5260253d0a2c9c6b5252d90b277cd
-]
--src/main/java/org/example/enums/DemoEnum.java,d\0\d0c77a3d64f81a433d4c4aa64ba6416455d4ed8e
-]
--src/main/java/org/example/enums/Priority.java,e\3\e39b52805cbf18c86645a84ec2d062fb0cb7d5f4
