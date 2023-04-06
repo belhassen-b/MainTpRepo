@@ -1,102 +1,71 @@
 package org.example.gestionHotel;
 
+import org.example.gestionHotel.enums.Statut;
+
 public class Reservation {
 
     private int idReservation;
+    private Statut statut;
+    private Chambre chambre;
+    private Client client;
 
-    private boolean statut;
+    public Reservation() {}
 
-    private String numTelClientReservation;
-
-    private int idChambre;
-
-    private int idHotel;
-
-    private int numChambreReservation;
-
-    private boolean statutReservation;
-
-
-public Reservation(){
-
-    }
-
-
-    public Reservation(int idReservation, boolean statut, String numTelClientReservation, int idChambre, int idHotel, int numChambreReservation, boolean statutReservation) {
+    public Reservation(int idReservation,  Chambre chambre, Client client) {
         this.idReservation = idReservation;
-        this.statut = statut;
-        this.numTelClientReservation = numTelClientReservation;
-        this.idChambre = idChambre;
-        this.idHotel = idHotel;
-        this.numChambreReservation = numChambreReservation;
-        this.statutReservation = statutReservation;
+        this.chambre = chambre;
+        this.client = client;
+        this.statut = Statut.STATUT_VALIDEE;
     }
-
-    public int getIdReservation() {
-        return idReservation;
-    }
+    public int getIdReservation() { return idReservation; }
 
     public void setIdReservation(int idReservation) {
         this.idReservation = idReservation;
     }
 
-    public boolean isStatut() {
+    public Statut getStatut() {
         return statut;
     }
 
-public void setStatut(boolean statut) {
+    public void setStatut(Statut statut) {
         this.statut = statut;
     }
 
-
-    public int getIdChambre() {
-        return idChambre;
+    public Chambre getChambre() {
+        return chambre;
     }
 
-    public void setIdChambre(int idChambre) {
-        this.idChambre = idChambre;
+    public void setChambre(Chambre chambre) {
+        this.chambre = chambre;
     }
 
-    public int getIdHotel() {
-        return idHotel;
+    public Client getClient() {
+        return client;
     }
 
-    public void setIdHotel(int idHotel) {
-        this.idHotel = idHotel;
+    public void setClient(Client client) {
+        this.client = client;
     }
 
-    public String getNumTelClientReservation() {
-        return numTelClientReservation;
+    public  void afficherDetail(){
+        System.out.println("Reservation : " + idReservation  + " " +  statut) ;
+        System.out.println("Client : " + client.getNomClient()+ " " + client.getNumTel() );
+        System.out.println("Chambre : " + chambre.getIdChambre() + " " + chambre.getCapacite() + chambre .getTarif());
     }
 
-    public void setNumTelClientReservation(String numTelClientReservation) {
-        this.numTelClientReservation = numTelClientReservation;
+    public void annuler(){
+        statut = Statut.STATUT_ANNULEE;
+        chambre.liberer();
     }
 
-    public int getNumChambreReservation() {
-        return numChambreReservation;
-    }
-
-    public void setNumChambreReservation(int numChambreReservation) {
-        this.numChambreReservation = numChambreReservation;
-    }
-
-    public boolean isStatutReservation() {
-        return statutReservation;
-    }
-
-    public void setStatutReservation(boolean statutReservation) {
-        this.statutReservation = statutReservation;
-    }
 
     @Override
     public String toString() {
         return "Reservation{" +
                 "idReservation=" + idReservation +
                 ", statut=" + statut +
-                ", numTelClientReservation='" + numTelClientReservation + '\'' +
-                ", idChambre=" + idChambre +
-                ", idHotel=" + idHotel +
+                ", chambre=" + chambre +
+                ", client=" + client +
                 '}';
     }
 

@@ -1,24 +1,22 @@
 package org.example.gestionHotel;
 
+import org.example.gestionHotel.enums.Statut;
+
 public class Chambre {
-
     private int idChambre;
-
-    private boolean statut;
-
     private double tarif;
-
     private int capacite;
 
-    public Chambre(){
+    private Statut statut;
 
+    public Chambre() {
     }
 
-    public Chambre(int idChambre, boolean statut, double tarif, int capacite) {
+    public Chambre(int idChambre, double tarif, int capacite) {
         this.idChambre = idChambre;
-        this.statut = statut;
         this.tarif = tarif;
         this.capacite = capacite;
+        this.statut = Statut.STATUT_LIBRE;
     }
 
     public int getIdChambre() {
@@ -29,13 +27,6 @@ public class Chambre {
         this.idChambre = idChambre;
     }
 
-    public boolean isStatut() {
-        return statut;
-    }
-
-    public void setStatut(boolean statut) {
-        this.statut = statut;
-    }
 
     public double getTarif() {
         return tarif;
@@ -53,11 +44,26 @@ public class Chambre {
         this.capacite = capacite;
     }
 
+    public void afficherDetail(){
+        System.out.println("Chambre " + idChambre + " (" + statut + ") : " + capacite + " personne(s) - " + tarif + " €/nuit");
+    }
+
+    public boolean estLibre(){
+        return statut.equals(Statut.STATUT_LIBRE);
+    }
+
+    public void occuper(){
+        statut = Statut.STATUT_OCCUPE;
+    }
+
+    public void liberer(){
+        statut = Statut.STATUT_LIBRE;
+    }
+
     @Override
     public String toString() {
         return "Chambre{" +
                 "idChambre=" + idChambre +
-                ", statut=" + statut +
                 ", tarif=" + tarif +
                 ", capacite=" + capacite +
                 '}';
