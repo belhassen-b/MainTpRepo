@@ -7,38 +7,38 @@ import java.util.Objects;
 
 public class Ingredient {
 
-    private int id;
-    private String nom_aliment;
+    private int idIngredient;
+    private String nomIngredient;
     private Etat etat;
     private Unite unite;
     private int quantite;
 
 
-    public Ingredient() {
+    public Ingredient(int idIngredient, String nomIngredient, String etat, String unite, int quantite) {
     }
 
-    public Ingredient(int id,String nom_aliment, Etat etat, Unite unite, int quantite) {
-        this.id = id;
-        this.nom_aliment = nom_aliment;
+    public Ingredient(int idIngredient, String nomIngredient, Etat etat, Unite unite, int quantite) {
+        this.idIngredient = idIngredient;
+        this.nomIngredient = nomIngredient;
         this.etat = etat;
         this.unite = unite;
         this.quantite = quantite;
     }
 
-    public int getId() {
-        return id;
+    public int getIdIngredient() {
+        return idIngredient;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdIngredient(int idIngredient) {
+        this.idIngredient = idIngredient;
     }
 
-    public String getNom_aliment() {
-        return nom_aliment;
+    public String getNomIngredient() {
+        return nomIngredient;
     }
 
-    public void setNom_aliment(String nom_aliment) {
-        this.nom_aliment = nom_aliment;
+    public void setNomIngredient(String nomIngredient) {
+        this.nomIngredient = nomIngredient;
     }
 
     public Etat getEtat() {
@@ -70,28 +70,25 @@ public class Ingredient {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Ingredient that)) return false;
-        return Objects.equals(getNom_aliment(), that.getNom_aliment()) && getEtat() == that.getEtat();
+        return Objects.equals(getNomIngredient(), that.getNomIngredient()) && getEtat() == that.getEtat();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getNom_aliment(), getEtat(), getUnite(), getQuantite());
+        return Objects.hash(getNomIngredient(), getEtat(), getUnite(), getQuantite());
     }
+
     @Override
     public String toString() {
-        return "Ingredient{" +
-                "id=" + id +
-                "nom_aliment='" + nom_aliment + '\'' +
-                ", etat=" + etat +
-                ", unite=" + unite +
-                ", quantite=" + quantite +
-                '}';
+        return "Ingredient{" + "idIngredient=" + idIngredient + "nomIngredient='" + nomIngredient + '\'' + ", etat=" + etat + ", unite=" + unite + ", quantite=" + quantite + '}';
     }
+
     public void cuire() {
         if (this.etat == Etat.CRU) {
             this.etat = Etat.CUIT;
         }
     }
+
     public void decouper() {
         if (this.etat == Etat.ENTIER) {
             this.etat = Etat.DECOUPE;

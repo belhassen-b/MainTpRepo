@@ -1,0 +1,31 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‹’Û8È´êÚö0
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÙÖ‘¿8Ó´êÚö0
+‰
+java:S4165
+"gRemove this useless assignment; "typeArbre" already holds the assigned value along all execution paths.(ñóíÜøÿÿÿÿ8Ş´êÚö0
+ˆ
+java:S4165"fRemove this useless assignment; "diametre" already holds the assigned value along all execution paths.(ÄÅëõÿÿÿÿÿ8ß´êÚö0
+ƒ
+java:S4165"fRemove this useless assignment; "feuillus" already holds the assigned value along all execution paths.(èç©—8ß´êÚö0
+ˆ
+java:S4165"fRemove this useless assignment; "resineux" already holds the assigned value along all execution paths.(„à½ƒüÿÿÿÿ8ß´êÚö0
+‡
+java:S4165"eRemove this useless assignment; "hauteur" already holds the assigned value along all execution paths.(ŞŸÜ³üÿÿÿÿ8ß´êÚö0
+C
+java:S1659"&Declare "diametre" on a separate line.(İ¡í8â´êÚö0
+L
+java:S1172D"/Remove this unused method parameter "parcelle".(ä¬áœ8Ã¦ìÚö0
+Z	java:S106E"9Replace this use of System.out or System.err by a logger.(ä™ùùÿÿÿÿ8›ûêÚö0
+Z	java:S106F"9Replace this use of System.out or System.err by a logger.(òÿİıÿÿÿÿ8›ûêÚö0
+Q
+java:S1656"/Remove or correct this useless self-assignment.(ÄÅëõÿÿÿÿÿ8ƒµêÚö0
+Q
+java:S1656"/Remove or correct this useless self-assignment.(ŞŸÜ³üÿÿÿÿ8ƒµêÚö0
+L
+java:S1656"/Remove or correct this useless self-assignment.(èç©—8„µêÚö0
+Q
+java:S1656"/Remove or correct this useless self-assignment.(„à½ƒüÿÿÿÿ8„µêÚö0
+Q
+java:S1656
+"/Remove or correct this useless self-assignment.(ñóíÜøÿÿÿÿ8„µêÚö0

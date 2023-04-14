@@ -1,36 +1,37 @@
 package org.example.ex113;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Plat {
 
-    private int id;
-    private String nom;
+    private int idPlat;
+    private String nomPlat;
     private Ingredient[] ingredients;
 
     public Plat() {
     }
 
-    public Plat(int id, String nom, Ingredient[] ingredients) {
-        this.id = id;
-        this.nom = nom;
+    public Plat(int idPlat, String nomPlat, Ingredient[] ingredients) {
+        this.idPlat = idPlat;
+        this.nomPlat = nomPlat;
         this.ingredients = ingredients;
     }
 
-    public int getId() {
-        return id;
+    public int getIdPlat() {
+        return idPlat;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdPlat(int id) {
+        this.idPlat = idPlat;
     }
 
-    public String getNom() {
-        return nom;
+    public String getNomPlat() {
+        return nomPlat;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setNomPlat(String nomPlat) {
+        this.nomPlat = nomPlat;
     }
 
     public Ingredient[] getIngredients() {
@@ -40,7 +41,6 @@ public class Plat {
     public void setIngredients(Ingredient[] ingredients) {
         this.ingredients = ingredients;
     }
-
 
     @Override
     public boolean equals(Object o) {
@@ -54,11 +54,4 @@ public class Plat {
         return Arrays.hashCode(getIngredients());
     }
 
-    public void afficher() {
-        System.out.println("Plat: " + nom);
-        System.out.println("Ingredients: ");
-        for (Ingredient ingredient : ingredients) {
-            System.out.println(ingredient.getNom_aliment() + " " + ingredient.getEtat() + " " + ingredient.getQuantite() + " " + ingredient.getUnite());
-        }
-    }
 }
