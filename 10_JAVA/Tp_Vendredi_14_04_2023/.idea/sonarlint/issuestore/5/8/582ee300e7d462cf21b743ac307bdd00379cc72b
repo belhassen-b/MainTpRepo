@@ -1,0 +1,30 @@
+
+z
+java:S11920"XDefine a constant instead of duplicating this literal "**********************" 10 times.(Ì™áıûÿÿÿÿ8¯º£ù÷0
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ËÇ¬ûÿÿÿÿ8°º£ù÷0
+Y
+java:S1612="=Replace this lambda with method reference 'Teacher::getName'.(ù§è_8Áº£ù÷0
+]
+java:S1612>"@Replace this lambda with method reference 'System.out::println'.(Á’¦Ò8Áº£ù÷0
+]
+java:S1612E"@Replace this lambda with method reference 'System.out::println'.(Á’¦Ò8Âº£ù÷0
+\
+java:S1612K"?Replace this lambda with method reference 'Course::getTeacher'.(¿¥øë8Âº£ù÷0
+b
+java:S1612R"@Replace this lambda with method reference 'Course::getDuration'.(Ïİåµüÿÿÿÿ8Äº£ù÷0
+]
+java:S1612^"@Replace this lambda with method reference 'System.out::println'.(›Åºî8Æº£ù÷0
+b
+java:S1612l"@Replace this lambda with method reference 'Student::getCourses'.(ŸÍµüùÿÿÿÿ8Éº£ù÷0
+a
+java:S1612m"?Replace this lambda with method reference 'Collection::stream'.(Ú‚ôüÿÿÿÿ8Éº£ù÷0
+]
+java:S1612x"@Replace this lambda with method reference 'System.out::println'.(›Åºî8Ëº£ù÷0
+O
+java:S6126{"2Replace this String concatenation with Text block.(ğÍ…ã8Ëº£ù÷0
+^	java:S125„"<This block of commented-out lines of code should be removed.(Ì½Íıÿÿÿÿ8Ìº£ù÷0
+S
+java:S1128"1Remove this unused import 'java.util.Collection'.(¹ÉĞšùÿÿÿÿ8è”§ù÷0
+Q
+java:S1128
+"4Remove this unused import 'java.util.stream.Stream'.(ó÷”8è”§ù÷0
