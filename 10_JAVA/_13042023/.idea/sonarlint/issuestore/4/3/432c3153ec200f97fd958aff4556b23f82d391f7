@@ -7,12 +7,12 @@ h
 java:S1192"FDefine a constant instead of duplicating this literal "Milan" 3 times.(ö©¢¯ùÿÿÿÿ8Ó™íÓ÷0
 h
 java:S3655U"FCall "max.isPresent()" or "!max.isEmpty()" before accessing the value.(Ÿý‡åÿÿÿÿÿ8ˆšíÓ÷0
+h
+java:S3655"FCall "min.isPresent()" or "!min.isEmpty()" before accessing the value.(ØÁ×åÿÿÿÿÿ8ˆšíÓ÷0
 r
 java:S3655H"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(‰ýòôÿÿÿÿÿ8ˆšíÓ÷0
 e
 java:S3655~"HCall "max2.isPresent()" or "!max2.isEmpty()" before accessing the value.(½˜‹ˆ8ˆšíÓ÷0
-h
-java:S3655"FCall "min.isPresent()" or "!min.isEmpty()" before accessing the value.(ØÁ×åÿÿÿÿÿ8ˆšíÓ÷0
 O
 java:S3958s"2Refactor the code so this stream pipeline is used.(ô•Í»8ˆšíÓ÷0
 o

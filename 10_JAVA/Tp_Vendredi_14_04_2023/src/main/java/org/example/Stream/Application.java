@@ -129,12 +129,30 @@ public class Application {
                 .forEach((year, teachers) -> System.out.println(year + " : " + teachers.stream().map(Teacher::getName).collect(Collectors.joining(", "))));
 
 
-//        System.out.println("**********************");
-//        System.out.println("11 - Sélectionner les Student avec un âge compris entre 20 et 25 ans, puis récupérer une liste\n" +
-//                "de leurs Course triée par ordre alphabétique :");
-//        Arrays.asList(student1, student2, student3, student4, student5)
-//                .stream()
-//                .filter(student -> student.getAge() > 20 && student.getAge() < 25)
+        System.out.println("**********************");
+        System.out.println("11 - Sélectionner les Student avec un âge compris entre 18 et 20 ans, puis récupérer une liste de leurs Course triée par ordre alphabétique");
+        Arrays.asList(student1, student2, student3, student4, student5)
+                .stream()
+                .filter(student -> student.getAge() >= 18 && student.getAge() <= 20)
+                .collect(Collectors.toList())
+                .forEach(student -> System.out.println(student.getName() + " : " + student.getCourses().stream().map(Course::getName).sorted().collect(Collectors.joining(", "))));
 
-    }
+        System.out.println("**********************");
+        System.out.println("12 - Quel est le nombre moyen de cours suivis par les étudiants de plus de 20 ans");
+            Arrays.asList(student1, student2, student3, student4, student5)
+                .stream()
+                .filter(student -> student.getAge() > 20)
+                .map(student -> student.getCourses().size())
+                .mapToInt(Integer::intValue)
+                .average()
+                .ifPresent(System.out::println);
+
+        System.out.println("**********************");
+        System.out.println("13 - Quels sont les noms des étudiants qui ont suivi tous les cours");
+        Arrays.asList(student1, student2, student3, student4, student5)
+                .stream()
+                .filter(student -> student.getCourses().size() == 3)
+                .map(student -> student.getName())
+                .forEach(student -> System.out.println(student));
+}
 }

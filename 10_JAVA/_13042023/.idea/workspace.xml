@@ -5,13 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c78fb7e4-fefe-494e-b2fd-dea80a2ab60c" name="Changes" comment="ExCours 13042023">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/trader/Trader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/transaction/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/ecf1" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/ecf1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/ex-contact-routing" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/ex-contact-routing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/execice_adress-redux-routing" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/execice_adress-redux-routing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/exercice15022023" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/exercice15022023" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/exo-recipes-redux" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/exo-recipes-redux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/exo-router-react" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/exo-router-react" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f8c1ee53f8cfcd7e559ae9245734f8d26d5bc76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/432c3153ec200f97fd958aff4556b23f82d391f7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e86bb74eeb603dc8772d6fcfd4a0341794bad2e4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/f/2f8c1ee53f8cfcd7e559ae9245734f8d26d5bc76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/3/432c3153ec200f97fd958aff4556b23f82d391f7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/8/e86bb74eeb603dc8772d6fcfd4a0341794bad2e4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +30,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="2OMVnm0gIUEntOi0GKAzmb87Ssi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -77,6 +88,7 @@
       <workItem from="1681370610779" duration="14240000" />
       <workItem from="1681391340462" duration="15000" />
       <workItem from="1681461399233" duration="1225000" />
+      <workItem from="1681467932787" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="ExCours 13042023">
       <created>1681377789413</created>
