@@ -1,54 +1,17 @@
 
 
 java:S1192"_Define a constant instead of duplicating this literal "==============================" 3 times.(‘õ¼©ùÿÿÿÿ8¦ğóÙö0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(‘õ¼©ùÿÿÿÿ8äğóÙö0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(‘õ¼©ùÿÿÿÿ8äğóÙö0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(íÜõßúÿÿÿÿ8åğóÙö0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(—·Š÷8åğóÙö0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(¦”Åô8åğóÙö0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(€–Ê¨8åğóÙö0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(‘õ¼©ùÿÿÿÿ8åğóÙö0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(«Ëúÿÿÿÿ8åğóÙö0
-Z	java:S106""9Replace this use of System.out or System.err by a logger.(âàºşüÿÿÿÿ8æğóÙö0
-Z	java:S106#"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8æğóÙö0
-Z	java:S106$"9Replace this use of System.out or System.err by a logger.(Ë´şğùÿÿÿÿ8æğóÙö0
-Z	java:S106%"9Replace this use of System.out or System.err by a logger.(åÈÙøÿÿÿÿ8æğóÙö0
-Z	java:S106'"9Replace this use of System.out or System.err by a logger.(õŸüÉıÿÿÿÿ8æğóÙö0
 `
 java:S1854P">Remove this useless assignment to local variable "ingredient".(£Ü„Èüÿÿÿÿ8çğóÙö0
 Z
 java:S1854X"8Remove this useless assignment to local variable "plat".(ÿŸ°»üÿÿÿÿ8çğóÙö0
-Z	java:S106-"9Replace this use of System.out or System.err by a logger.(ôòÅŞúÿÿÿÿ8çğóÙö0
-Z	java:S106."9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8çğóÙö0
-T	java:S106/"9Replace this use of System.out or System.err by a logger.(¿„u8çğóÙö0
-Z	java:S1065"9Replace this use of System.out or System.err by a logger.(†Î‘•øÿÿÿÿ8èğóÙö0
-U	java:S1067"9Replace this use of System.out or System.err by a logger.(º¶¬Ş8èğóÙö0
-Z	java:S1069"9Replace this use of System.out or System.err by a logger.(»°Î‹ıÿÿÿÿ8èğóÙö0
-Z	java:S106;"9Replace this use of System.out or System.err by a logger.(§î¦Ëıÿÿÿÿ8èğóÙö0
-Z	java:S106?"9Replace this use of System.out or System.err by a logger.(µ­•ûÿÿÿÿ8éğóÙö0
-Z	java:S106A"9Replace this use of System.out or System.err by a logger.(õŸüÉıÿÿÿÿ8éğóÙö0
-Z	java:S106C"9Replace this use of System.out or System.err by a logger.(–´ˆ³ûÿÿÿÿ8éğóÙö0
-Z	java:S106D"9Replace this use of System.out or System.err by a logger.(©íûùÿÿÿÿ8êğóÙö0
-Z	java:S106H"9Replace this use of System.out or System.err by a logger.(†Î‘•øÿÿÿÿ8êğóÙö0
-U	java:S106J"9Replace this use of System.out or System.err by a logger.(º¶¬Ş8êğóÙö0
-Z	java:S106L"9Replace this use of System.out or System.err by a logger.(»°Î‹ıÿÿÿÿ8êğóÙö0
-Z	java:S106N"9Replace this use of System.out or System.err by a logger.(§î¦Ëıÿÿÿÿ8ëğóÙö0
-Z	java:S106Q"9Replace this use of System.out or System.err by a logger.(–´ˆ³ûÿÿÿÿ8ëğóÙö0
-Z	java:S106R"9Replace this use of System.out or System.err by a logger.(©íûùÿÿÿÿ8ëğóÙö0
 Z
 java:S1117X"8Rename "plat" which hides the field declared at line 11.(ÿŸ°»üÿÿÿÿ8ëğóÙö0
 K
 java:S1481X")Remove this unused "plat" local variable.(ÿŸ°»üÿÿÿÿ8ìğóÙö0
-Z	java:S106Y"9Replace this use of System.out or System.err by a logger.(­¹İøÿÿÿÿ8ìğóÙö0
-Z	java:S106Z"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ìğóÙö0
-U	java:S106_"9Replace this use of System.out or System.err by a logger.(Üïã8ìğóÙö0
-Z	java:S106`"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ìğóÙö0
-Z	java:S106a"9Replace this use of System.out or System.err by a logger.(áÄ”¢üÿÿÿÿ8ìğóÙö0
-T	java:S106h"9Replace this use of System.out or System.err by a logger.(£Ú–8íğóÙö0
-T	java:S106~"9Replace this use of System.out or System.err by a logger.(ÙĞG8îğóÙö0
 V
-java:S1128"9Remove this unused import 'org.example.ex113.enums.Etat'.(µÊéÃ8ºÚö0
+java:S1128"9Remove this unused import 'org.example.ex113.enums.Etat'.(µÊéÃ8š£˜ú0
 W
-java:S1128":Remove this unused import 'org.example.ex113.enums.Unite'.(øÎÁË8ºÚö0
+java:S1128":Remove this unused import 'org.example.ex113.enums.Unite'.(øÎÁË8š£˜ú0
 M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ô”Úö0
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8š£˜ú0
