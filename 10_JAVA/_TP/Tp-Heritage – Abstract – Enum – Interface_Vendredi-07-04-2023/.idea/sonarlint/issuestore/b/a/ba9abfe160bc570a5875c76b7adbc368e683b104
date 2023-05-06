@@ -1,0 +1,17 @@
+
+
+java:S1192"_Define a constant instead of duplicating this literal "==============================" 3 times.(‘õ¼©ùÿÿÿÿ8¦ğóÙö0
+`
+java:S1854P">Remove this useless assignment to local variable "ingredient".(£Ü„Èüÿÿÿÿ8çğóÙö0
+Z
+java:S1854X"8Remove this useless assignment to local variable "plat".(ÿŸ°»üÿÿÿÿ8çğóÙö0
+Z
+java:S1117X"8Rename "plat" which hides the field declared at line 11.(ÿŸ°»üÿÿÿÿ8ëğóÙö0
+K
+java:S1481X")Remove this unused "plat" local variable.(ÿŸ°»üÿÿÿÿ8ìğóÙö0
+V
+java:S1128"9Remove this unused import 'org.example.ex113.enums.Etat'.(µÊéÃ8š£˜ú0
+W
+java:S1128":Remove this unused import 'org.example.ex113.enums.Unite'.(øÎÁË8š£˜ú0
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8š£˜ú0

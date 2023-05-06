@@ -1,0 +1,25 @@
+
+_
+java:S2259"IA "NullPointerException" could be thrown; "bankAccount" is nullable here.(ÁÆçá
+Q
+java:S2696/"6Make the enclosing method "static" or remove this set.(¼ñÖóûÿÿÿÿ
+Q
+java:S26960"6Make the enclosing method "static" or remove this set.(±½Àüÿÿÿÿÿ
+Q
+java:S2696;"6Make the enclosing method "static" or remove this set.(¼ñÖóûÿÿÿÿ
+Q
+java:S2696<"6Make the enclosing method "static" or remove this set.(¾­ûóøÿÿÿÿ
+Q
+java:S2696C"6Make the enclosing method "static" or remove this set.(¼ñÖóûÿÿÿÿ
+Q
+java:S2696F"6Make the enclosing method "static" or remove this set.(••ÌÊøÿÿÿÿ
+Q
+java:S2696J"6Make the enclosing method "static" or remove this set.(É’µ³şÿÿÿÿ
+Q
+java:S2696\"6Make the enclosing method "static" or remove this set.(¼ñÖóûÿÿÿÿ
+Q
+java:S2696_"6Make the enclosing method "static" or remove this set.(®áÖïûÿÿÿÿ
+Q
+java:S2696c"6Make the enclosing method "static" or remove this set.(É’µ³şÿÿÿÿ
+^
+java:S1858e"C"getStatus" returns a string, there's no need to call "toString()".(Å½ £ıÿÿÿÿ

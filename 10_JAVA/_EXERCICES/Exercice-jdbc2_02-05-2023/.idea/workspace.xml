@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0cc45b1f-b5be-4941-bfcb-153130fffd4f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../08_React/ecf1" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/ecf1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/ex-contact-routing" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/ex-contact-routing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/execice_adress-redux-routing" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/execice_adress-redux-routing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/exercice15022023" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/exercice15022023" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/exo-recipes-redux" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/exo-recipes-redux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/exo-router-react" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/exo-router-react" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/contact/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/contact/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ihm/Ihm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ihm/Ihm.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PEmd6wXIdKXwqgHgrVig1uERMx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MainTpRepo/10_JAVA/Exercice-jdbc2/src/main/java/org/example&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MainTpRepo\10_JAVA\Exercice-jdbc2\src\main\java\org\example" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MainTpRepo\10_JAVA\Exercice-jdbc2" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="Exercice-jdbc2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0cc45b1f-b5be-4941-bfcb-153130fffd4f" name="Changes" comment="" />
+      <created>1683030702071</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683030702071</updated>
+      <workItem from="1683030703206" duration="9247000" />
+      <workItem from="1683096192657" duration="3059000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

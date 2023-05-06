@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c78fb7e4-fefe-494e-b2fd-dea80a2ab60c" name="Changes" comment="ExCours 13042023">
+      <change beforePath="$PROJECT_DIR$/../../08_React/ecf1" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/ecf1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/ex-contact-routing" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/ex-contact-routing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/execice_adress-redux-routing" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/execice_adress-redux-routing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/exercice15022023" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/exercice15022023" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/exo-recipes-redux" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/exo-recipes-redux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_React/exo-router-react" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/exo-router-react" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/.idea/sonarlint/issuestore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/.idea/sonarlint/securityhotspotstore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/.idea/sonarlint/securityhotspotstore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/src/main/java/org/example/exEnum/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/src/main/java/org/example/exEnum/MessageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05-04-2023/src/main/java/org/example/exEnum/Priority.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc/Exercice1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc/src/main/java/org/example/utils/DataBaseConnector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/issuestore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/securityhotspotstore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/securityhotspotstore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/securityhotspotstore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/Exercice2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/src/main/java/org/example/contact/Contact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/src/main/java/org/example/ihm/Ihm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/src/main/java/org/example/utils/DataBaseManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/1-TP_Class_Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/2-TPHeritage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/3-TP Class-Heritage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/4-TP_Class_Salarie_Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/4bis-TP - Employe - Class.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/TpClasseChaise/Chaise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/TpClasseChaise/Objet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/employe/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/employe/Employe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/employe/Technicien.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/heritage/CompteBancaire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/heritage/CompteEpargne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/heritage/ComptePayant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/heritage/CompteSimple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/house/Apartment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/house/House.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/house/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/personne/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/personne/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/personne/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/salarie/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/salarie/Commercial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/salarie/Commun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/salarie/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/salarie/Salarie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoCours04-04-2023/src/main/java/org/example/salarie/tabSalarie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/exo2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/src/main/java/org/example/ex1/Calculation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/src/main/java/org/example/ex2/FirstName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/src/main/java/org/example/ex3/PrixHt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/src/main/java/org/example/ex4/NombrePos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/src/main/java/org/example/ex5/ProduitNombre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/src/main/java/org/example/ex6/Noms.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/src/main/java/org/example/ex7/NombrePos2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/src/main/java/org/example/ex8/NombreCompris.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/target/classes/org/example/ex1/Calculation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/target/classes/org/example/ex2/FirstName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/target/classes/org/example/ex3/PrixHt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/target/classes/org/example/ex4/NombrePos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/target/classes/org/example/ex5/ProduitNombre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/target/classes/org/example/ex6/Noms.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/target/classes/org/example/ex7/NombrePos2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie1/target/classes/org/example/ex8/NombreCompris.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/exo3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/src/main/java/org/example/ex1/Ex1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/src/main/java/org/example/ex10/Ex10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/src/main/java/org/example/ex2/Ex2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/src/main/java/org/example/ex3/Ex3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/src/main/java/org/example/ex4/EX4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/src/main/java/org/example/ex5/Ex5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/src/main/java/org/example/ex6/Ex6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/src/main/java/org/example/ex7/Ex7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/src/main/java/org/example/ex8/Ex8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/src/main/java/org/example/ex9/Ex9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/target/classes/org/example/ex1/Ex1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/target/classes/org/example/ex10/Ex10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/target/classes/org/example/ex2/Ex2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/target/classes/org/example/ex3/Ex3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/target/classes/org/example/ex4/EX4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/target/classes/org/example/ex5/Ex5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/target/classes/org/example/ex6/Ex6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/target/classes/org/example/ex7/Ex7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/target/classes/org/example/ex8/Ex8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie2/target/classes/org/example/ex9/Ex9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/1-Exo-String.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/src/main/java/org/example/Ex5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/src/main/java/org/example/ex1/Ex1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/src/main/java/org/example/ex2/Ex2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/src/main/java/org/example/ex3/Ex3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/src/main/java/org/example/ex4/Ex4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/target/classes/org/example/Ex5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/target/classes/org/example/ex1/Ex1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/target/classes/org/example/ex2/Ex2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/target/classes/org/example/ex3/Ex3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie3/target/classes/org/example/ex4/Ex4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/issuestore/0/6/0640b926358dbdd381813059801c990088579127" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/issuestore/1/e/1e753ce2cea7c866f8d71615a70a6f1426f30682" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/issuestore/4/6/46e2d537e036371a739aae31ea3bc440d26d2fed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/issuestore/6/1/617d60847cf42c3c03874941029eda712362e8dc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/issuestore/7/a/7af9dbec445d68282a3c921a438d777efda1fd25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/issuestore/b/7/b7f0bdd5979140152ec510e802a5509af1b78cee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/issuestore/d/6/d6ca00de12d82f02875199e56474e88060407dc7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/issuestore/f/9/f96002735cf6ed3762fe896d31289d748d9dd9e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/securityhotspotstore/0/6/0640b926358dbdd381813059801c990088579127" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/securityhotspotstore/1/e/1e753ce2cea7c866f8d71615a70a6f1426f30682" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/securityhotspotstore/4/6/46e2d537e036371a739aae31ea3bc440d26d2fed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/securityhotspotstore/6/1/617d60847cf42c3c03874941029eda712362e8dc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/securityhotspotstore/7/a/7af9dbec445d68282a3c921a438d777efda1fd25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/securityhotspotstore/b/7/b7f0bdd5979140152ec510e802a5509af1b78cee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/securityhotspotstore/d/6/d6ca00de12d82f02875199e56474e88060407dc7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/securityhotspotstore/f/9/f96002735cf6ed3762fe896d31289d748d9dd9e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/3-Exercice Structure itératives et conditionnelles.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/4-Tableau_java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/TP_tri_bulle.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/src/main/java/org/example/ex1/Ex1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/src/main/java/org/example/ex2/Ex2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/src/main/java/org/example/ex3/Ex3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/src/main/java/org/example/ex4/Ex4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/src/main/java/org/example/ex5/Ex5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/src/main/java/org/example/ex6/Ex6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/src/main/java/org/example/ex7/Ex7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/src/main/java/org/example/ex8/Ex8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie4/tableau.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie5/TP_trie_selection.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie5/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie5/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie5/tp-matrice1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie5/tp-matrice2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serie5/tp-matrice3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/sonarlint/issuestore/5/f/5f2dbc7fdf04f74ddeb3a7986c81a4a8472c3693" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/sonarlint/issuestore/d/f/dfd92ff1a2d0f6129cf82a823f9f0775f3686ba9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/sonarlint/securityhotspotstore/5/f/5f2dbc7fdf04f74ddeb3a7986c81a4a8472c3693" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/sonarlint/securityhotspotstore/d/f/dfd92ff1a2d0f6129cf82a823f9f0775f3686ba9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/TP Révision JAVA.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/src/main/java/dao/BaseDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/src/main/java/dao/ClientDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/src/main/java/dao/EvenementDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/src/main/java/dao/LocationDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/src/main/java/dao/TicketDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/src/main/java/entity/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/src/main/java/entity/Evenement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/src/main/java/entity/Location.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/src/main/java/entity/Ticket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/src/main/java/ihm/IHM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP-Vendredi-05-052023_BilleterieDAO/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/Exercices Tableaux 2 dimensions.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/Exercices sur les structures itératives et conditionnelles.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/Exercices sur les tableaux.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/TP_Bonus.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex1/Ex1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex10Tableaux5/Ex10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex11Tableaux6/Ex11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex12Tableaux7/Ex12.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex13Tableaux2d1/Ex13.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex14Tableaux2d2/Ex14.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex15Tableau2d3/Ex15.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex16Tableau2d4/Ex16.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex2/Ex2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex3/Ex3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex4/Ex4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex5/Ex5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex6Tableaux1/Ex6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex7Tableaux2/Ex7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex8Tableaux3/Ex8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/ex9Tableaux4/Ex9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/justePrix/Ex17.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/src/main/java/org/example/pendu/Ex18.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex1/Ex1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex10Tableaux5/Ex10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex11Tableaux6/Ex11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex12Tableaux7/Ex12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex13Tableaux2d1/Ex13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex14Tableaux2d2/Ex14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex15Tableau2d3/Ex15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex16Tableau2d4/Ex16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex2/Ex2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex3/Ex3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex4/Ex4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex5/Ex5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex6Tableaux1/Ex6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex7Tableaux2/Ex7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex8Tableaux3/Ex8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/ex9Tableaux4/Ex9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/justePrix/Ex17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp-Vendredi-31-03-2023/target/classes/org/example/pendu/Ex18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/issuestore/0/e/0ee55ab02613d208128a83ec8f61b06804c408c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/issuestore/1/6/16adad07508a709dbe47243e2bffdcbdbc4381ad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/issuestore/7/e/7e4740491c22c8b93611c4a5c6871ebb5dec7570" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/issuestore/8/3/833452b8e9f9d6f56991ecd292ee0d889e44fe32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/issuestore/8/d/8dc14d2554e1b46979a46576fa5370c113635984" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/issuestore/c/3/c3a933866098fd029e47bb85f5bbe233949fa129" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/issuestore/c/c/cc98685f61055d18b03cdf971d552e967686c6c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/issuestore/f/b/fb8d72fc8f2574fe754d26d6964cdacbe93a0468" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/securityhotspotstore/0/e/0ee55ab02613d208128a83ec8f61b06804c408c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/securityhotspotstore/1/6/16adad07508a709dbe47243e2bffdcbdbc4381ad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/securityhotspotstore/7/e/7e4740491c22c8b93611c4a5c6871ebb5dec7570" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/securityhotspotstore/8/3/833452b8e9f9d6f56991ecd292ee0d889e44fe32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/securityhotspotstore/8/d/8dc14d2554e1b46979a46576fa5370c113635984" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/securityhotspotstore/c/3/c3a933866098fd029e47bb85f5bbe233949fa129" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/securityhotspotstore/c/c/cc98685f61055d18b03cdf971d552e967686c6c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/securityhotspotstore/f/b/fb8d72fc8f2574fe754d26d6964cdacbe93a0468" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/src/main/java/org/example/enums/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/src/main/java/org/example/exercice1/Exercice1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/src/main/java/org/example/exercice1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/src/main/java/org/example/exercice2/Cercle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/src/main/java/org/example/exercice2/CercleComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/src/main/java/org/example/exercice2/DemoCercle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/src/main/java/org/example/exercice2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/src/main/java/org/example/exercice3/ListeTriee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpCollection/src/main/java/org/example/exercice3/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/issuestore/0/3/03daa6932134cd8b49dba5b7c023e215bd007888" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/issuestore/0/5/05ba4af5b5c230316b0bc75a11f58652469b7a2a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/issuestore/2/a/2aee4e278d78975f0c0dfd296c9a01c7c909b6ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/issuestore/5/6/56fd7555f93a686884c461579651af1940c1b38b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/issuestore/6/3/6333a1a1fdcf4c677ebe746348ec1d753eefe82c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/issuestore/c/b/cb395a9f6293f4ce58c15dbc629a949e973b27c8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/securityhotspotstore/0/3/03daa6932134cd8b49dba5b7c023e215bd007888" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/securityhotspotstore/0/5/05ba4af5b5c230316b0bc75a11f58652469b7a2a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/securityhotspotstore/2/a/2aee4e278d78975f0c0dfd296c9a01c7c909b6ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/securityhotspotstore/5/6/56fd7555f93a686884c461579651af1940c1b38b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/securityhotspotstore/6/3/6333a1a1fdcf4c677ebe746348ec1d753eefe82c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/securityhotspotstore/c/b/cb395a9f6293f4ce58c15dbc629a949e973b27c8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/8-TP_HÔTEL.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/src/main/java/org/example/gestionHotel/Chambre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/src/main/java/org/example/gestionHotel/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/src/main/java/org/example/gestionHotel/Hotel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/src/main/java/org/example/gestionHotel/Ihm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/src/main/java/org/example/gestionHotel/Reservation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpHotel/src/main/java/org/example/gestionHotel/enums/Statut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/issuestore/0/8/085cec3af75c509c7ea964df2e0e52a65fd41f62" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/issuestore/2/f/2feaebca326ddd7a97a18f038f9f4c33943ca242" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/issuestore/3/5/35ed1634ae577246b0090d06bb7995edc8ea6b60" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/issuestore/8/0/80c92db435a8fe898ce4eafa57c9767750b0080f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/issuestore/a/d/adc32a431662278cfbb83340f93ecb2fdaf23220" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/issuestore/b/4/b47b53f1cd12bc654a694669576490c3b190a332" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/issuestore/b/4/b4991631f768a24f2f8cc657593d11195cb64083" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/issuestore/b/a/ba9abfe160bc570a5875c76b7adbc368e683b104" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/issuestore/c/1/c19f8930af1b1847965a18457485fb00093f369f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/securityhotspotstore/0/8/085cec3af75c509c7ea964df2e0e52a65fd41f62" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/securityhotspotstore/2/f/2feaebca326ddd7a97a18f038f9f4c33943ca242" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/securityhotspotstore/3/5/35ed1634ae577246b0090d06bb7995edc8ea6b60" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/securityhotspotstore/8/0/80c92db435a8fe898ce4eafa57c9767750b0080f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/securityhotspotstore/a/d/adc32a431662278cfbb83340f93ecb2fdaf23220" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/securityhotspotstore/b/4/b47b53f1cd12bc654a694669576490c3b190a332" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/securityhotspotstore/b/4/b4991631f768a24f2f8cc657593d11195cb64083" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/securityhotspotstore/b/a/ba9abfe160bc570a5875c76b7adbc368e683b104" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/securityhotspotstore/c/1/c19f8930af1b1847965a18457485fb00093f369f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/java/org/example/EX39/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/java/org/example/EX39/ONF_Data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/java/org/example/EX39/Parcelle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/java/org/example/ex113/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/java/org/example/ex113/Ihm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/java/org/example/ex113/Ingredient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/java/org/example/ex113/Plat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/java/org/example/ex113/enums/Etat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/java/org/example/ex113/enums/Unite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/revision_base_poo/TP_revision_POO.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/revision_methode_java/6-Exercice_method.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/tp_vendredi/1-Exercice_JAVA_POO.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TpVendredi-07-04-2023/src/main/tp_vendredi/2-TP_Transaction_Bancaire_class.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/0/2/02e7b9a4944bebd90a3c27ed9fe2c7e4a926c30c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/0/f/0fd17340eef9142bc8acca6986b580e5cb4c0c16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/1/8/1807cb9650d942322ccaa7c75ab3e0a8273ccc29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/4/7/470be1fe2692b2b25e8d2533fe3c4b49057da725" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/4/7/472e3b6ca694a9676a0382b9ed553c11115d8886" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/5/6/56ce72ca05cf07c5dfedc46ac47a51b893d74ad1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/5/c/5c17683a3b3943f2f144ff195524806575ded4a9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/8/0/80568aa0bb81b47035210a00c9e14059fd6ba2ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/9/6/96415ee9c4b76dc459be5d5d78b08bcf7010ea87" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/a/8/a8e0e8a009847515f0091258eda81759b6f5f153" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/d/9/d98b38314653cc9f8986d079c54f91144105a76e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/e/7/e7b499c851f6d679685a8425306718161868a9d9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/f/3/f30f9ce58db85f69c30a14b8065204100925ca57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/f/4/f4e59c326a493cb9b8476e14cf1cda4873f0aecf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/f/6/f6bf456814379d5ef9d8f4b04d46eb953a1a17ea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/0/2/02e7b9a4944bebd90a3c27ed9fe2c7e4a926c30c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/0/f/0fd17340eef9142bc8acca6986b580e5cb4c0c16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/1/8/1807cb9650d942322ccaa7c75ab3e0a8273ccc29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/4/7/470be1fe2692b2b25e8d2533fe3c4b49057da725" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/4/7/472e3b6ca694a9676a0382b9ed553c11115d8886" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/5/6/56ce72ca05cf07c5dfedc46ac47a51b893d74ad1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/5/c/5c17683a3b3943f2f144ff195524806575ded4a9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/8/0/80568aa0bb81b47035210a00c9e14059fd6ba2ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/9/6/96415ee9c4b76dc459be5d5d78b08bcf7010ea87" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/a/8/a8e0e8a009847515f0091258eda81759b6f5f153" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/d/9/d98b38314653cc9f8986d079c54f91144105a76e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/e/7/e7b499c851f6d679685a8425306718161868a9d9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/f/3/f30f9ce58db85f69c30a14b8065204100925ca57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/f/4/f4e59c326a493cb9b8476e14cf1cda4873f0aecf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/f/6/f6bf456814379d5ef9d8f4b04d46eb953a1a17ea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/lien correction Git Mohammed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/TP Design Pattern Adapter.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/TP_Exception_Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/TP_Papeterie_hashMap.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/TP_Stream_Java_course_student.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/Stream/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/Stream/course/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/Stream/student/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/Stream/teacher/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/designPattern/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/designPattern/CarData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/designPattern/CarDataAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/designPattern/CarEnt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/execption/ApplicationTableau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/execption/Tableau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/papeterie/ApplicationPapeterie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/papeterie/article/Article.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/papeterie/article/ArticleUnitaire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/papeterie/facture/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/papeterie/facture/Facture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/papeterie/facture/LignesFacture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/papeterie/facture/Papeterie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/papeterie/produit/Lot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/papeterie/produit/Ramette.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/papeterie/produit/Stylo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tp_Vendredi_14_04_2023/src/main/java/org/example/papeterie/utils/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f8c1ee53f8cfcd7e559ae9245734f8d26d5bc76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/432c3153ec200f97fd958aff4556b23f82d391f7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e86bb74eeb603dc8772d6fcfd4a0341794bad2e4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/f/2f8c1ee53f8cfcd7e559ae9245734f8d26d5bc76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/3/432c3153ec200f97fd958aff4556b23f82d391f7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/8/e86bb74eeb603dc8772d6fcfd4a0341794bad2e4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/TP Révision JAVA.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/src/main/java/org/example/entity/Billeterie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/src/main/java/org/example/entity/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/src/main/java/org/example/entity/Evenement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/src/main/java/org/example/entity/Lieu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/src/main/java/org/example/utils/Ihm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterie/src/main/java/org/example/utils/parcours.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/sonarlint/issuestore/d/f/dfd92ff1a2d0f6129cf82a823f9f0775f3686ba9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/sonarlint/securityhotspotstore/d/f/dfd92ff1a2d0f6129cf82a823f9f0775f3686ba9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/TP Révision JAVA.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/dao/BaseDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/dao/ClientDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/dao/EvenementDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/dao/LocationDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/dao/TicketDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/entity/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/entity/Evenement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/entity/Location.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/entity/Ticket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/ihm/IHM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/org/example/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2OMVnm0gIUEntOi0GKAzmb87Ssi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MainTpRepo\10_JAVA\_13042023\src\main\java\org\example" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="_13042023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c78fb7e4-fefe-494e-b2fd-dea80a2ab60c" name="Changes" comment="" />
+      <created>1681370609664</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681370609664</updated>
+      <workItem from="1681370610779" duration="14240000" />
+      <workItem from="1681391340462" duration="15000" />
+      <workItem from="1681461399233" duration="1225000" />
+      <workItem from="1681467932787" duration="45000" />
+      <workItem from="1683403899651" duration="274000" />
+      <workItem from="1683404216856" duration="456000" />
+    </task>
+    <task id="LOCAL-00001" summary="ExCours 13042023">
+      <created>1681377789413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681377789413</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ExCours 13042023" />
+    <option name="LAST_COMMIT_MESSAGE" value="ExCours 13042023" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

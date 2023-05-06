@@ -1,0 +1,9 @@
+
+c
+java:S2095"HUse try-with-resources or close this "FileReader" in a "finally" clause.(·™ºšüÿÿÿÿ
+Y
+java:S1854">Remove this useless assignment to local variable "fileReader".(·™ºšüÿÿÿÿ
+J
+java:S1481"/Remove this unused "fileReader" local variable.(·™ºšüÿÿÿÿ
+I
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ

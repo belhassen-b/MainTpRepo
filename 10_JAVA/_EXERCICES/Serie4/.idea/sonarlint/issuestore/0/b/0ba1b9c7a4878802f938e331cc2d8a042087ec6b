@@ -1,0 +1,16 @@
+
+W	java:S125"<This block of commented-out lines of code should be removed.(äÏÅy8ÑÅ•ó0
+M
+java:S1128"0Remove this unused import 'org.example.ex1.Ex1'.(àå»ã8ÑÅ•ó0
+R
+java:S1128"0Remove this unused import 'org.example.ex2.Ex2'.(¿í¡Ñùÿÿÿÿ8ÑÅ•ó0
+M
+java:S1128"0Remove this unused import 'org.example.ex3.Ex3'.(ÿ±‹Æ8ÑÅ•ó0
+M
+java:S1128"0Remove this unused import 'org.example.ex4.Ex4'.(Ùƒë8ÑÅ•ó0
+R
+java:S1128"0Remove this unused import 'org.example.ex5.Ex5'.(­üã½øÿÿÿÿ8ÑÅ•ó0
+M
+java:S1128"0Remove this unused import 'org.example.ex6.Ex6'.(éÑ‚Ÿ8ÑÅ•ó0
+R
+java:S1128	"0Remove this unused import 'org.example.ex7.Ex7'.(¨À¡¹úÿÿÿÿ8ÑÅ•ó0
