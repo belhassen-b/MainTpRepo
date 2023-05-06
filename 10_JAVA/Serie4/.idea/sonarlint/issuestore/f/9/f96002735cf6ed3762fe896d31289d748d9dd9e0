@@ -1,17 +1,0 @@
-
-\
-java:S1118":Add a private constructor to hide the implicit public one.(‘Ó·ƒşÿÿÿÿ8¿˜¾”ó0
-Z
-java:S1854"=Remove this useless assignment to local variable "croissant".(‰¹¡“8ê”¿”ó0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(éò»§ÿÿÿÿÿ8Á˜¾”ó0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(º“™ûÿÿÿÿ8Á˜¾”ó0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(®Â¸8Ä˜¾”ó0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(àì¶8Â‘Á”ó0
-K
-java:S1481".Remove this unused "croissant" local variable.(ÓİÅú8íŞ¾”ó0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(úÅ­©øÿÿÿÿ8²ÅÇ”ó0
-G
-java:S3457"%String contains no format specifiers.(¦è¡”ıÿÿÿÿ8é«Ï”ó0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(¦è¡”ıÿÿÿÿ8é«Ï”ó0
-R
-java:S1751"5Remove this "break" statement or make it conditional.(›ûä·8‚¯Ğ”ó0

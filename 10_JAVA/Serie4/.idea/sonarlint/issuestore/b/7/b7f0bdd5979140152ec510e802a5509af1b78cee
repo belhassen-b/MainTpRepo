@@ -1,13 +1,0 @@
-
-W
-java:S1118":Add a private constructor to hide the implicit public one.(ÈÎÌ8Íáü’ó0
-o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª«ƒÂùÿÿÿÿ8Ïáü’ó0
-Z	java:S106	"9Replace this use of System.out or System.err by a logger.(‘¹Åÿúÿÿÿÿ8Öáü’ó0
-Z	java:S106
-"9Replace this use of System.out or System.err by a logger.(º“™ûÿÿÿÿ8Ùáü’ó0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ü‚÷¬8ááü’ó0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(õÔáÀ8äáü’ó0
-@
-java:S2119"Save and re-use this "Random".(®¶§‰üÿÿÿÿ8êáü’ó0
-@
-java:S2119"Save and re-use this "Random".(éÌ”Ãıÿÿÿÿ8ìáü’ó0
