@@ -294,10 +294,34 @@ public class IHM {
 
     // 10 - Afficher les ventes de voiture
     private void showAllSellAction() {
+        System.out.println("Liste des ventes");
+        try {
+            connection = new DataBaseManager().getConnection();
+            connection.setAutoCommit(false);
+            sellDAO = new SellDAO(connection);
+            sellDAO.getAll();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        } catch (ExecutionControl.NotImplementedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     // 11 - Afficher la liste des ventes d'un véhicule pour une personne
-    private void showSellByIdAction() {
-    }
+    private void showSellByIdAction() throws SQLException, ExecutionControl.NotImplementedException {
+        showAllPersonAction();
+        System.out.println("Saississez l'id de la personne");
+        int idPerson = scanner.nextInt();
+        scanner.nextLine();
+        try {
+            connection = new DataBaseManager().getConnection();
+            connection.setAutoCommit(false);
+            sellDAO = new SellDAO(connection);
+            sellDAO.getByPerson(idPerson);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
 
+
+}
 }

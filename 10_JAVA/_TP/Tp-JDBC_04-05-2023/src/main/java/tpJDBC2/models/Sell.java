@@ -1,7 +1,6 @@
 package tpJDBC2.models;
 
 
-import java.util.Date;
 
 public class Sell {
 
@@ -13,7 +12,7 @@ public class Sell {
     public Sell(int idPerson, int idCar, String date) {
         this.idPerson = idPerson;
         this.idCar = idCar;
-        this.date = this.date;
+        this.date = date;
     }
 
     public Sell(int idSell, int idPerson, int idCar, String date) {

@@ -1,6 +1,7 @@
 package tpJDBC2.dao;
 
 import jdk.jshell.spi.ExecutionControl;
+import tpJDBC2.models.Car;
 import tpJDBC2.models.Sell;
 
 import java.sql.Connection;
@@ -36,22 +37,35 @@ public class SellDAO extends BaseDAO<Sell> {
 
     @Override
     public List<Sell> getAll() throws ExecutionControl.NotImplementedException, SQLException {
-        return super.getAll();
+        request = "SELECT * FROM sell";
+        try {
+            statement = _connection.prepareStatement(request);
+            resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                System.out.println("idSell : " + resultSet.getInt("idSell"));
+                System.out.println("idCar : " + resultSet.getInt("idCar"));
+                System.out.println("idPerson : " + resultSet.getInt("idPerson"));
+                System.out.println("date : " + resultSet.getString("date"));
+            }
+            return null;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
-    public  Sell getByIdByPerson(int idPerson) throws SQLException {
-        request = "SELECT * FROM sell WHERE id_person = ?";
+    public Sell getByPerson(int idPerson) throws SQLException {
+        request = "SELECT * FROM sell WHERE idPerson = ?";
         try {
             statement = _connection.prepareStatement(request);
             statement.setInt(1, idPerson);
             resultSet = statement.executeQuery();
-            if (resultSet.next()) {
-                return new Sell(
-                        resultSet.getInt("id_sell"),
-                        resultSet.getInt("id_person"),
-                        resultSet.getInt("id_car"),
-                        resultSet.getString("date")
-                );
+            if (resultSet.next())  {
+                System.out.println("Liste des voitures vendues pour un acheteur : " + resultSet.getInt("idPerson"));
+                System.out.println("idSell : " + resultSet.getInt("idSell"));
+                System.out.println("idCar : " + resultSet.getInt("idCar"));
+                System.out.println("date : " + resultSet.getString("date"));
+
             }
             return null;
         } catch (Exception e) {
