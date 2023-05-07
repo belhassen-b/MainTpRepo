@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+/src/main/java/tpJDBC/utils/DataBaseManager.java
+/src/main/java/tpJDBC2/utils/DataBaseManager.java
