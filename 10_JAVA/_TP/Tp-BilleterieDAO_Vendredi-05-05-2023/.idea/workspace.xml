@@ -4,48 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a4ab1ba-cc05-442a-aaea-405115793cd5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../08_React/ecf1" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/ecf1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_React/ex-contact-routing" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/ex-contact-routing" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_React/execice_adress-redux-routing" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/execice_adress-redux-routing" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_React/exercice15022023" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/exercice15022023" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_React/exo-recipes-redux" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/exo-recipes-redux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_React/exo-router-react" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_React/exo-router-react" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercice-jdbc2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/src/main/java/org/example/contact/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercice-jdbc2/src/main/java/org/example/contact/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercice-jdbc2/src/main/java/org/example/ihm/Ihm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercice-jdbc2/src/main/java/org/example/ihm/Ihm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Serie1/exo2.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Serie1/exo2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterie/src/main/java/org/example/entity/Billeterie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tpBilleterie/src/main/java/org/example/entity/Billeterie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterie/src/main/java/org/example/entity/Lieu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tpBilleterie/src/main/java/org/example/entity/Lieu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterie/src/main/java/org/example/utils/Ihm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tpBilleterie/src/main/java/org/example/utils/Ihm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/sonarlint/issuestore/d/f/dfd92ff1a2d0f6129cf82a823f9f0775f3686ba9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/sonarlint/securityhotspotstore/d/f/dfd92ff1a2d0f6129cf82a823f9f0775f3686ba9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/TP Révision JAVA.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/dao/BaseDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/dao/ClientDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/dao/EvenementDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/dao/LocationDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/dao/TicketDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/entity/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/entity/Evenement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/entity/Location.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/entity/Ticket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/ihm/IHM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tpBilleterieDAO/src/main/java/org/example/Main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="1a4ab1ba-cc05-442a-aaea-405115793cd5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,20 +31,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/DemoRepo/CDA-LILLE&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/MainTpRepo/10_JAVA/_TP/Tp-BilleterieDAO_Vendredi-05-05-2023",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dao" />
@@ -141,6 +100,7 @@
       <workItem from="1683271982979" duration="14827000" />
       <workItem from="1683359289936" duration="17014000" />
       <workItem from="1683392633325" duration="648000" />
+      <workItem from="1683445512065" duration="363000" />
     </task>
     <servers />
   </component>

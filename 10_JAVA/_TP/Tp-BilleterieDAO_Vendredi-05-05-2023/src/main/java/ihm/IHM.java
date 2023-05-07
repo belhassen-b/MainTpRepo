@@ -549,7 +549,6 @@ private void showAllLieuAction() throws SQLException, ExecutionControl.NotImplem
     }
 
     // 5 - Annuler un achat de billet
-
     private void cancelTicketAction() throws SQLException, ExecutionControl.NotImplementedException {
         showAllTicketAction();
         System.out.println("Saississez l'id du ticket à supprimer");
@@ -571,7 +570,6 @@ private void showAllLieuAction() throws SQLException, ExecutionControl.NotImplem
     }
 
     // 6 - Afficher la liste des événemennts disponibles
-
     private void showAllEventAction() throws SQLException, ExecutionControl.NotImplementedException {
         try {
             connection = new DataBaseManager().getConnection();
