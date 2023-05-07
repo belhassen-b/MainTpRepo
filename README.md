@@ -2,7 +2,7 @@
 ## REPOSITORY WORKSPACE  M2I
 
 # MainTpRepo
-Main Repo use for exercices and personnal work
+Main Repo use for exercices and personal work
 
  ### :hammer_and_wrench: Languages étudiés :
 <div>
