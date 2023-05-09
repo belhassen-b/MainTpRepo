@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a4ab1ba-cc05-442a-aaea-405115793cd5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../08_React/crud-firebase/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../08_React/crud-firebase/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../08_React/crud-firebase/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../08_React/crud-firebase/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../11_SQL/tpVendredi-21-04-23.sql" beforeDir="false" />
-    </list>
+    <list default="true" id="1a4ab1ba-cc05-442a-aaea-405115793cd5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +43,11 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -93,7 +94,7 @@
       <workItem from="1683392633325" duration="648000" />
       <workItem from="1683445512065" duration="363000" />
       <workItem from="1683546258071" duration="3926000" />
-      <workItem from="1683622257648" duration="1239000" />
+      <workItem from="1683622257648" duration="5086000" />
     </task>
     <servers />
   </component>
