@@ -1,7 +1,6 @@
 package tpJDBC2.dao;
 
 import jdk.jshell.spi.ExecutionControl;
-import tpJDBC2.models.Car;
 import tpJDBC2.models.Sell;
 
 import java.sql.Connection;
@@ -17,7 +16,7 @@ public class SellDAO extends BaseDAO<Sell> {
 
 
     public boolean create(Sell sell) throws SQLException {
-        request = "INSERT INTO sell ( idCar, idPerson, date) VALUES (?,?,?)";
+        request = "INSERT INTO jdbcCar.sell ( idCar, idPerson, date) VALUES (?,?,?)";
         try {
             statement = _connection.prepareStatement(request, Statement.RETURN_GENERATED_KEYS);
             statement.setInt(1, sell.getIdCar());
@@ -37,7 +36,7 @@ public class SellDAO extends BaseDAO<Sell> {
 
     @Override
     public List<Sell> getAll() throws ExecutionControl.NotImplementedException, SQLException {
-        request = "SELECT * FROM sell";
+        request = "SELECT * FROM jdbcCar.sell";
         try {
             statement = _connection.prepareStatement(request);
             resultSet = statement.executeQuery();
@@ -55,7 +54,7 @@ public class SellDAO extends BaseDAO<Sell> {
     }
 
     public Sell getByPerson(int idPerson) throws SQLException {
-        request = "SELECT * FROM sell WHERE idPerson = ?";
+        request = "SELECT * FROM jdbcCar.sell WHERE idPerson = ?";
         try {
             statement = _connection.prepareStatement(request);
             statement.setInt(1, idPerson);

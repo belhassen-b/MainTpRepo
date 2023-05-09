@@ -13,7 +13,7 @@ public class CarDAO extends BaseDAO<Car> {
     }
 
     public boolean create(Car car) throws SQLException {
-        request = "INSERT INTO car ( name, year, power, price) VALUES (?,?,?,?)";
+        request = "INSERT INTO jdbcCar.car ( name, year, power, price) VALUES (?,?,?,?)";
        try {
         statement = _connection.prepareStatement(request, Statement.RETURN_GENERATED_KEYS);
         statement.setString(1, car.getName());
@@ -34,7 +34,7 @@ public class CarDAO extends BaseDAO<Car> {
 
     public Car findAll() throws SQLException {
         Car car = null;
-        request = "SELECT * FROM car";
+        request = "SELECT * FROM jdbcCar.car";
         try {
         statement = _connection.prepareStatement(request);
         resultSet = statement.executeQuery();
@@ -55,7 +55,7 @@ public class CarDAO extends BaseDAO<Car> {
 
     public Car findById(int id) throws SQLException {
         Car car = null;
-        request = "SELECT * FROM car WHERE idCar = ?";
+        request = "SELECT * FROM jdbcCar.car WHERE idCar = ?";
             statement = _connection.prepareStatement(request);
             statement.setInt(1, id);
             resultSet = statement.executeQuery();
@@ -74,7 +74,7 @@ public class CarDAO extends BaseDAO<Car> {
         }
 
     public boolean update( Car car) throws SQLException {
-        request = "UPDATE car SET name = ?, year = ?, power = ?, price = ? WHERE idCar = ?";
+        request = "UPDATE jdbcCar.car SET name = ?, year = ?, power = ?, price = ? WHERE idCar = ?";
             statement = _connection.prepareStatement(request);
             statement.setString(1, car.getName());
             statement.setInt(2, Integer.parseInt(car.getYear()));
@@ -91,7 +91,7 @@ public class CarDAO extends BaseDAO<Car> {
     }
 
     public boolean delete(int id) throws SQLException {
-        request = "DELETE FROM car WHERE idCar = ?";
+        request = "DELETE FROM jdbcCar.car WHERE idCar = ?";
         try {
             statement = _connection.prepareStatement(request);
             statement.setInt(1, id);

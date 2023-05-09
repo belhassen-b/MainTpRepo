@@ -36,4 +36,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
-/src/main/java/utils/DataBaseManager.java
+/src/main/java/org/example/utils/DataBaseManager.java

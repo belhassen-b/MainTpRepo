@@ -1,6 +1,6 @@
 package org.example;
 
-import ihm.IHM;
+import org.example.ihm.IHM;
 import jdk.jshell.spi.ExecutionControl;
 
 import java.sql.SQLException;

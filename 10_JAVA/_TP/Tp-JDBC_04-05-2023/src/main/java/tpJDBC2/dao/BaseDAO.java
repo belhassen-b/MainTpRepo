@@ -1,7 +1,7 @@
 package tpJDBC2.dao;
 
 import jdk.jshell.spi.ExecutionControl;
-import tpJDBC2.models.Car;
+
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public abstract class BaseDAO<T> {
-
+// tu utilises nul part ta connection ok
         protected Connection _connection;
         protected PreparedStatement statement;
         protected String request;
@@ -21,7 +21,7 @@ public abstract class BaseDAO<T> {
         }
 
 
-        public boolean save(T element) throws ExecutionControl.NotImplementedException, SQLException {
+        public boolean create(T element) throws ExecutionControl.NotImplementedException, SQLException {
             return false;
         }
 

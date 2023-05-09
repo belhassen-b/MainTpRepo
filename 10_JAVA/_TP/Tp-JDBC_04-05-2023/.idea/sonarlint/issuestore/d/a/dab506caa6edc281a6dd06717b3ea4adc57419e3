@@ -1,0 +1,29 @@
+
+h	java:S112³"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¶¦¦ÿÿ0
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éñîñ8»¦¦ÿÿ0
+T
+java:S1854y"7Remove this useless assignment to local variable "car".(ê¹µ8Á¨¦ÿÿ0
+³
+java:S1130d"Remove the declaration of thrown exception 'jdk.jshell.spi.ExecutionControl$NotImplementedException', as it cannot be thrown from method's body.(ç‘µÉùÿÿÿÿ8Â¨¦ÿÿ0
+¯
+java:S1130‚"Remove the declaration of thrown exception 'jdk.jshell.spi.ExecutionControl$NotImplementedException', as it cannot be thrown from method's body.(ÃŠØ8Æ¨¦ÿÿ0
+´
+java:S1130"Remove the declaration of thrown exception 'jdk.jshell.spi.ExecutionControl$NotImplementedException', as it cannot be thrown from method's body.(¥‹©åşÿÿÿÿ8É¨¦ÿÿ0
+´
+java:S1130¡"Remove the declaration of thrown exception 'jdk.jshell.spi.ExecutionControl$NotImplementedException', as it cannot be thrown from method's body.(§ëé­øÿÿÿÿ8Ì¨¦ÿÿ0
+X
+java:S1854Ï":Remove this useless assignment to local variable "person".(«¾õ8Ò¨¦ÿÿ0
+´
+java:S1130½"Remove the declaration of thrown exception 'jdk.jshell.spi.ExecutionControl$NotImplementedException', as it cannot be thrown from method's body.(âœõüÿÿÿÿ8Ò¨¦ÿÿ0
+´
+java:S1130Ø"Remove the declaration of thrown exception 'jdk.jshell.spi.ExecutionControl$NotImplementedException', as it cannot be thrown from method's body.(Òú³Ãûÿÿÿÿ8Ö¨¦ÿÿ0
+®
+java:S1130å"Remove the declaration of thrown exception 'jdk.jshell.spi.ExecutionControl$NotImplementedException', as it cannot be thrown from method's body.(Äò¯-8Ú¨¦ÿÿ0
+¯
+java:S1130÷"Remove the declaration of thrown exception 'jdk.jshell.spi.ExecutionControl$NotImplementedException', as it cannot be thrown from method's body.(§î¦æ8Ü¨¦ÿÿ0
+U
+java:S1854¡"8Remove this useless assignment to local variable "sell".(ÚÓøf8ß¨¦ÿÿ0
+¯
+java:S1130"Remove the declaration of thrown exception 'jdk.jshell.spi.ExecutionControl$NotImplementedException', as it cannot be thrown from method's body.(ĞèÀæ8à¨¦ÿÿ0
+H
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8é¨¦ÿÿ0

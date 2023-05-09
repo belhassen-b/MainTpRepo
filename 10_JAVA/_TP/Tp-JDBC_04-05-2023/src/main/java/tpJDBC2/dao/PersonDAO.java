@@ -13,7 +13,7 @@ public class PersonDAO extends BaseDAO<Person> {
     }
 
     public boolean create(Person person) {
-        request = "INSERT INTO person (firstName, lastName, age) VALUES (?, ?, ?)";
+        request = "INSERT INTO jdbcCar.person (firstName, lastName, age) VALUES (?, ?, ?)";
         try {
             statement = _connection.prepareStatement(request,  Statement.RETURN_GENERATED_KEYS);
             statement.setString(1, person.getFirstName());
@@ -33,7 +33,7 @@ public class PersonDAO extends BaseDAO<Person> {
 
     public Person getById(int id) throws SQLException {
         Person person = null;
-        request = "SELECT * FROM person WHERE id = ?";
+        request = "SELECT * FROM jdbcCar.person WHERE idPerson = ?";
         try {
             statement = _connection.prepareStatement(request);
             statement.setInt(1, id);
@@ -57,7 +57,7 @@ public class PersonDAO extends BaseDAO<Person> {
 
     public Person findAll() throws SQLException {
         Person person = null;
-        request = "SELECT * FROM person";
+        request = "SELECT * FROM jdbcCar.person";
         try {
             statement = _connection.prepareStatement(request);
             resultSet = statement.executeQuery();
@@ -76,7 +76,7 @@ public class PersonDAO extends BaseDAO<Person> {
 
     public Person findById(int id) throws SQLException {
         Person person = null;
-        request = "SELECT * FROM person WHERE idPerson = ?";
+        request = "SELECT * FROM jdbcCar.person WHERE idPerson = ?";
         statement = _connection.prepareStatement(request);
         statement.setInt(1, id);
         resultSet = statement.executeQuery();
@@ -93,7 +93,7 @@ public class PersonDAO extends BaseDAO<Person> {
     }
 
     public boolean update(Person person) throws SQLException {
-        request = "UPDATE person SET firstName = ?, lastName = ?, age = ? WHERE idPerson = ?";
+        request = "UPDATE jdbcCar.person SET firstName = ?, lastName = ?, age = ? WHERE idPerson = ?";
         try {
             statement = _connection.prepareStatement(request);
             statement.setString(1, person.getFirstName());
@@ -114,7 +114,7 @@ public class PersonDAO extends BaseDAO<Person> {
     }
 
     public boolean delete(int id) throws SQLException {
-        request = "DELETE FROM person WHERE idPerson = ?";
+        request = "DELETE FROM jdbcCar.person WHERE idPerson = ?";
         try {
             statement = _connection.prepareStatement(request);
             statement.setInt(1, id);

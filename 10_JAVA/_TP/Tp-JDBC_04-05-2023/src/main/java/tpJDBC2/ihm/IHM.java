@@ -1,7 +1,8 @@
 package tpJDBC2.ihm;
 
 import jdk.jshell.spi.ExecutionControl;
-import tpJDBC.utils.DataBaseManager;
+import tpJDBC2.utils.DataBaseManager;
+
 import tpJDBC2.dao.CarDAO;
 import tpJDBC2.dao.PersonDAO;
 import tpJDBC2.dao.SellDAO;

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a4ab1ba-cc05-442a-aaea-405115793cd5" name="Changes" comment="" />
+    <list default="true" id="1a4ab1ba-cc05-442a-aaea-405115793cd5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../08_React/crud-firebase/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../08_React/crud-firebase/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../08_React/crud-firebase/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../08_React/crud-firebase/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11_SQL/tpVendredi-21-04-23.sql" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/MainTpRepo/10_JAVA/_TP/Tp-BilleterieDAO_Vendredi-05-05-2023",
+    "last_opened_file_path": "D:/MainTpRepo/10_JAVA/_TP/Tp-JDBC_04-05-2023",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,19 +74,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="2023_tpBilleterieDAO" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="2023_tpBilleterieDAO" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -101,25 +92,12 @@
       <workItem from="1683359289936" duration="17014000" />
       <workItem from="1683392633325" duration="648000" />
       <workItem from="1683445512065" duration="363000" />
+      <workItem from="1683546258071" duration="3926000" />
+      <workItem from="1683622257648" duration="1239000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ihm/IHM.java</url>
-          <line>174</line>
-          <properties class="ihm.IHM" method="updateLieuAction">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
