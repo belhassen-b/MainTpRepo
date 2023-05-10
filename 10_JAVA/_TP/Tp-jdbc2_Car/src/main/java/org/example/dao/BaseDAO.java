@@ -9,7 +9,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public abstract class BaseDAO<T> {
-// tu utilises nul part ta connection ok
         protected Connection _connection;
         protected PreparedStatement statement;
         protected String request;
@@ -19,7 +18,6 @@ public abstract class BaseDAO<T> {
             _connection = connection;
         }
 
-//non c'est au dessus de ta methode la ou tu l'implemente
         public boolean create(T e) throws  SQLException {
             return false;
         }

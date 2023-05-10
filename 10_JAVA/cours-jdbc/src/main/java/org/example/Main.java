@@ -39,15 +39,10 @@ public class Main {
 //            System.out.println("Nombre de ligne  : " + nbLigne);
 
             // Facon 3 requete de lecture (iteration)
-            String request = "SELECT * FROM personne";
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(request);
-            while (resultSet.next()){
-                System.out.println("id : " + resultSet.getInt("id"));
-                System.out.println("nom : " + resultSet.getString("nom"));
-                System.out.println("prenom : " + resultSet.getString("prenom"));
-                System.out.println("============================================");
-            }
+//
+
+            IHM ihm = new IHM();
+            ihm.start();
 
     } catch (SQLException e)
         {
