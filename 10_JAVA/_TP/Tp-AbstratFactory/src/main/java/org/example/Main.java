@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.abstratfactory.FactionFactory;
 import org.example.abstratfactory.HumanFactionFactory;
 import org.example.abstratfactory.Jeu;
 import org.example.abstratfactory.OrcFactionFactory;

@@ -7,4 +7,5 @@ public interface FactionFactory {
 
     Infanterie creerInfanterie();
 
+
 }

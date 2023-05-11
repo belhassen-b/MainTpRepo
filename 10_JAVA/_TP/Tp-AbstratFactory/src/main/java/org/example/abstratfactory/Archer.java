@@ -2,7 +2,7 @@ package org.example.abstratfactory;
 
 public interface  Archer {
 
-        public abstract void afficherArcher();
+        void afficherArcher();
 
-        public Archer creerArcher();
+        Archer creerArcher();
 }
