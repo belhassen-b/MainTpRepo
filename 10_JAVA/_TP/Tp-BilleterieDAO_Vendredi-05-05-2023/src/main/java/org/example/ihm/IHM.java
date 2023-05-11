@@ -242,7 +242,6 @@ public class IHM {
 
     // 2 - Afficher tous les evenements
     private void getAllEvenementAction() {
-        System.out.println("Liste des evenements :");
         EvenementService evenementService = new EvenementService();
         if (evenementService.getAllEvenement() != null) {
             evenementService.getAllEvenement().forEach(
@@ -418,7 +417,6 @@ public class IHM {
         System.out.println("Saississez l'id du client");
         int idClient = scanner.nextInt();
         scanner.nextLine();
-        System.out.println("Liste des événements");
         getAllEvenementAction();
         System.out.println("Saississez l'id de l'événement");
         int idEvent = scanner.nextInt();
@@ -436,7 +434,7 @@ public class IHM {
 
     // 5 - Annuler un achat de billet
     private void cancelTicketAction() {
-        ticketService.getAllTickets();
+        getAllTickets();
         System.out.println("Saississez l'id du ticket à supprimer");
         int id = scanner.nextInt();
         scanner.nextLine();
@@ -448,25 +446,28 @@ public class IHM {
         }
     }
 
-    // 6 - Afficher la liste des événemennts disponibles
-    private void showAllEventAction() {
-        getAllEvenementAction();
-        System.out.println("Liste des événements :");
-        EvenementService evenementService = new EvenementService();
-        if (evenementService.getAllEvenement() != null) {
-            evenementService.getAllEvenement().forEach(
-                    evenement -> System.out.println(
-                            "Id : " + evenement.getIdEvent() +
-                                    " Nom : " + evenement.getNameEvent() +
-                                    " Date : " + evenement.getDate() +
-                                    " Lieu : " + evenement.getLocation() +
-                                    " Nb Places : " + evenement.getTicketsSold() +
-                                    " Prix : " + evenement.getPrice()
+    private void getAllTickets() {
+        System.out.println("Liste des tickets :");
+        TicketService ticketService = new TicketService();
+        if (ticketService.getAllTickets() != null) {
+            ticketService.getAllTickets().forEach(
+                    ticket -> System.out.println(
+                            "Id : " + ticket.getId() + " " +
+                                   "IdClient :" + ticket.getIdClient() + " " +
+                                    "IdEvent :" + ticket.getIdEvent() + " " +
+                                    "NbTickets :" + ticket.getNbTickets()
                     )
             );
         } else {
-            System.out.println("Il n'y a pas d'événement enregistré");
+            System.out.println("Il n'y a pas de ticket enregistré");
         }
+    }
+
+    // 6 - Afficher la liste des événemennts disponibles
+    private void showAllEventAction() {
+        System.out.println("Liste des événements :");
+        EvenementService evenementService = new EvenementService();
+        getAllEvenementAction();
     }
 
     // 7 - Afficher la liste des billes achetés par un client

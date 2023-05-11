@@ -5,7 +5,7 @@ import org.example.ihm.IHM;
 
 
 public class Main {
-    public static void main(String[] args) throws ExecutionControl.NotImplementedException {
+    public static void main(String[] args)  {
       IHM IHM = new IHM();
         IHM.start();
     }
