@@ -1,0 +1,15 @@
+
+q
+java:S2095."OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(―ψόÿÿÿÿ8¬βιγ€1
+q
+java:S2095B"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(―ψόÿÿÿÿ8¬βιγ€1
+q
+java:S2095a"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(―ψόÿÿÿÿ8¬βιγ€1
+q
+java:S2095N"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(―ψόÿÿÿÿ8¬βιγ€1
+q
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(―ψόÿÿÿÿ8¬βιγ€1
+
+java:S4165"hRemove this useless assignment; "connection" already holds the assigned value along all execution paths.(½Γνςϊÿÿÿÿ8¬βιγ€1
+Q
+java:S1656"/Remove or correct this useless self-assignment.(½Γνςϊÿÿÿÿ8Ίβιγ€1

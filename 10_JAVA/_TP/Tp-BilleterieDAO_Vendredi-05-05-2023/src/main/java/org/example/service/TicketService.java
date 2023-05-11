@@ -45,7 +45,7 @@ public class TicketService {
         return false;
     }
 
-    public boolean updateTicket(int id, int idClient, int idEvenement, int nbTickets) throws SQLException {
+    public boolean updateTicket(int id, int idClient, int idEvenement, int nbTickets){
         try {
             Ticket ticket = getTicket(id);
             ticket.setIdClient(idClient);
@@ -81,4 +81,6 @@ public class TicketService {
             throw new RuntimeException(e);
         }
     }
+
+
 }

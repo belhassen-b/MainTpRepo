@@ -1,7 +1,6 @@
 package org.example;
 
-import jdk.jshell.spi.ExecutionControl;
-import org.example.ihm.IHM;
+import org.example.entity.ihm.IHM;
 
 
 public class Main {
