@@ -9,10 +9,10 @@ import java.util.List;
 
 
 public class RecipeServiceImpl implements IRecipeService {
- private final RecipeDaoImpl  recipeDao;
+    private final RecipeDaoImpl recipeDao;
 
-    public RecipeServiceImpl() throws SQLException {
-            this.recipeDao = new RecipeDaoImpl();
+    public RecipeServiceImpl() {
+        this.recipeDao = new RecipeDaoImpl();
     }
 
     @Override
@@ -40,9 +40,7 @@ public class RecipeServiceImpl implements IRecipeService {
         return recipeDao.findAll();
     }
 
-    @Override
-    public void save(String nameRecipe, int nbPerson, int preparationTime, int cookingTime, int difficulty, String description) {
-
+    public int getLastId() {
+        return recipeDao.getLastId();
     }
-
 }

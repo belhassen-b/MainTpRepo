@@ -2,20 +2,21 @@ package org.example.service;
 
 import org.example.entity.Ingredient;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface IIngredientService {
 
-    Ingredient createIngredient(Ingredient ingredient);
+    Ingredient save(Ingredient ingredient) throws SQLException;
 
-    Ingredient updateIngredient(Ingredient ingredient);
+    Ingredient update(Ingredient ingredient) throws SQLException;
 
-    void deleteIngredient(int id);
+    void delete(int id) throws SQLException;
 
-    Ingredient getIngredient(int id);
+    Ingredient get(int id) throws SQLException;
 
-    Ingredient getIngredientByName(String name);
+    Ingredient getByName(String name) throws SQLException;
 
-    List<Ingredient> getAllIngredients();
+    List<Ingredient> getAllIngredients() throws SQLException;
 
 }

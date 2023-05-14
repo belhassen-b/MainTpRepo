@@ -1,37 +1,41 @@
 package org.example.dao.impl;
 
-import org.example.dao.IGenericDao;
+import org.example.config.DataBaseSingleton;
+import org.example.dao.ICommentDao;
 import org.example.entity.Comment;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import static java.sql.Statement.RETURN_GENERATED_KEYS;
 
-public class CommentDaoImpl implements IGenericDao<Comment> {
+public class CommentDaoImpl implements ICommentDao<Comment> {
 
 
     private Connection connection;
 
     public CommentDaoImpl() {
-
-        this.connection = connection;
+        this.connection = DataBaseSingleton.getInstance().getConnection();
     }
     @Override
     public Comment save(Comment type) {
-        String request = "INSERT INTO recettes.comment (idRecipe, comment, comment) VALUES (?,?,?)";
+        String request = "INSERT INTO recettes.comment (idRecipe, content) VALUES (?,?)";
         try {
             PreparedStatement statement = connection.prepareStatement(request, RETURN_GENERATED_KEYS);
             statement.setInt(1, type.getIdRecipe());
             statement.setString(2, type.getContent());
-            statement.setInt(3, type.getIdRecipe());
             statement.executeUpdate();
             ResultSet generatedKeys = statement.getGeneratedKeys();
             if (generatedKeys.next()) {
-                type.setIdComment(generatedKeys.getInt(1));
+                return Comment.builder()
+                        .idComment(generatedKeys.getInt(1))
+                        .idRecipe(type.getIdRecipe())
+                        .content(type.getContent())
+                        .build();
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -73,17 +77,19 @@ public class CommentDaoImpl implements IGenericDao<Comment> {
 
     @Override
     public List<Comment> findAll() {
+        List<Comment> comments = new ArrayList<>();
         String request = "SELECT * FROM recettes.comment";
         try {
             PreparedStatement statement = connection.prepareStatement(request, RETURN_GENERATED_KEYS);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                return List.of(Comment.builder()
+      comments.add(Comment.builder()
                         .idComment(resultSet.getInt("idComment"))
                         .idRecipe(resultSet.getInt("idRecipe"))
                         .content(resultSet.getString("content"))
                         .build());
             }
+            return comments;
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -92,12 +98,11 @@ public class CommentDaoImpl implements IGenericDao<Comment> {
 
     @Override
     public Comment update(Comment type) {
-        String request = "UPDATE recettes.comment SET idRecipe = ?, comment = ? WHERE idComment = ?";
+        String request = "UPDATE recettes.comment SET content = ?  WHERE idComment = ?";
         try {
             PreparedStatement statement = connection.prepareStatement(request, RETURN_GENERATED_KEYS);
-            statement.setInt(1, type.getIdRecipe());
-            statement.setString(2, type.getContent());
-            statement.setInt(3, type.getIdComment());
+            statement.setString(1, type.getContent());
+            statement.setInt(2, type.getIdComment());
             statement.executeUpdate();
             ResultSet generatedKeys = statement.getGeneratedKeys();
             if (generatedKeys.next()) {

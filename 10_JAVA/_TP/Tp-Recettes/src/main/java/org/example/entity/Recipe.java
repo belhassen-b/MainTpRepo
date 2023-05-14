@@ -15,5 +15,9 @@ private int preparationTime;
 private int cookingTime;
 private int difficulty;
 private String description;
+
+    public Recipe() {
+
+    }
 }
 

@@ -16,6 +16,4 @@ public interface IRecipeService {
     Recipe getRecipe(int id);
 
     List<Recipe> getAllRecipes() throws SQLException;
-
-    void save(String nameRecipe, int nbPerson, int preparationTime, int cookingTime, int difficulty, String description);
 }

@@ -1,7 +1,7 @@
 package org.example.dao.impl;
 
 import org.example.config.DataBaseSingleton;
-import org.example.dao.IGenericDao;
+import org.example.dao.IRecipeDao;
 import org.example.entity.Recipe;
 
 import java.sql.Connection;
@@ -13,7 +13,7 @@ import java.util.List;
 
 import static java.sql.Statement.RETURN_GENERATED_KEYS;
 
-public class RecipeDaoImpl implements IGenericDao<Recipe> {
+public class RecipeDaoImpl implements IRecipeDao<Recipe> {
     private Connection connection;
 
     public RecipeDaoImpl(){
@@ -22,7 +22,7 @@ public class RecipeDaoImpl implements IGenericDao<Recipe> {
 
 
     @Override
-    public  Recipe save(Recipe type) {
+    public Recipe save(Recipe type) {
         String request = "INSERT INTO recettes.recipe ( nameRecipe, nbPerson, preparationTime, cookingTime, difficulty, description) VALUES (?,?,?,?,?,?)";
         try (PreparedStatement statement = connection.prepareStatement(request, RETURN_GENERATED_KEYS)) {
             statement.setString(1, type.getNameRecipe());
@@ -34,7 +34,15 @@ public class RecipeDaoImpl implements IGenericDao<Recipe> {
             statement.executeUpdate();
             ResultSet generatedKeys = statement.getGeneratedKeys();
             if (generatedKeys.next()) {
-                type.setIdRecipe(generatedKeys.getInt(1));
+                return Recipe.builder()
+                        .idRecipe(generatedKeys.getInt(1))
+                        .nameRecipe(type.getNameRecipe())
+                        .nbPerson(type.getNbPerson())
+                        .preparationTime(type.getPreparationTime())
+                        .cookingTime(type.getCookingTime())
+                        .difficulty(type.getDifficulty())
+                        .description(type.getDescription())
+                        .build();
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -118,5 +126,20 @@ public class RecipeDaoImpl implements IGenericDao<Recipe> {
             e.printStackTrace();
         }
         return null;
+    }
+
+
+    public int getLastId() {
+        String request = "SELECT idRecipe FROM recettes.recipe ORDER BY idRecipe DESC LIMIT 1";
+        try {
+            PreparedStatement statement = connection.prepareStatement(request, RETURN_GENERATED_KEYS);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                return resultSet.getInt("idRecipe");
+            }
+} catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 }

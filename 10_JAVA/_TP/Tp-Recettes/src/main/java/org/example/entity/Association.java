@@ -7,8 +7,8 @@ import lombok.*;
 @AllArgsConstructor
 @Setter
 @Getter
-public class Ingredient {
+public class Association {
+    private int idRecipe;
     private int idIngredient;
-    private String name;
-    private String unity;
+    private int quantity;
 }
