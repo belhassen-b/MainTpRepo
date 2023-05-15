@@ -6,3 +6,8 @@ L'application doit permettre  aux utilisateurs de rechercher des recettes par no
 De plus, chaque recette peut avoir plusieurs ingrédients, et chaque ingrédient peut être utilisé dans plusieurs recettes.
 
 Chaque recette peut aussi avoir plusieurs commentaires.
+
+
+==>
+
+![img.png](img.png)

@@ -303,7 +303,7 @@ public class IHM {
     //10- Supprimer un commentaire
     private void deleteComments() {
         System.out.println("Supprimer un commentaire");
-        CommentServiceImpl commentService = null;
+        CommentServiceImpl commentService;
         try {
             commentService = new CommentServiceImpl();
         } catch (SQLException e) {

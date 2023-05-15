@@ -1,0 +1,25 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
+    <!-- Nom de la "connexion" -->
+    <persistence-unit name="tpJPA">
+        <description>
+         <!--   ici je peux mettre une description de mon fichier de persistence-->
+        </description>
+        <!--JPA provider to use falcutatif par défaut hibernate -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <!-- Ici spécifier les classes d'entités à mapper   -->
+        <!--  Exemple  <class>org.example.demoJPA.entities.Personne</class>-->
+<!--    <class>org.example.entity.Todo</class>-->
+        <properties>
+            <!--The driver class name"/-->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <!-- url de connexion à la base de données"/-->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/hibernate"/>
+            <!-- Specifie le nom d'utilisateur et le mot de passe de la base de données"/-->
+            <property name="javax.persistence.jdbc.user" value="test"/>
+            <property name="javax.persistence.jdbc.password" value="password"/>
+        </properties>
+    </persistence-unit>
+</persistence>
