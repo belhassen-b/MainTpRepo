@@ -5,21 +5,17 @@
     <!-- Nom de la "connexion" -->
     <persistence-unit name="tpJPA">
         <description>
-         <!--   ici je peux mettre une description de mon fichier de persistence-->
         </description>
-        <!--JPA provider to use falcutatif par défaut hibernate -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <!-- Ici spécifier les classes d'entités à mapper   -->
-        <!--  Exemple  <class>org.example.demoJPA.entities.Personne</class>-->
-<!--    <class>org.example.entity.Todo</class>-->
+            <class>org.example.model.Todo</class>
+            <class>org.example.model.TodoInfo</class>
         <properties>
-            <!--The driver class name"/-->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-            <!-- url de connexion à la base de données"/-->
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/hibernate"/>
-            <!-- Specifie le nom d'utilisateur et le mot de passe de la base de données"/-->
             <property name="javax.persistence.jdbc.user" value="test"/>
             <property name="javax.persistence.jdbc.password" value="password"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
     </persistence-unit>
 </persistence>
