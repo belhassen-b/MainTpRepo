@@ -1,7 +1,7 @@
 package org.example.controller;
 
 import org.example.dao.impl.TodoDaoImpl;
-import org.example.dao.impl.TodoInfoDaoImpl;
+
 import org.example.model.Todo;
 import org.example.model.TodoInfo;
 
@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 public class TodoAppConsole {
     private static TodoDaoImpl todoDao;
-    private static TodoInfoDaoImpl todoInfoDao;
+
 
     public static void main() {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tpJPA");

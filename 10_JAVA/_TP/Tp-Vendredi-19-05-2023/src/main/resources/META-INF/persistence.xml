@@ -3,20 +3,21 @@
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
              version="2.0">
 
-    <persistence-unit name="jpa_demo">
+    <persistence-unit name="banque">
         <description>
             persistence xml pour le tp Jpa du vendredi 19/05/2023
         </description>
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <!--        <class>org.example.entity.Person</class>-->
-        <!--        <class>org.example.entity.oneToOne.Adress</class>-->
+                <class>org.example.model.Account</class>
+                <class>org.example.model.Client</class>
+                <class>org.example.model.Agency</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/TP_190523"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/banque_bdd"/>
             <property name="javax.persistence.jdbc.user" value="test"/>
             <property name="javax.persistence.jdbc.password" value="password"/>
-            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+            <property name="javax.persistence.schema-generation.database.action" value="update"/>
         </properties>
     </persistence-unit>
 

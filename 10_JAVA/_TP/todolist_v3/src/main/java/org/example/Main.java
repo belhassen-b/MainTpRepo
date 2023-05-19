@@ -1,10 +1,9 @@
 package org.example;
 
-import org.example.controller.AppConsole;
+import org.example.controller.ToDoListAppConsole;
 
 public class Main {
     public static void main(String[] args) {
-
-        AppConsole.main();
+        ToDoListAppConsole.main();
     }
 }
