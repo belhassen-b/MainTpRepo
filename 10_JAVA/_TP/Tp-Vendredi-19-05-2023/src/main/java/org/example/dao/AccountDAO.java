@@ -6,23 +6,10 @@ import java.util.List;
 
 public interface AccountDAO {
 
-    public boolean create(Account account);
+    boolean create(Account account, Long clientId, Long agencyId);
+    List<Account> getAllByAgency(Long id);
 
-    public Account getById(Long id);
+    Account getById(Long accountId);
 
-    public boolean update(Account account);
-
-    public boolean delete(Account account);
-
-    public boolean setBalance(Long id, Double balance);
-
-    public boolean setAgency(Long id, Long agencyId);
-
-    public List<Account> getAll();
-
-    public List<Account> getByAgency(Long agencyId);
-
-    public List<Account> getByClient(Long clientId);
-
-
+    boolean update(Account account);
 }

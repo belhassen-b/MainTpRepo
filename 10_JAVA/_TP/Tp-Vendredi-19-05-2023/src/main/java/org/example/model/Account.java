@@ -1,6 +1,7 @@
 package org.example.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -9,7 +10,7 @@ import java.util.List;
 public class Account {
 
     @Id
-    @GeneratedValue(strategy =  GenerationType.AUTO)
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private Long accountId;
 
 
@@ -17,54 +18,34 @@ public class Account {
     private String accountName;
 
 
-    @Column(length = 27, nullable = false, unique = true)
+    @Column(length = 27, nullable = false)
     private String iban;
 
     @Column(precision = 10, scale = 2)
-    private Double balance;
+    private Double balance = 0.0;
 
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name= "agency_id",referencedColumnName = "agencyId", nullable = false)
+    @ManyToOne
     private Agency agency;
 
-    @ManyToMany
-    @JoinTable(
-            name = "client_account",
-            joinColumns = @JoinColumn(name = "account_id"),
-            inverseJoinColumns = @JoinColumn(name = "client_id"))
-    private List<Client> clients;
-
-    public Account(String accountName) {
-        this.accountName = accountName;
-    }
+    @ManyToMany(mappedBy = "accounts", fetch = FetchType.EAGER)
+    private List<Client> clients = new ArrayList<>();
 
     public Account() {
-
+        //default constructor
     }
 
-    public void setAccountId(Long accountId) {
-        this.accountId = accountId;
+
+    public List<Client> getClients() {
+        return clients;
     }
 
     public Long getAccountId() {
         return accountId;
     }
 
-    public List<Client> getClients() {
-        return clients;
-    }
-
-    public void setClients(List<Client> clients) {
-        this.clients = clients;
-    }
-
-    public Agency getAgency() {
-        return agency;
-    }
-
-    public void setAgency(Agency agency) {
-        this.agency = agency;
+    public String getAccountName() {
+        return accountName;
     }
 
     public void setAccountName(String accountName) {
@@ -75,15 +56,15 @@ public class Account {
         this.iban = iban;
     }
 
+    public Double getBalance() {
+        return balance;
+    }
+
     public void setBalance(Double balance) {
         this.balance = balance;
     }
 
-    public void setClient(Client client) {
-        List<Client> clients = this.getClients();
-    }
-
-    public Double getBalance() {
-        return balance;
+    public void setAgency(Agency agency) {
+        this.agency = agency;
     }
 }

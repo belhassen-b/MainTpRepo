@@ -1,6 +1,7 @@
 package org.example.dao.impl;
 
-import org.example.model.Agency;
+import org.example.dao.ClientDAO;
+import org.example.model.Account;
 import org.example.model.Client;
 
 import javax.persistence.EntityManager;
@@ -8,9 +9,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import java.util.List;
 
-public class ClientDAOImpl {
+public class ClientDAOImpl implements ClientDAO {
 
-    private EntityManagerFactory entityManagerFactory;
+    private final EntityManagerFactory entityManagerFactory;
 
     public ClientDAOImpl(EntityManagerFactory entityManagerFactory) {
         this.entityManagerFactory = entityManagerFactory;
@@ -33,55 +34,40 @@ public class ClientDAOImpl {
         }
     }
 
-    public boolean update(Client client){
+    @Override
+    public boolean getAll() {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
-        EntityTransaction transaction = entityManager.getTransaction();
         try {
-            transaction.begin();
-            entityManager.merge(client);
-            transaction.commit();
-            return true;
+        List<Client> clients = entityManager.createQuery("SELECT c FROM Client c", Client.class).getResultList();
+        for (Client client : clients) {
+            System.out.println("Id client: " + client.getId() + " Name client: " + client.getFullName());
+
+            for (Account account : client.getAccounts()) {
+                System.out.println("Id account: " + account.getAccountId() + " Balance account: " + account.getBalance());
+            }
+        }
+        entityManager.close();
+        return true;
         } catch (Exception e) {
             e.printStackTrace();
-            transaction.rollback();
             return false;
         } finally {
             entityManager.close();
         }
     }
 
-    public boolean delete(Long id){
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-        EntityTransaction transaction = entityManager.getTransaction();
-        try {
-            transaction.begin();
-            Client client = entityManager.find(Client.class, id);
-            entityManager.remove(client);
-            transaction.commit();
-            return true;
-        } catch (Exception e) {
-            e.printStackTrace();
-            transaction.rollback();
-            return false;
-        } finally {
-            entityManager.close();
-        }
-    }
-
+    @Override
     public Client getById(Long id) {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
-        Client client = entityManager.find(Client.class, id);
-        entityManager.close();
-        return client;
+        try {
+            return entityManager.find(Client.class, id);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            entityManager.close();
+        }
     }
-
-    public List<Client> getAll() {
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-        List<Client> clients = entityManager.createQuery("SELECT c FROM Client c").getResultList();
-        entityManager.close();
-        return clients;
-    }
-
 
 
 }

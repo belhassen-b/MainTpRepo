@@ -2,8 +2,7 @@ package org.example.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 
 @Entity
@@ -12,7 +11,7 @@ public class Client {
 
 
     @Id
-    @GeneratedValue(strategy =  GenerationType.AUTO)
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private Long id;
 
     private String lastname;
@@ -21,26 +20,27 @@ public class Client {
 
     private LocalDate birthdate;
 
-@ManyToMany(mappedBy ="clients" )
-    private List<Account> accounts;
+@ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+@JoinTable(name = "client_account", joinColumns = @JoinColumn(name = "client_id"),
+inverseJoinColumns = @JoinColumn(name = "account_id"))
+    private final List<Account> accounts = new ArrayList<>();
 
     public Client() {
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public Long getId() {
         return id;
     }
 
-    public List<Account> getAccounts() {
-        return accounts;
+    public void setId(Long id) {
+        this.id = id;
+    }
+    public String getFullName() {
+        return firstname + " " + lastname;
     }
 
-    public void setAccounts(List<Account> accounts) {
-        this.accounts = accounts;
+    public List<Account> getAccounts() {
+        return accounts;
     }
 
     public void setLastname(String lastname) {
@@ -54,4 +54,16 @@ public class Client {
     public void setBirthdate(LocalDate birthdate) {
         this.birthdate = birthdate;
     }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id=" + id +
+                ", lastname='" + lastname + '\'' +
+                ", firstname='" + firstname + '\'' +
+                ", birthdate=" + birthdate +
+                '}';
+    }
+
+
 }
