@@ -26,6 +26,7 @@ inverseJoinColumns = @JoinColumn(name = "account_id"))
     private final List<Account> accounts = new ArrayList<>();
 
     public Client() {
+        // default constructor
     }
 
     public Long getId() {
