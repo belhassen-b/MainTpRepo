@@ -1,57 +1,50 @@
 package org.example.controller;
 
-import org.example.dao.impl.AccountDAOImpl;
-import org.example.dao.impl.AgencyDAOImpl;
-import org.example.dao.impl.ClientDAOImpl;
-import org.example.model.Account;
-import org.example.model.Agency;
-import org.example.model.Client;
+
+import com.sun.jdi.request.VMDeathRequest;
+import org.example.dao.impl.ActivityDAOImpl;
+import org.example.dao.impl.CoachDAOImpl;
+import org.example.dao.impl.MemberDAOImpl;
+import org.example.model.Activity;
+import org.example.model.Category;
+import org.example.model.Coach;
+import org.example.model.Member;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.Scanner;
+import  java.util.Scanner;
 
 public class AppConsole {
 
-    private static ClientDAOImpl clientDAO;
-    private static AgencyDAOImpl agencyDAO;
-    private static AccountDAOImpl accountDAO;
+    private static CoachDAOImpl coachDAO;
+    private static ActivityDAOImpl activityDAO;
+    private static MemberDAOImpl memberDAO;
 
 
     public static void main() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("banque");
-        clientDAO = new ClientDAOImpl(emf);
-        agencyDAO = new AgencyDAOImpl(emf);
-        accountDAO = new AccountDAOImpl(emf);
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("centreSportif");
+        coachDAO = new CoachDAOImpl(emf);
+        activityDAO = new ActivityDAOImpl(emf);
+        memberDAO = new MemberDAOImpl(emf);
 
         Scanner sc = new Scanner(System.in);
         int choice;
         do {
-            System.out.println("1. Créer une banque");
-            System.out.println("2. Créer un client");
-            System.out.println("3. Créer un compte");
-            System.out.println("4. Afficher les banques disponibles");
-            System.out.println("5. Afficher les comptes d'un client");
-            System.out.println("6. Afficher les comptes d'une banque");
-            System.out.println("7. Opération sur un compte client ");
+            System.out.println("1. Gestion des membres");
+            System.out.println("2. Gestion des activités");
+            System.out.println("3. Gestion des coachs");
+            System.out.println("4. Gestion des salles");
             System.out.println("0. Quitter");
             choice = sc.nextInt();
             sc.nextLine();
             switch (choice) {
-                case 1 -> createAgency(sc);
-                case 2 -> createClient(sc);
-                case 3 -> createAccount(sc);
-                case 4 -> showAgencies();
-                case 5 -> showAccountByClient(sc);
-                case 6 -> showAgencyAccounts(sc);
-                case 7 -> clientOperation(sc);
-                case 8 -> {
-                    System.out.println("Opération sur un compte client");
-                    menuClient();
-                }
+                case 1 -> menuMember(sc);
+                case 2 -> menuActivity(sc);
+                case 3 -> menuCoach(sc);
                 case 0 -> {
                     System.out.println("Au revoir !");
                     emf.close();
@@ -61,190 +54,359 @@ public class AppConsole {
         } while (choice != 0);
     }
 
-    private static void showAgencyAccounts(Scanner sc) {
-        System.out.println("Liste des comptes d'une banque");
-        agencyDAO.getAll().forEach( agency -> System.out.println("Agence n°: " + agency.getAgencyId() + " - Adresse :  " + agency.getAddress()));
-        System.out.println("Saisir l'id de la banque");
-        Long id = sc.nextLong();
-        sc.nextLine();
-        List<Account> accounts = accountDAO.getAllByAgency(id);
-        if (accounts.isEmpty()) {
-            System.out.println("Aucun compte trouvé");
-        } else {
-            accounts.forEach(
-                    account -> System.out.println("Compte n°: " + account.getAccountId() + " - Solde :  " + account.getBalance() + "€"
-                    )
-            );
-        }
-    }
 
-    private static void clientOperation(Scanner sc) {
-        System.out.println("Opération sur un compte client");
-        menuClient();
-    }
-
-    private static void showAccountByClient(Scanner sc) {
-        System.out.println("Liste des comptes d'un client");
-        clientDAO.getAll();
-        System.out.println("Saisir l'id du client");
-        Long id = sc.nextLong();
-        sc.nextLine();
-        Client client = clientDAO.getById(id);
-        if (client != null) {
-            client.getAccounts().forEach(
-                    account -> System.out.println("Compte n°: " + account.getAccountId() + " - Solde :  " + account.getBalance() + "€"
-                    )
-            );
-        } else {
-            System.out.println("Client non trouvé");
-        }
-    }
-
-
-    private static void showAgencies() {
-        System.out.println("Liste des banques");
-        agencyDAO.getAll().forEach(
-                agency -> System.out.println("Agence n°: " + agency.getAgencyId() + " - Adresse :  " + agency.getAddress())
-        );
-
-    }
-
-    private static void createAgency(Scanner sc) {
-        System.out.println("Création d'une banque");
-        System.out.println("Adresse de la banque : ");
-        String address = sc.nextLine();
-        Agency agency = new Agency();
-        agency.setAddress(address);
-        if (agencyDAO.create(agency)) {
-            System.out.println("Banque créée avec succès !");
-        } else {
-            System.out.println("Erreur lors de la création de la banque !");
-        }
-    }
-
-    private static void createClient(Scanner sc) {
-        System.out.println("Création d'un client");
-        System.out.println("Nom du client : ");
-        String name = sc.nextLine();
-        System.out.println("Prénom du client : ");
-        String firstname = sc.nextLine();
-        System.out.println("Date de naissance du client : ");
-        String birthDate = sc.nextLine();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate localDate = LocalDate.parse(birthDate, formatter);
-        Client client = new Client();
-        client.setLastname(name);
-        client.setFirstname(firstname);
-        client.setBirthdate(localDate);
-        if (clientDAO.create(client)) {
-            System.out.println("Client créé avec succès !");
-        } else {
-            System.out.println("Erreur lors de la création du client !");
-        }
-    }
-
-    private static void createAccount(Scanner sc) {
-        System.out.println("Création d'un compte");
-        System.out.println("Saisir le libéllé du compte : ");
-        String label = sc.nextLine();
-        System.out.println("Saisir l'Iban du compte : ");
-        String iban = sc.nextLine();
-        System.out.println("Numéro du client : ");
-        Long clientId = sc.nextLong();
-        sc.nextLine();
-        System.out.println("Numéro de la banque : ");
-        Long agencyId = sc.nextLong();
-        sc.nextLine();
-        System.out.println("Solde du compte : ");
-        double balance = sc.nextDouble();
-        sc.nextLine();
-        Account account = new Account();
-        account.setAccountName(label);
-        account.setIban(iban);
-        account.setBalance(balance);
-        if (accountDAO.create(account, agencyId, clientId)) {
-            System.out.println("Compte créé avec succès !");
-        } else {
-            System.out.println("Erreur lors de la création du compte !");
-        }
-    }
-
-    private static void menuClient() {
-        Scanner sc = new Scanner(System.in);
+    // menu de gestion des membres
+    private static void menuMember(Scanner sc) {
         int choice;
         do {
-            System.out.println("1. Dépot");
-            System.out.println("2. Retrait");
-            System.out.println("3. voir le soldes");
+            System.out.println("1. Ajouter un membre");
+            System.out.println("2. Modifier un membre");
+            System.out.println("3. Supprimer un membre");
+            System.out.println("4. Afficher les membres");
             System.out.println("0. Quitter");
-
             choice = sc.nextInt();
             sc.nextLine();
             switch (choice) {
-                case 1 -> balanceDeposit();
-                case 2 -> balanceWithdrawal();
-                case 3 -> accountBalance();
-                default -> System.out.println("Choix invalide");
+                case 1 -> createMember(sc);
+                case 2 -> updateMember(sc);
+                case 3 -> deleteMember(sc);
+                case 4 -> showMembers();
+                case 0 -> System.out.println("Retour au menu principal");
+                default -> System.out.println("Veuillez saisir un choix valide !");
             }
         } while (choice != 0);
     }
 
-    // menu operation client
-    private static void accountBalance() {
-        System.out.println("Solde");
-        System.out.println("Numéro du compte : ");
-        Scanner sc = new Scanner(System.in);
-        Long accountId = sc.nextLong();
-        sc.nextLine();
 
-        System.out.print("Libéllé Compte : " + accountDAO.getById(accountId).getAccountName() + " - ");
-        Account account = accountDAO.getById(accountId);
-        account.getClients().forEach(
-                client -> System.out.println("Client : " + client.getFullName())
-        );
-        System.out.println("Solde du compte : " + account.getBalance() + "€");
-    }
-
-    private static void balanceDeposit() {
-        System.out.println("Dépot");
-        System.out.println("Numéro du compte : ");
-        Scanner sc = new Scanner(System.in);
-        Long accountId = sc.nextLong();
-        sc.nextLine();
-        System.out.println("Libéllé Compte : " + accountDAO.getById(accountId).getAccountName());
-        Account account = accountDAO.getById(accountId);
-        System.out.println("Montant du dépot : ");
-        double amount = sc.nextDouble();
-        sc.nextLine();
-        account.setBalance(account.getBalance() + amount);
-        if (accountDAO.update(account)) {
-            System.out.println("Dépot effectué avec succès !");
+    // Ajout d'un membre + choix d'une activité
+    private static void createMember(Scanner sc) {
+        System.out.println("Veuillez saisir le nom du membre : ");
+        String name = sc.nextLine();
+        System.out.println("Veuillez saisir le prénom du membre : ");
+        String firstName = sc.nextLine();
+        Member member = new Member();
+        member.setLastName(name);
+        member.setFirstName(firstName);
+        if (memberDAO.createMemberDAO(member)) {
+            System.out.println("Le membre a bien été ajouté !");
         } else {
-            System.out.println("Erreur lors du dépot !");
+            System.out.println("Une erreur est survenue lors de l'ajout du membre !");
+        }
+        System.out.println("Voulez-vous ajouter une autre activité ? (y/n)");
+        String choice = sc.nextLine();
+        if (choice.equals("y")) {
+            createMember(sc);
+        } else {
+            System.out.println("Retour au menu principal");
+            main();
         }
     }
 
-    private static void balanceWithdrawal() {
-        System.out.println("Retrait");
-        System.out.println("Numéro du compte : ");
-        Scanner sc = new Scanner(System.in);
-        Long accountId = sc.nextLong();
+    // Modification d'un membre
+    private static void updateMember(Scanner sc) {
+        System.out.println("Veuillez saisir l'id du membre à modifier : ");
+        showMembers();
+        Long id = sc.nextLong();
         sc.nextLine();
-        System.out.println("Libéllé Compte : " + accountDAO.getById(accountId).getAccountName());
-        Account account = accountDAO.getById(accountId);
-        System.out.println("Montant du retrait : ");
-        double amount = sc.nextDouble();
-        sc.nextLine();
-        if (account.getBalance() >= amount) {
-            account.setBalance(account.getBalance() - amount);
-            if (accountDAO.update(account)) {
-                System.out.println("Retrait effectué avec succès !");
+        Member member = memberDAO.getMemberDAOById(id);
+        if (member != null) {
+            System.out.println("Veuillez saisir le nouveau nom du membre : ");
+            String name = sc.nextLine();
+            System.out.println("Veuillez saisir le nouveau prénom du membre : ");
+            String firstName = sc.nextLine();
+            member.setLastName(name);
+            member.setFirstName(firstName);
+            if (memberDAO.updateMemberDAO(member)) {
+                System.out.println("Le membre a bien été modifié !");
             } else {
-                System.out.println("Erreur lors du retrait !");
+                System.out.println("Une erreur est survenue lors de la modification du membre !");
             }
         } else {
-            System.out.println("Solde insuffisant !");
+            System.out.println("Le membre n'existe pas !");
+            main();
         }
     }
+
+    // Suppression d'un membre
+    private static void deleteMember(Scanner sc) {
+        System.out.println("Veuillez saisir l'id du membre à supprimer : ");
+        showMembers();
+        Long id = sc.nextLong();
+        sc.nextLine();
+        Member member = memberDAO.getMemberDAOById(id);
+        if (member != null) {
+            if (memberDAO.deleteMemberDAO(member.getId())) {
+                System.out.println("Le membre a bien été supprimé !");
+            } else {
+                System.out.println("Une erreur est survenue lors de la suppression du membre !");
+            }
+        } else {
+            System.out.println("Le membre n'existe pas !");
+            main();
+        }
+    }
+
+    // Affichage des membres
+    private static void showMembers() {
+        List<Member> members = memberDAO.getAllMembersDAO();
+        for (Member member : members) {
+            System.out.println("Id : " + member.getId() + " Nom : " + member.getLastName() + " Prénom : " + member.getFirstName() + " Activité : " + member.getActivities());
+        }
+    }
+
+
+    // menu de gestion des coachs
+    private static void menuCoach(Scanner sc) {
+        int choice;
+        do {
+            System.out.println("1. Ajouter un coach");
+            System.out.println("2. Modifier un coach");
+            System.out.println("3. Supprimer un coach");
+            System.out.println("4. Afficher les coachs");
+            System.out.println("0. Quitter");
+            choice = sc.nextInt();
+            sc.nextLine();
+            switch (choice) {
+                case 1 -> createCoach(sc);
+                case 2 -> updateCoach(sc);
+                case 3 -> deleteCoach(sc);
+                case 4 -> showCoaches();
+                case 0 -> System.out.println("Retour au menu principal");
+                default -> System.out.println("Veuillez saisir un choix valide !");
+            }
+        } while (choice != 0);
+    }
+
+
+    // creation d'un coach
+    private static void createCoach(Scanner sc) {
+        System.out.println("Veuillez saisir le nom du coach : ");
+        String name = sc.nextLine();
+        System.out.println("Veuillez saisir le prénom du coach : ");
+        String firstName = sc.nextLine();
+        Coach coach = new Coach();
+        coach.setLastName(name);
+        coach.setFirstName(firstName);
+        if (coachDAO.createCoachDAO(coach)) {
+            System.out.println("Le coach a bien été ajouté !");
+        } else {
+            System.out.println("Une erreur est survenue lors de l'ajout du coach !");
+        }
+    }
+
+    // Modification d'un coach
+    private static void updateCoach(Scanner sc) {
+        System.out.println("Veuillez saisir l'id du coach à modifier : ");
+        showCoaches();
+        Long id = sc.nextLong();
+        sc.nextLine();
+        Coach coach = coachDAO.getCoachDAOById(id);
+        if (coach != null) {
+            System.out.println("Veuillez saisir le nouveau nom du coach : ");
+            String name = sc.nextLine();
+            System.out.println("Veuillez saisir le nouveau prénom du coach : ");
+            String firstName = sc.nextLine();
+            coach.setLastName(name);
+            coach.setFirstName(firstName);
+            if (coachDAO.updateCoachDAO(coach)) {
+                System.out.println("Le coach a bien été modifié !");
+            } else {
+                System.out.println("Une erreur est survenue lors de la modification du coach !");
+            }
+        }
+    }
+
+
+    // Suppression d'un coach
+    private static void deleteCoach(Scanner sc) {
+        System.out.println("Veuillez saisir l'id du coach à supprimer : ");
+        showCoaches();
+        Long idCoach = sc.nextLong();
+        sc.nextLine();
+        Coach coach = coachDAO.getCoachDAOById(idCoach);
+        if (coach != null) {
+            if (coachDAO.deleteCoachDAO(coach.getId())) {
+                System.out.println("Le coach a bien été supprimé !");
+            } else {
+                System.out.println("Une erreur est survenue lors de la suppression du coach !");
+            }
+        }
+    }
+
+    // Affichage des coachs
+    private static void showCoaches() {
+        List<Coach> coaches = coachDAO.getAllCoachesDAO();
+        for (Coach coach : coaches) {
+            System.out.println("Id : " + coach.getId() + " Nom : " + coach.getLastName() + " Prénom : " + coach.getFirstName() );
+        }
+    }
+
+
+    // menu de gestion des activités
+    private static void menuActivity(Scanner sc) {
+        int choice;
+        do {
+            System.out.println("1. Ajouter une activité");
+            System.out.println("2. Modifier une activité");
+            System.out.println("3. Supprimer une activité");
+            System.out.println("4. Afficher les activités");
+            System.out.println("5. Ajouter un membre à une activité");
+            System.out.println("0. Quitter");
+            choice = sc.nextInt();
+            sc.nextLine();
+            switch (choice) {
+                case 1 -> createActivity(sc);
+                case 2 -> updateActivity(sc);
+                case 3 -> deleteActivity(sc);
+                case 4 -> showActivities();
+                case 5 -> addMemberToActivity(sc);
+                case 0 -> System.out.println("Retour au menu principal");
+                default -> System.out.println("Veuillez saisir un choix valide !");
+            }
+        } while (choice != 0);
+    }
+
+
+    // creation d'une activité
+    private static void createActivity(Scanner sc) {
+        System.out.println("Veuillez saisir le nom de l'activité : ");
+        String name = sc.nextLine();
+        System.out.println("Veuillez saisir la description de l'activité : ");
+        String description = sc.nextLine();
+        System.out.println("Veuillez saisir la date de l'activité :  format dd/MM/yyyy");
+        String date = sc.nextLine();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate localDate = LocalDate.parse(date, formatter);
+        System.out.println("Heure de début de l'activité :  format HH:mm ");
+        String startTime = sc.nextLine();
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("HH:mm");
+        LocalTime localTime = LocalTime.parse(startTime, formatter2);
+        System.out.println("Veuillez saisir la durée de l'activité :  en minutes");
+        int duration = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Selectionner le coach de l'activité : ");
+        showCoaches();
+        Long coachId = sc.nextLong();
+        sc.nextLine();
+        System.out.println("Selectionner le type d'activité : ");
+for (Category activityType : Category.values()) {
+            System.out.println(activityType.ordinal() + " - " + activityType.name());
+        }
+int activityType = sc.nextInt();
+sc.nextLine();
+        Activity activity = new Activity();
+        activity.setName(name);
+        activity.setDescription(description);
+        activity.setDate(localDate);
+        activity.setTime(localTime);
+        activity.setDuration(duration);
+        activity.setCategory(Category.values()[activityType]);
+        activity.setCoach(coachDAO.getCoachDAOById(coachId));
+        if (activityDAO.createActivityDAO(activity)) {
+            System.out.println("L'activité a bien été ajoutée !");
+        } else {
+            System.out.println("Une erreur est survenue lors de l'ajout de l'activité !");
+        }
+    }
+
+
+    // Modification d'une activité
+    private static void updateActivity(Scanner sc) {
+        System.out.println("Veuillez saisir l'id de l'activité à modifier : ");
+        showActivities();
+        Long id = sc.nextLong();
+        sc.nextLine();
+        Activity activity = activityDAO.getActivityDAOById(id);
+        if (activity != null) {
+            System.out.println("Veuillez saisir le nouveau nom de l'activité : ");
+            String name = sc.nextLine();
+            System.out.println("Veuillez saisir la nouvelle description de l'activité : ");
+            String description = sc.nextLine();
+            System.out.println("Veuillez saisir la nouvelle date de l'activité : ");
+            String date = sc.nextLine();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+            LocalDate localDate = LocalDate.parse(date, formatter);
+            System.out.println("Heure de début de l'activité : ");
+            String startTime = sc.nextLine();
+            DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("HH:mm");
+            LocalTime localTime = LocalTime.parse(startTime, formatter2);
+            System.out.println("Veuillez saisir la nouvelle durée de l'activité : ");
+            int duration = sc.nextInt();
+            sc.nextLine();
+            System.out.println("Salle de l'activité : ");
+            String room = sc.nextLine();
+            System.out.println("Selectionner le nouveau coach de l'activité : ");
+            showCoaches();
+            Long coachId = sc.nextLong();
+            sc.nextLine();
+            activity.setName(name);
+            activity.setDescription(description);
+            activity.setDate(localDate);
+            activity.setTime(localTime);
+            activity.setDuration(duration);
+            activity.setLocation(room);
+            activity.setCoach(coachDAO.getCoachDAOById(coachId));
+            if (activityDAO.updateActivityDAO(activity)) {
+                System.out.println("L'activité a bien été modifiée !");
+            } else {
+                System.out.println("Une erreur est survenue lors de la modification de l'activité !");
+            }
+        }
+    }
+
+    // Suppression d'une activité
+    private static void deleteActivity(Scanner sc) {
+        System.out.println("Veuillez saisir l'id de l'activité à supprimer : ");
+        showActivities();
+        Long id = sc.nextLong();
+        sc.nextLine();
+        Activity activity = activityDAO.getActivityDAOById(id);
+        if (activity != null) {
+            if (activityDAO.deleteActivityDAO(activity.getId())) {
+                System.out.println("L'activité a bien été supprimée !");
+            } else {
+                System.out.println("Une erreur est survenue lors de la suppression de l'activité !");
+            }
+        }
+
+    }
+
+    // Affichage des activités
+    private static void showActivities() {
+        List<Activity> activities = activityDAO.getAllActivitiesDAO();
+        if (activities.isEmpty()) {
+            System.out.println("Aucune activité n'est disponible !");
+        } else {
+            for (Activity activity : activities) {
+                System.out.println("Id : " + activity.getId() + " Nom : " + activity.getName() + " Description : " + activity.getDescription() + " Date : " + activity.getDate() + " Heure : " + activity.getTime() + " Durée : " + activity.getDuration() + " Salle : " + activity.getLocation() + " Coach : " + activity.getCoach().getLastName() + " " + activity.getCoach().getFirstName());
+            }
+        }
+    }
+ // Ajouter un membre à une activté
+ private static void addMemberToActivity(Scanner sc) {
+     System.out.println("Veuillez saisir l'id de l'activité : ");
+        showActivities();
+        Long id = sc.nextLong();
+        sc.nextLine();
+        Activity activity = activityDAO.getActivityDAOById(id);
+
+     System.out.println("Selectionner le membre à ajouter : ");
+     showMembers();
+     Long memberId = sc.nextLong();
+        sc.nextLine();
+        Member member = memberDAO.getMemberDAOById(memberId);
+        if ( activity != null && member != null) {
+            if (activityDAO.addMemberToActivity(activity.getId(), member.getId())) {
+                System.out.println("Le membre a bien été ajouté à l'activité !");
+            } else {
+                System.out.println("Une erreur est survenue lors de l'ajout du membre à l'activité !");
+            }
+        }
+ }
+
+
+
+
 }
+
 
