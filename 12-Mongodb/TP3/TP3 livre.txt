@@ -1,0 +1,12 @@
+use livres
+
+db.livre.find({type: "Book"});
+
+db.livre.find({year: {$gt: 2011}});
+
+db.livre.find({type: "Book"} && {year: {$gt: 2014}});
+
+db.livre.find({authors: {$in: ["Toru Ishida"]}});
+
+db.livre.distinct("authors");
+

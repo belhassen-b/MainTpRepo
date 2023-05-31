@@ -1,0 +1,45 @@
+use info;
+
+db.createCollection("produits");
+
+db.produits.insertOne({
+    nom: "Macbook Pro",
+    fabriquant: "Apple",
+    prix : 11435.99,
+    options : ["Intel Core i5", "Retina Display", "Long Life Battery"]
+})
+
+db.produits.insertOne({
+    nom: "Macbook Air",
+    fabriquant: "Apple",
+    prix : 125794.73,
+    options : ["Intel Core i7", "SSD", "Long Life Battery"]
+})
+
+db.produits.insertOne({
+    nom: "Thinkpad X230",
+    fabriquant: "Lenovo",
+    prix : 114358.74,
+    ultrabook : true,
+    options : ["Intel Core i5", "SSD", "Long Life Battery"]
+})
+
+// A.
+db.produits.find().pretty()
+// B.
+db.produits.findOne()
+//C.
+db.produits.find({nom: "Thinkpad X230"}, {nom: 1, _id: 1})
+//D.
+db.produits.find({prix: {$gt: 13723}})
+//E.
+db.produits.findOne({ultrabook: true})
+//F.
+db.produits.findOne({nom: /Macbook/})
+//G.
+db.produits.find({nom: /^Macbook/})
+//H.
+db.produits.deleteMany({fabriquant: "Apple"})
+// I
+db.produits.deleteOne({_id: ObjectId("5f9b7b4b9b0b3b1b4c9b0b3b")})
+

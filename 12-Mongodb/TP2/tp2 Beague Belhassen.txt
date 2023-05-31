@@ -1,0 +1,24 @@
+use tp2
+db.users.insertOne(
+    {
+        name: "Chuck Norris",
+        age: 77,
+        hobbies:["Karate", "Kung-fu", "Ruling the world"]
+    });
+
+    db.users.find({name: "Chuck Norris"});
+
+    //show chuck without id
+    db.users.find({name: "Chuck Norris"}, {_id: 0});
+    db.users.find({age: {$in: [20,25]}});
+    db.users.find({gender: "male", age: {$in: [30,40]}});
+    db.users.find({"address.state": "Louisiana"});
+    db.users.find().sort({age: -1}).limit(20);
+    db.users.find({gender: "female" , age: {$eq: 30}});
+//  il y a 63 femmes agées de 30 ans .
+
+db.users.aggregate([ { $unset: "phone" } ])
+db.users.updateOne({name: "Chuck Norris"}, { $set: {age: Infinity }});
+
+db.users.updateMany({age: {$gt: 50}}, { $addToSet: { hobbies: "jardinage" }});
+

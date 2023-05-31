@@ -1,0 +1,19 @@
+use hopitaldb
+
+db.hopitaldb.insertMany([{
+firstName: "John",
+lastName: "Doe",
+age: "31",
+history: [{desease: "Cancer",treatment: "Chemotherapy"},{desease: "Rhume",treatment: "Aspirin"}]},
+
+{firstName: "Jane",lastName: "Doe",age: "23","history": [{desease: "Tuberculose",treatment: "Antibiotics"}, {desease: "Hypertension",treatment: "Beta-blockers"}]},
+
+{firstName: "Jack",lastName: "Doe",age: "31","history": [{desease: "Cancer",treatment: "Chemotherapy"}, {desease: "Hypertension",treatment: "Beta-blockers"}]}]);
+
+ db.hopitaldb.updateOne(
+ {firstname: "John"},{$set: {age: "55"}, $set: {firstName: "Jojo"}, $set: {history: [{desease: "Rhume",treatment: "Sirup"}, {desease: "Grippa",treatment: "Aspirin"}]}});
+
+db.hopitaldb.find({age: {$gt: "29"}}).pretty();
+
+db.hopitaldb.findOneAndDelete({desese: "Rhume"});
+
