@@ -1,6 +1,0 @@
-
-[	java:S107"AConstructor has 8 parameters, which is greater than 7 authorized.(Î¥‹Üúÿÿÿÿ
-¤
-java:S1172"ˆRemove these unused method parameters "matricule", "categorie", "service", "nom", "salaire", "distance", "chiffreAffaire", "commission".(Î¥‹Üúÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(òàè§
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ÒÖ÷Ž

@@ -1,27 +1,0 @@
-
-h
-java:S1192"KDefine a constant instead of duplicating this literal "Commercial" 3 times.(ôÙŸ¤8Á…§„õ0
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û‚ßéıÿÿÿÿ8½Ğùƒõ0
-…
-java:S4165"hRemove this useless assignment; "commission" already holds the assigned value along all execution paths.(·“µï8›ç„õ0
-ˆ
-java:S4165"fRemove this useless assignment; "distance" already holds the assigned value along all execution paths.(ÛØóçøÿÿÿÿ8›ç„õ0
-
-java:S4165"lRemove this useless assignment; "chiffreAffaire" already holds the assigned value along all execution paths.(™½Èüÿÿÿÿ8›ç„õ0
-]	java:S107
-"AConstructor has 8 parameters, which is greater than 7 authorized.(©ç“Ø8²—š„õ0
-¦
-java:S1172
-"ˆRemove these unused method parameters "matricule", "categorie", "service", "nom", "salaire", "distance", "chiffreAffaire", "commission".(©ç“Ø8´—š„õ0
-Q
-java:S1656"/Remove or correct this useless self-assignment.(ÛØóçøÿÿÿÿ8£ç„õ0
-Q
-java:S1656"/Remove or correct this useless self-assignment.(™½Èüÿÿÿÿ8£ç„õ0
-L
-java:S1656"/Remove or correct this useless self-assignment.(·“µï8£ç„õ0
-–
-java:S1172"tRemove these unused method parameters "jean", "m001", "a", "comptabilitÃ©", "salaire", "distance", "chiffreAffaire".(û‚ßéıÿÿÿÿ8ÂĞùƒõ0
-U	java:S106+"9Replace this use of System.out or System.err by a logger.(ıÅÌë8Ì¼ãƒõ0
-Z	java:S1060"9Replace this use of System.out or System.err by a logger.(ıÀ£ úÿÿÿÿ8Ï¼ãƒõ0
-Z	java:S1064"9Replace this use of System.out or System.err by a logger.(áÈ‚Æşÿÿÿÿ8Ğ¼ãƒõ0
-U	java:S1068"9Replace this use of System.out or System.err by a logger.(’¬Ë¢8ºª¯…õ0
