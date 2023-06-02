@@ -1,0 +1,19 @@
+use sportifs
+
+db.sportif.find({Age: {$gte: 20, $lte: 30}}, {_id: 0, IdSportif: 1, Nom: 1,  Prenom: 1}).pretty()
+db.sportif.find({"Sports.Jouer": "Hand ball" }, {_id: 0, IdSportif: 1, Nom: 1}).pretty()
+db.sportif.find({"Sports.Jouer": null }, {_id: 0, IdSportif: 1, Nom: 1}).pretty();
+
+db.sportif.find({$and: [{"Sports.Jouer": {$exists: true}}, {"Sports.Entrainer": {$exists: true}}]}, {_id: 0, IdSportif: 1, Nom: 1}).pretty()
+db.sportif.find({Nom: "KERVADEC"}, {_id: 0, IdSportifConseiller: 1, Nom: 1}).pretty()
+db.sportif.aggregate([{$match: {Sexe: "F", "Sports.Jouer": "Basket ball"}}, {$group: {_id: null, moyenne: {$avg: "$Age"}}}])
+db.sportif.find({"Sports.Entrainer": {$all: ["Hand ball", "Basket ball"]}}, {_id: 0, IdSportif: 1, Nom: 1}).pretty()
+
+//db.sportif.aggregate([{$group: {_id: "$IdSportif",nombreSportsArbitres :{ $sum: {$: "$Sports.Arbitrer"}}}}])
+
+use gymnase
+
+db.gym.find({$or: [{Ville: "VILLETANEUSE"}, {Ville: "SARCELLES"}], Surface: {$gt: 400}}).pretty()
+db.gym.find({"Seances.Jour": {$ne: "Dimanche"}}, {_id: 0, IdGymnase: 1, NomGymnase: 1}).pretty()
+db.gym.find({"Seances.Libelle": {$in: ["Volley ball", "Basket ball"]}}, {_id: 0, IdGymnase: 1, NomGymnase: 1}).pretty()
+
