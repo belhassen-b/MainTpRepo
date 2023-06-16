@@ -1,0 +1,10 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕúÀŞûÿÿÿÿ8ñŸ¦§‰1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ­ë8ñŸ¦§‰1
+m	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ®í—8ñŸ¦§‰1
+{	java:S116"ZRename this field "id_prescription" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÔì±úÿÿÿÿ8ùŸ¦§‰1
+ƒ	java:S116"bRename this field "medicament_prescription" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÏõÈøÿÿÿÿ8ùŸ¦§‰1
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÚ—8ÿŸ¦§‰1
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ­ë8„ ¦§‰1
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ùº8† ¦§‰1
+j	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ®í—8‡ ¦§‰1

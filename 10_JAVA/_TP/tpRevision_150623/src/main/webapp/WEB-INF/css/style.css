@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+td.empty {
+    background-color: white;
+}
+form {
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    margin-bottom:  20px;
+}

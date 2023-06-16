@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Tp_Vendredi_14_04_2023" />
+        <module name="tpBilleterie" />
+        <module name="demoJPA" />
+        <module name="Tp-Vendredi-19-05-2023" />
+        <module name="TpRevisionJ2e" />
+        <module name="2023_tpBilleterieDAO" />
+        <module name="tpJdbc" />
+        <module name="ECF2" />
+        <module name="Tp-Recettes" />
+        <module name="TpVendredi-07-04-2023" />
+        <module name="Tp-AbstratFactory" />
+        <module name="TpHotel" />
+        <module name="Tp-Builder" />
+        <module name="Tp-Vendredi-31-03-2023" />
+        <module name="TpJeuVideo" />
+        <module name="Tp-jdbc2_Car" />
+        <module name="TP1-JPAv2" />
+        <module name="todolist_v1" />
+        <module name="TpCollection" />
+        <module name="demoJee" />
+        <module name="Tp_hopital" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

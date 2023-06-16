@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ECF2/pom.xml" />
+        <option value="$PROJECT_DIR$/demoJee/pom.xml" />
+        <option value="$PROJECT_DIR$/demoJPA/pom.xml" />
+        <option value="$PROJECT_DIR$/TP1-JPAv2/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp-Builder/pom.xml" />
+        <option value="$PROJECT_DIR$/TpJeuVideo/pom.xml" />
+        <option value="$PROJECT_DIR$/todolist_v3/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp-Recettes/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp-jdbc2_Car/pom.xml" />
+        <option value="$PROJECT_DIR$/TpRevisionJ2e/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp_Hopital_Jee/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp-AbstratFactory/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp-JDBC_04-05-2023/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp-Vendredi-19-05-2023/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp-Vendredi-31-03-2023/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp_Vendredi_14-04-2023/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp-Hotel_Jeuid-06-04-2023l/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp-Billeterie_Vendredi_28-04-2023/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp-Collection_Vendredi_14-04-2023/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp-BilleterieDAO_Vendredi-05-05-2023/pom.xml" />
+        <option value="$PROJECT_DIR$/Tp-Heritage – Abstract – Enum – Interface_Vendredi-07-04-2023/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="temurin-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
