@@ -6,30 +6,35 @@ import com.example.tprevision_150623.entities.Grille;
 
 public class GrilleService {
 
-    private Grille grille;
 
-
-    public Grille tirer(Grille grille, int x, int y) {
+    public void tirer(Grille grille, int x, int y) {
         Cellule cellule = grille.getCellule(x, y);
         if (cellule.getStatut() == CelluleStatut.BATEAU) {
             cellule.setStatut(CelluleStatut.TOUCHE);
         } else {
             cellule.setStatut(CelluleStatut.RATE);
         }
-        return grille;
     }
 
 
     public boolean resteBateau(Grille grille) {
-        boolean gameOver = false;
-        for (int i = 0; true; i++) {
-            for (int j = 0; true; j++) {
-                if (grille.getCellule(i, j).getStatut() == CelluleStatut.BATEAU) {
+        for(Cellule[] ligne : grille.getCellules()){
+            for(Cellule cellule : ligne){
+                if(cellule.getStatut() == CelluleStatut.BATEAU){
                     return false;
-                } else {
-                    return true;
                 }
             }
         }
-
+        return true;
+    }
+//        boolean gameOver = false;
+//        for (int i = 0; i < grille.getTaille(); i++) {
+//            for (int j = 0; j < grille.getTaille(); j++) {
+//                if (grille.getCellule(i, j).getStatut() == CelluleStatut.BATEAU) {
+//                    gameOver = true;
+//                }
+//            }
+//        }
+//        return gameOver;
+//    }
 }

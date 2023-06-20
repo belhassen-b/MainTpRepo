@@ -8,16 +8,10 @@ import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
 public class Bateau {
 
     private Cellule cellule;
     private boolean touche;
-
-    public void toucher() {
-        this.touche = true;
-        cellule.setStatut(CelluleStatut.TOUCHE);
-    }
 
 }

@@ -1,4 +1,4 @@
-package com.example.correctionpatient.util;
+package com.example.tprevision13062023.util;
 
 public class Definition {
     public final static String VIEW_PATH = "/WEB-INF/views";

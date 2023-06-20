@@ -1,3 +1,4 @@
 <div>
-  <img src="${""}" alt="">
+ <img src="${pageContext.request.contextPath}/images/logo.png">
+
 </div>

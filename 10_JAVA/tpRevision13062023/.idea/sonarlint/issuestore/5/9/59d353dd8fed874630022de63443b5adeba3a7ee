@@ -1,0 +1,11 @@
+
+I
+java:S1948".Make "loginService" transient or serializable.(­”ƒÇüÿÿÿÿ
+J
+java:S1948"4Make "utilisateurService" transient or serializable.(¨ ­
+P
+java:S1161":Add the "@Override" annotation above this method signature( Üó
+P
+java:S1161":Add the "@Override" annotation above this method signature(à»¢ü
+K
+java:S1068"0Remove this unused "loginService" private field.(­”ƒÇüÿÿÿÿ

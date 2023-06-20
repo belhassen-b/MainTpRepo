@@ -22,4 +22,12 @@ public class Cellule {
         this.y = j;
         this.statut = CelluleStatut.VIDE;
     }
+
+    public CelluleStatut getStatut() {
+        return statut;
+    }
+
+    public void setStatut(CelluleStatut statut) {
+        this.statut = statut;
+    }
 }

@@ -15,7 +15,7 @@ import java.io.IOException;
 @WebServlet("/tirer")
 public class TirerServlet extends HttpServlet {
 
-    private GrilleService grilleService;
+    private GrilleService grilleService = new GrilleService();
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -23,9 +23,10 @@ public class TirerServlet extends HttpServlet {
         int x = Integer.parseInt(req.getParameter("x"));
         int y = Integer.parseInt(req.getParameter("y"));
             grilleService.tirer(grille, x, y);
-            grilleService.resteBateau(grille);
+            if(grilleService.resteBateau(grille)){
+                req.getSession().setAttribute("gameOver", "true");
+            }
+        req.getSession().setAttribute("grille", grille);
         req.getRequestDispatcher("WEB-INF/views/grille.jsp").forward(req, resp);
-
-
     }
 }

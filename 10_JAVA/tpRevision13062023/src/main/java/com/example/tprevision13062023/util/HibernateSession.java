@@ -1,6 +1,5 @@
-package com.example.correctionpatient.util;
+package com.example.tprevision13062023.util;
 
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;

@@ -1,0 +1,8 @@
+
+a	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(‰Æáe8ïö†ô‹1
+a	java:S112 "FDefine and throw a dedicated exception instead of using a generic one.(‰Æáe8ðö†ô‹1
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¦ý àúÿÿÿÿ8òö†ô‹1
+q	java:S116"URename this field "_lastFrame" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒŠýê8üö†ô‹1
+w	java:S116"VRename this field "_generateur" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„²æ¶ùÿÿÿÿ8üö†ô‹1
+S
+java:S1172"1Remove this unused method parameter "generateur".(¦ý àúÿÿÿÿ8—á…÷‹1
