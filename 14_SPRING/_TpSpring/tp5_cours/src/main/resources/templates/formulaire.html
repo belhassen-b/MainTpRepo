@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+<body>
+
+// formulaire pour permettre de changer le background color  sur toutes les pages au choix bleu, rouge ou jaune
+<form th:action="@{/color}" method="get">
+
+  <div class="container">
+
+    <div class="form-group">
+      <label for="color">Color</label>
+      <select class="form-control" id="color" name="color">
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+</body>
+</html>

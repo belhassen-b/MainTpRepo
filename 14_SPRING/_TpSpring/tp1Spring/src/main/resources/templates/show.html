@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Todo</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+</head>
+<body>
+<div th:replace="~{fragments/header.html :: header}"></div>
+<div class="container">
+    <table class="table table-bordered table-striped table-dark text-center">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Todo</th>
+            <th scope="col">Description</th>
+            <th scope="col">Date</th>
+            <th scope="col">Catégorie</th>
+            <th scope="col">Priorité</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody th:each="todo: ${todos}">
+        <tr>
+            <!--            <td th:text="${todo.id}"></td>-->
+            <td th:text="${todo.title}"></td>
+            <td th:text="${todo.description}"></td>
+            <td th:text="${todo.done}"></td>
+
+            <td th:text="${todo.date}"></td>
+            <td th:text="${todo.category}"></td>
+            <td th:text="${todo.priority}"></td>
+            <td>
+                <a th:href="@{/todo/edit/{id}(id=${todo.id})}" class="btn btn-primary">Edit</a>
+                <a th:href="@{/todo/delete/{id}(id=${todo.id})}" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>

@@ -1,6 +1,7 @@
 package com.example.exercice1.controller;
 
 
+import com.example.exercice1.entity.Personne;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +25,8 @@ public class PersonneController {
     public String getListPersonne() {
         return personnes.toString();
     }
+
+
     @PostMapping("/add")
     public Personne addPersonne(@RequestBody Personne personne) {
         System.out.println(personne);
@@ -33,6 +36,7 @@ public class PersonneController {
 
     @GetMapping("/get/{id}")
     public String getPersonne(@PathVariable("id") Integer id) {
-        return personnes.get(id).toString();
+
+    return personnes.get(id).toString();
     }
 }

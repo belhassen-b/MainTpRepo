@@ -1,4 +1,4 @@
-package com.example.exercice1.controller;
+package com.example.exercice1.entity;
 
 public class Personne {
 
@@ -24,7 +24,7 @@ public class Personne {
         return nom;
     }
 
-    public String getPrenom(){
+    public String getPrenom() {
         return prenom;
     }
 
