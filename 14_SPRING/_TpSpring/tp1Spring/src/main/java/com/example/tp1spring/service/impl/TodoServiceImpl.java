@@ -14,13 +14,13 @@ public class TodoServiceImpl implements com.example.tp1spring.service.ITodoServi
 
     @Autowired
     private ServiceHibernate serviceHibernate;
-
     private final Session session;
 
-    public TodoServiceImpl(ServiceHibernate serviceHibernate){
+    public TodoServiceImpl(ServiceHibernate serviceHibernate) {
         this.serviceHibernate = serviceHibernate;
         session = this.serviceHibernate.getSession();
     }
+
     @Override
     public boolean create(Todo t) {
         session.beginTransaction();
@@ -29,7 +29,6 @@ public class TodoServiceImpl implements com.example.tp1spring.service.ITodoServi
 //        session.close();
         return true;
     }
-
 
 
     @Override
@@ -50,7 +49,7 @@ public class TodoServiceImpl implements com.example.tp1spring.service.ITodoServi
 
     @Override
     public Todo findById(int id) {
-        Todo todo;
+        Todo todo = null;
         todo = (Todo) session.get(Todo.class, id);
         return todo;
     }

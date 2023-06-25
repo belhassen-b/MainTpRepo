@@ -35,7 +35,14 @@ public class Todo {
 
     private Category category;
 
+    private boolean urgent;
+
+
     public boolean getDone() {
         return done;
+    }
+
+    public boolean getUrgent() {
+        return urgent;
     }
 }
