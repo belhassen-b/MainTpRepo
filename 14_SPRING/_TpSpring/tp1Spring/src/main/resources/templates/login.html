@@ -19,7 +19,7 @@
         <h3 class="text-center">Login</h3>
         </div>
         <div class="card-body">
-        <form method="post" th:action="@{/user/createuser}" th:object="${user}">
+        <form method="post" th:action="@{/user/postUser}" th:object="${user}">
             <div class="form-group">
             <label for="username">Username</label>
             <input type="text" class="form-control" id="username" placeholder="Entrer votre nom d'utilisateur" name="username">
@@ -33,7 +33,7 @@
 
         </div>
     </div>
-    <a th:href="@{/user/createuser}">Créer un compte</a>
+    <a th:href="@{/user/addUser}">Créer un compte</a>
 </div>
 
 </body>

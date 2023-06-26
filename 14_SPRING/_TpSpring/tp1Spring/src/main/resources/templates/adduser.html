@@ -14,7 +14,7 @@
 
 <div class="container">
 
-  <forù method="post" th:action="@{/adduser}">
+  <form method="post" th:action="@{/user/create}">
     <div class="form-group">
       <label for="username">Username</label>
       <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
@@ -25,6 +25,8 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+  <p class="text-center">Vous avez déjà un compte ? <a th:href="@{/user/login}">Se connecter</a></p>
+
 </div>
 
 

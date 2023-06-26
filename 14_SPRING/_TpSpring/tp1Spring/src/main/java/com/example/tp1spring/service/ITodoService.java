@@ -1,5 +1,7 @@
 package com.example.tp1spring.service;
 
+import com.example.tp1spring.entity.Category;
+import com.example.tp1spring.entity.Priority;
 import com.example.tp1spring.entity.Todo;
 
 import java.util.List;
@@ -15,7 +17,15 @@ public interface ITodoService {
 
     List<Todo> findAll();
 
-    Object findAllCategory();
+//    Category findAllCategory();
 
-    Object findAllPriority();
+    List<Category> findAllCategoryList();
+
+//    Priority findAllPriority();
+
+    List<Priority> findAllPriorityList();
+
+    Category findAllCategory();
+
+    Priority findAllPriority();
 }
