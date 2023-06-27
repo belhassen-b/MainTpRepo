@@ -3,7 +3,6 @@ package com.example.tp1spring.controller;
 import com.example.tp1spring.entity.User;
 import com.example.tp1spring.service.IUserService;
 import jakarta.servlet.http.HttpSession;
-import org.aspectj.bridge.IMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -46,7 +45,6 @@ public class UserController {
 
         if(user != null) {
             _httpSession.setAttribute("user", user);
-            boolean isLogged = true;
             return "redirect:/todo/show";
         }else {
             return "redirect:/user/login";
@@ -57,6 +55,4 @@ public class UserController {
         _httpSession.invalidate();
         return "redirect:/user/login";
       }
-
-
 }

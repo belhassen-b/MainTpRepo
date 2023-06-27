@@ -66,7 +66,6 @@ public class TodoController {
             if (todoService.create(todo)) {
                 return "redirect:/todo/show";
             }
-            return "error";
         } else {
             Todo existTodo = todoService.findById(todo.getId());
             if (existTodo != null) {
@@ -81,8 +80,8 @@ public class TodoController {
                     return "redirect:/todo/show";
                 }
             }
-            return "error";
         }
+        return "error";
     }
 
 

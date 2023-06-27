@@ -1,0 +1,40 @@
+<nav th:fragment="header" class="navbar navbar-expand-lg navbar navbar-dark bg-dark mt-0 mb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Gestion Todo List Spring</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" th:href="@{'/todo/show'}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{'/todo/add'}">Ajout </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Filtres Todos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" th:href="@{'/todo/done'}">Todos Faites</a></li>
+                        <li><a class="dropdown-item" th:href="@{'/todo/notdone'}">Todos à faire</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" th:href="@{'/user/logout'}" th:if="${session.user != null}">Logout</a>
+                </li>
+            </ul>
+            <form class="d-flex" th:action="@{search}" method="get">
+                <input type="text" name="todoId" placeholder="ID task ">
+                <button type="submit" class="btn btn-outline-success">Rechercher</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+</body>
+</html>
