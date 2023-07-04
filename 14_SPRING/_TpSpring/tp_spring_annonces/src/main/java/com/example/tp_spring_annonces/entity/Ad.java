@@ -8,6 +8,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -29,12 +30,13 @@ public class Ad {
 @ManyToOne
     private User user;
 
-@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Category>  category;
+@ManyToMany(fetch = FetchType.EAGER)
+    private List<Category>  categories = new ArrayList<>();
 
 
-@OneToMany(mappedBy = "ad")
+@OneToMany(mappedBy = "ad", fetch = FetchType.EAGER)
 @JsonIgnoreProperties("ad")
-private List<Picture> pictures;
+private List<Picture> pictures = new ArrayList<>();
+
 
 }

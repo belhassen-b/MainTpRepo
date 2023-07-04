@@ -63,6 +63,7 @@ public class UserController {
         else if (user.getId() == null) {
             userService.save(user);
             model.addAttribute("user", user);
+            return "redirect:/user/userManagement";
 
         }
         return "redirect:/ad/show";
