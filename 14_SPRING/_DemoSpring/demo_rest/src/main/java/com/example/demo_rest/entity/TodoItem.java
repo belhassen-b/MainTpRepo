@@ -11,6 +11,7 @@ import java.util.Date;
 @Entity
 @Table(name = "todo_item")
 public class TodoItem {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)

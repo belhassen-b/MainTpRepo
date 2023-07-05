@@ -12,10 +12,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/todos")
 public class ListTodoController {
-
     @Autowired
     private ListTodoItemService listTodoItemService;
-
     @GetMapping("/all")
     public ResponseEntity<?> getAllTodos() {
         String message = "La liste est vide";
@@ -25,7 +23,6 @@ public class ListTodoController {
             return ResponseEntity.ok(listTodoItemService.getAll());
         }
     }
-
     @PostMapping("/create")
     public ResponseEntity<?> post(@RequestBody ListTodoItem listTodoItem) {
         if (listTodoItem.getTitle() == null || listTodoItem.getDate() == null) {
@@ -33,5 +30,4 @@ public class ListTodoController {
         }
         return ResponseEntity.ok( listTodoItemService.createListTodoItem(listTodoItem));
     }
-
 }
