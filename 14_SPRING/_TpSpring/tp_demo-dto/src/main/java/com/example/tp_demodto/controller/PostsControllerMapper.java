@@ -27,13 +27,13 @@ public class PostsControllerMapper {
     @PostMapping("/created_post_mapper")
     public ResponseEntity<PostDto> post(@RequestBody PostCreateDto postCreateDto) {
 
-        return new ResponseEntity<PostDto>(postService.createPost(postCreateDto), HttpStatus.CREATED);
+        return new ResponseEntity<>(postService.createPost(postCreateDto), HttpStatus.CREATED);
     }
 
     @PutMapping("/updatePost/{id}")
     public ResponseEntity<PostDto> updatePost(@PathVariable("id") Integer id, @RequestBody PostCreateDto postCreateDto) {
 
-    return ResponseEntity.ok((PostDto) postService.updatePost(id, postCreateDto));
+    return ResponseEntity.ok(postService.updatePost(id, postCreateDto));
 }
 @DeleteMapping("/deletePost/{id}")
     public ResponseEntity<String> deletePost(@PathVariable("id") Integer id) {

@@ -3,7 +3,6 @@ package com.example.tp_demodto.controller;
 
 import com.example.tp_demodto.dto.CommentCreateDto;
 import com.example.tp_demodto.dto.CommentDto;
-import com.example.tp_demodto.dto.PostDto;
 import com.example.tp_demodto.service.CommentServiceMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -30,11 +29,11 @@ public class CommentsController {
     }
 
 
-@GetMapping("/getCommentByPost/{id}")
-public ResponseEntity<CommentDto> getCommentByPost(@PathVariable("id") Integer id) {
-    return ResponseEntity.ok(commentService.readCommentByPost(id));
+    @GetMapping("/getCommentByPost/{id}")
+    public ResponseEntity<CommentDto> getCommentByPost(@PathVariable("id") Integer id) {
+        return ResponseEntity.ok(commentService.readCommentByPost(id));
 
-}
+    }
 
 
     @GetMapping("/getCommentByIdAndPost/{id}")
@@ -45,9 +44,9 @@ public ResponseEntity<CommentDto> getCommentByPost(@PathVariable("id") Integer i
     }
 
     @PutMapping("/updateComment/{id}")
-    public ResponseEntity<CommentDto> updateComment(@PathVariable("id") Integer id, @RequestBody CommentCreateDto  commentCreateDto) {
+    public ResponseEntity<CommentDto> updateComment(@PathVariable("id") Integer id, @RequestBody CommentCreateDto commentCreateDto) {
 
-        return ResponseEntity.ok((CommentDto) commentService.updateComment(id, commentCreateDto));
+        return ResponseEntity.ok(commentService.updateComment(id, commentCreateDto));
     }
 
     @DeleteMapping("/deleteComment/{id}")
@@ -56,7 +55,6 @@ public ResponseEntity<CommentDto> getCommentByPost(@PathVariable("id") Integer i
         commentService.deleteComment(id);
         return ResponseEntity.ok(message);
     }
-
 
 
 }
