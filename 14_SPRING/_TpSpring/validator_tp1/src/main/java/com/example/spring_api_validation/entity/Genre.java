@@ -1,6 +1,7 @@
 package com.example.spring_api_validation.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
@@ -22,6 +23,7 @@ public class Genre {
         @Column(name = "description", nullable = false)
         private String description;
 
+        @JsonIgnore
         @OneToMany (mappedBy = "genre", cascade = CascadeType.ALL)
         private List<Book> book;
 }

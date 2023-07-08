@@ -30,7 +30,6 @@ public class BookService {
         return bookRepository.findAll();
     }
 
-
     public Book updateBookById(Integer id, Book book) {
         Book book1 = bookRepository.findById(id).get();
         book1.setTitle(book.getTitle());
