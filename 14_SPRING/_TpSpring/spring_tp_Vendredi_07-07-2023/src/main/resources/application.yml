@@ -13,3 +13,4 @@ spring:
         dialect: org.hibernate.dialect.MariaDBDialect
         format_sql: true
     database-platform: org.hibernate.dialect.MariaDBDialect
+
