@@ -9,7 +9,7 @@ public interface ICommentService {
 
     CommentDto update(Long id, CommentDto commentDto);
 
-    CommentDto create(CommentDto commentDto);
+    CommentDto create(CommentDto commentDto) throws Exception;
 
     CommentDto findById(Long id);
 

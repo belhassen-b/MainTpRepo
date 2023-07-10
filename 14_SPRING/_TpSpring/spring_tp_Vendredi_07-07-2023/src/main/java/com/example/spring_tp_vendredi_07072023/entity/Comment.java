@@ -32,7 +32,7 @@ public class Comment {
     @JsonIgnore
     private List<DislikeMention> dislikeMentions;
 
-    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JsonIgnore
     @JoinColumn(name = "post_id")
     private Post post;

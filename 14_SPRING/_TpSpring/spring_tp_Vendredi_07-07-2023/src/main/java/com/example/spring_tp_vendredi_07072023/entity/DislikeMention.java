@@ -20,13 +20,12 @@ public class DislikeMention {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(pattern = "dd-MM-yyyy")
     @Pattern(regexp = "^\\d{2}-\\d{2}-\\d{4}$", message = "Date must be in the format dd-mm-yyyy")
     private Date date;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JsonIgnore
     private Comment comment;
 

@@ -22,7 +22,7 @@ public class LikeMention {
     @DateTimeFormat(pattern = "dd-MM-yyyy")
     private Date date;
 
-    @ManyToOne
+    @ManyToOne (fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JsonIgnore
     private Comment comment;
 

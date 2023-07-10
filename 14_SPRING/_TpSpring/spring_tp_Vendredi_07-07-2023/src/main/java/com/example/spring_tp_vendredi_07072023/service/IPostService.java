@@ -11,6 +11,7 @@ public interface IPostService {
 
     List<PostDto> findAll();
 
+    PostDto findByUserId(Long id);
 
     PostDto findById(Long id);
 

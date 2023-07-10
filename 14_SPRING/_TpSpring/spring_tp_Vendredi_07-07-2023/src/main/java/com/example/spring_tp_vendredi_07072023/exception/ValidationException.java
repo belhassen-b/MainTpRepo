@@ -5,4 +5,8 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 public class ValidationException extends ResponseEntityExceptionHandler {
 
+        public ValidationException(String message) {
+            super();
+        }
+
 }

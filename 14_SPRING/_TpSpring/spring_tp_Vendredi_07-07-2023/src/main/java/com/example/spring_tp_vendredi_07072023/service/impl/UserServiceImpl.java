@@ -1,28 +1,34 @@
 package com.example.spring_tp_vendredi_07072023.service.impl;
 
-
 import com.example.spring_tp_vendredi_07072023.Dto.UserCreateDto;
 import com.example.spring_tp_vendredi_07072023.Dto.UserReadDto;
+import com.example.spring_tp_vendredi_07072023.entity.Post;
 import com.example.spring_tp_vendredi_07072023.entity.User;
+import com.example.spring_tp_vendredi_07072023.exception.NotFoundException;
+import com.example.spring_tp_vendredi_07072023.repository.IPostRepository;
 import com.example.spring_tp_vendredi_07072023.repository.IUserRepository;
 import com.example.spring_tp_vendredi_07072023.service.IUserService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl  implements IUserService {
 
     private final IUserRepository userRepository;
+    private final IPostRepository postRepository;
+
     private final ModelMapper modelMapper;
 
     @Override
     public UserReadDto findById(Long id) {
-        User user = userRepository.findById(id).get();
+        User user = userRepository.findById(id).orElseThrow(
+                () -> new NotFoundException("User not found")
+        );
         return modelMapper.map(user, UserReadDto.class);
 
     }
@@ -30,7 +36,12 @@ public class UserServiceImpl  implements IUserService {
     @Override
     public List<UserReadDto> findAll() {
         List<User> users = userRepository.findAll();
-        return users.stream().map(user -> modelMapper.map(user, UserReadDto.class)).collect(Collectors.toList());
+        List<UserReadDto> list = new ArrayList<>();
+        for (User user : users) {
+            UserReadDto map = modelMapper.map(user, UserReadDto.class);
+            list.add(map);
+        }
+        return list;
     }
 
     @Override
@@ -52,7 +63,9 @@ public class UserServiceImpl  implements IUserService {
 
     @Override
     public UserCreateDto update(Long id, UserCreateDto userCreateDto) {
-        User user1 = userRepository.findById(id).get();
+        User user1 = userRepository.findById(id).orElseThrow(
+                () -> new NotFoundException("User not found")
+        );
         user1.setName(userCreateDto.getName());
         user1.setPassword(userCreateDto.getPassword());
         return modelMapper.map(userRepository.save(user1), UserCreateDto.class);
@@ -60,7 +73,14 @@ public class UserServiceImpl  implements IUserService {
 
     @Override
     public UserReadDto deleteById(Long id) {
-        User user = userRepository.findById(id).get();
+        User user = userRepository.findById(id).orElseThrow(
+                () -> new NotFoundException("User not found")
+        );
+        user.setPosts(null);
+        Post post = postRepository.findByUserId(id).orElseThrow(
+                () -> new NotFoundException("Post not found")
+        );
+        post.setUser(null);
         userRepository.delete(user);
         return modelMapper.map(user, UserReadDto.class);
     }

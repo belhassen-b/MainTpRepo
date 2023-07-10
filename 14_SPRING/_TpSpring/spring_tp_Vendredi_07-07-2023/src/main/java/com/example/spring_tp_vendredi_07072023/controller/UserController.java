@@ -1,8 +1,9 @@
 package com.example.spring_tp_vendredi_07072023.controller;
 
-
 import com.example.spring_tp_vendredi_07072023.Dto.UserCreateDto;
 import com.example.spring_tp_vendredi_07072023.Dto.UserReadDto;
+import com.example.spring_tp_vendredi_07072023.exception.UserOrPasswordExistException;
+import com.example.spring_tp_vendredi_07072023.repository.IUserRepository;
 import com.example.spring_tp_vendredi_07072023.service.impl.UserServiceImpl;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -23,14 +24,21 @@ public class UserController {
 
 
     private final UserServiceImpl userService;
+    private final IUserRepository userRepository;
 
 
     @PostMapping("/save")
-    public ResponseEntity<String> createUser(@Valid @RequestBody UserCreateDto userCreateDto) {
+    public ResponseEntity<String> createUser(@Valid @RequestBody UserCreateDto userCreateDto)  throws UserOrPasswordExistException{
+        if (userRepository.existsByName(userCreateDto.getName() ) || userRepository.existsByPassword(userCreateDto.getPassword())) {
+
+            return new ResponseEntity<>("User or password already exist", HttpStatus.CONFLICT);
+        }
         if ( userService.create(userCreateDto) == null) {
             return ResponseEntity.badRequest().build();
         }
-        return ResponseEntity.ok("User created");
+        else {
+            return ResponseEntity.ok("User created");
+        }
     }
 
     @PutMapping("/update/{id}")

@@ -28,6 +28,7 @@ public class User {
     @Pattern(regexp = "^(?=.*[0-9])(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{5,8}$",  message = "Password must contain at least two digit, one lowercase, one uppercase, one special character and must be between 5 and 8 characters")
     private String password;
 
+
     @OneToMany(mappedBy = "user")
     @JsonIgnore
     private List<Post> posts;

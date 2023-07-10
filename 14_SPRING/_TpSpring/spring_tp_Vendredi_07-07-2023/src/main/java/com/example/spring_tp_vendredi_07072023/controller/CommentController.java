@@ -25,6 +25,7 @@ public class CommentController {
     public ResponseEntity<String> createComment(@Valid @RequestBody CommentDto commentDto) {
         if (commentService.create(commentDto) == null) {
             return ResponseEntity.badRequest().build();
+
         }
         return ResponseEntity.ok("Comment created");
     }
