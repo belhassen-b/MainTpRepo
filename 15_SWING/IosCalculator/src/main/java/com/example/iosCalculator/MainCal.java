@@ -15,7 +15,7 @@ public class MainCal extends JFrame {
 
     private JLabel screen = new JLabel();
     private JPanel panel, panel2;
-    String[] buttons = {"C", "+/-", "%", "/", "7", "8", "9", "x", "4", "5", "6", "-", "1", "2", "3", "+", "0", ".", "="};
+    String[] buttons = {"C", "+/-", "%", "/", "7", "8", "9", "x", "4", "5", "6", "-", "1", "2", "3", "+", "0", "",".", "="};
     JButton[] tab_button = new JButton[buttons.length];
 
 
@@ -35,7 +35,6 @@ public class MainCal extends JFrame {
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setResizable(false);
         this.setLocationRelativeTo(null);
-//        this.setLayout(new BorderLayout());
         this.setContentPane(container);
         initComponent();
 
@@ -50,12 +49,14 @@ public class MainCal extends JFrame {
         screen.setPreferredSize(new Dimension(380, 160));
         screen.setVerticalAlignment(JLabel.BOTTOM);
         screen.setForeground(Color.WHITE);
+        screen.setBackground(Color.black);
+        screen.setOpaque(true);
 
 
         JPanel panel = new JPanel();
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
         panel.setLayout(new GridBagLayout());
-        panel.setBackground(Color.darkGray);
+//        panel.setBackground(Color.darkGray);
         gridBagConstraints.fill = GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 1;
         gridBagConstraints.weighty = 1;
@@ -335,9 +336,13 @@ public class MainCal extends JFrame {
             gridBagConstraints.fill = GridBagConstraints.BOTH;
             gridBagConstraints.gridx = i % 4;
             gridBagConstraints.gridy = i / 4 + 1;
+            gridBagConstraints.gridwidth = 1;
+
             if (i == 16) {
                 gridBagConstraints.gridwidth = 2;
             }
+
+
             panel.add(tab_button[i], gridBagConstraints);
         }
         panel.add(screen, gridBagConstraints);
@@ -347,13 +352,13 @@ public class MainCal extends JFrame {
         tab_button[7].setBackground(Color.ORANGE);
         tab_button[11].setBackground(Color.ORANGE);
         tab_button[15].setBackground(Color.ORANGE);
-        tab_button[18].setBackground(Color.ORANGE);
+        tab_button[19].setBackground(Color.ORANGE);
 
         tab_button[3].setForeground(Color.WHITE);
         tab_button[7].setForeground(Color.WHITE);
         tab_button[11].setForeground(Color.WHITE);
         tab_button[15].setForeground(Color.WHITE);
-        tab_button[18].setForeground(Color.WHITE);
+        tab_button[19].setForeground(Color.WHITE);
 
         JPanel panel2 = new JPanel();
         panel2.setBackground(Color.darkGray);
