@@ -1,0 +1,18 @@
+
+J
+java:S16043"(Make this anonymous inner class a lambda(æèãøÿÿÿÿ8™’ïÍ¢1
+v
+java:S1450"YRemove the "connection" field and declare it as a local variable in the relevant methods.(ÿ›ÅÒ8¬’ïÍ¢1
+}
+java:S1450"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(ê¼¿Çıÿÿÿÿ8¬’ïÍ¢1
+‚
+java:S1450"`Remove the "preparedStatement" field and declare it as a local variable in the relevant methods.(¿ä Óşÿÿÿÿ8¬’ïÍ¢1
+z
+java:S1450"XRemove the "resultSet" field and declare it as a local variable in the relevant methods.(¿ˆ°úÿÿÿÿ8¬’ïÍ¢1
+I
+java:S1948",Make "connection" transient or serializable.(ÿ›ÅÒ8¬’ïÍ¢1
+U
+java:S1948"3Make "preparedStatement" transient or serializable.(¿ä Óşÿÿÿÿ8­’ïÍ¢1
+M
+java:S1948"+Make "resultSet" transient or serializable.(¿ˆ°úÿÿÿÿ8­’ïÍ¢1
+Z	java:S106@"9Replace this use of System.out or System.err by a logger.(ÁÒ®¶øÿÿÿÿ8²’ïÍ¢1

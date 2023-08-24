@@ -1,0 +1,17 @@
+
+E
+java:S1604I"(Make this anonymous inner class a lambda(»„¦²8ù ŒÁ¢1
+J
+java:S1604Y"(Make this anonymous inner class a lambda(æèãøÿÿÿÿ8ù ŒÁ¢1
+E
+java:S1604`"(Make this anonymous inner class a lambda(ê•úÄ8ù ŒÁ¢1
+V
+java:S11179"9Rename "btnOk" which hides the field declared at line 25.(¡›¬Š8‡¡ŒÁ¢1
+_
+java:S1117="=Rename "btnCancel" which hides the field declared at line 27.(„ÂÛ˜ûÿÿÿÿ8‡¡ŒÁ¢1
+R
+java:S1068"0Remove this unused "insertDialog" private field.(ĞùßŞıÿÿÿÿ8‹¡ŒÁ¢1
+F
+java:S1068")Remove this unused "btnOk" private field.(©È•8‹¡ŒÁ¢1
+J
+java:S1068"-Remove this unused "btnCancel" private field.(Ãğ¬ú8‹¡ŒÁ¢1
