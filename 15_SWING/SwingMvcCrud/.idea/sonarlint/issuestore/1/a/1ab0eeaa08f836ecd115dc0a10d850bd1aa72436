@@ -1,9 +1,0 @@
-
-\
-java:S1118	":Add a private constructor to hide the implicit public one.(ÁÁ²àüÿÿÿÿ8‘¾å¿£1
-a
-java:S1854"?Remove this useless assignment to local variable "departments".(¼Ä›Ùýÿÿÿÿ8“¾å¿£1
-N
-java:S1172",Remove this unused method parameter "table".(«öè±ÿÿÿÿÿ8”¾å¿£1
-R
-java:S1481"0Remove this unused "departments" local variable.(¼Ä›Ùýÿÿÿÿ8—¾å¿£1

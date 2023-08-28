@@ -1,15 +1,18 @@
 package org.example.utils;
 
+import org.example.dao.DepartmentDAO;
 import org.example.model.Department;
 
 import javax.swing.table.AbstractTableModel;
 import java.util.List;
 
 public class DepartmentTableModel extends AbstractTableModel {
-  private final List<Department> departmentsData;
 
-    private final String[] columnNames = {"Id", "Name"};
-    public DepartmentTableModel(List<Department> departmentsData) {
+    private final List<DepartmentDAO> departmentsData;
+
+    private final String[] columnNames = {"Id", "Nom Département"};
+
+    public DepartmentTableModel(List<DepartmentDAO> departmentsData) {
         this.departmentsData = departmentsData;
     }
 
@@ -25,13 +28,14 @@ public class DepartmentTableModel extends AbstractTableModel {
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        Department department = departmentsData.get(rowIndex);
+        DepartmentDAO department = departmentsData.get(rowIndex);
         return switch (columnIndex) {
             case 0 -> department.getId();
             case 1 -> department.getName();
             default -> null;
         };
     }
+
     @Override
     public String getColumnName(int column) {
         return columnNames[column];

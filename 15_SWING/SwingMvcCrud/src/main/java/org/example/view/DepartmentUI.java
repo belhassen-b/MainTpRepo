@@ -5,43 +5,67 @@ import org.example.model.Department;
 import org.example.utils.DepartmentTableModel;
 
 import javax.swing.*;
+import java.awt.*;
+
+
+
+
 
 public class DepartmentUI extends JDialog {
-
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            DepartmentUI dialog = new DepartmentUI();
+            dialog.setVisible(true);
+        });
+    }
     private final JTextField textFieldName;
     private DepartmentTableModel departmentTableModel;
 
     public DepartmentUI() {
-        setTitle("Department");
-        setSize(300, 200);
-        setLocationRelativeTo(null);
-        setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+        // Initialisation
+        JTable table = new JTable();
+        JPanel contentPanel = new JPanel();
 
-        // Content pane
-        JPanel contentPane = new JPanel();
-        contentPane.setLayout(null);
-        setContentPane(contentPane);
-
+        //Initialisation
         textFieldName = new JTextField();
-        textFieldName.setBounds(80, 20, 150, 20);
-        contentPane.add(textFieldName);
 
-        JLabel lblName = new JLabel("Name");
+        // Model de la table basé sur la liste des départements
+        table.setModel(new DepartmentTableModel(new DepartmentController().getAllDepartments()));
+        table.setBounds(10, 10, 400, 300);
+        JScrollPane jScrollPane = new JScrollPane(table);
+        getContentPane().add(jScrollPane, BorderLayout.CENTER);
+
+        setTitle("Ajout d'un département");
+        setSize(500, 200);
+        setLocationRelativeTo(null);
+
+        contentPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+        contentPanel.setLayout(null);
+
+        getContentPane().setLayout(new BorderLayout());
+        getContentPane().add(contentPanel, BorderLayout.CENTER);
+
+        //Champs de saisie
+        JLabel lblName = new JLabel("Nom");
         lblName.setBounds(10, 20, 80, 20);
-        contentPane.add(lblName);
+        textFieldName.setBounds(80, 20, 300, 20);
+        textFieldName.setColumns(10);
+        contentPanel.add(textFieldName);
+        contentPanel.add(lblName);
 
-        // Buttons
+        // Bouton Ok pour la validation
         JButton buttonOK = new JButton("OK");
         buttonOK.setBounds(80, 100, 80, 25);
-        contentPane.add(buttonOK);
+          contentPanel.add(buttonOK);
 
-        JButton buttonCancel = new JButton("Cancel");
-        buttonCancel.setBounds(180, 100, 80, 25);
-        contentPane.add(buttonCancel);
+        // Bouton Annuler pour l'annulation
+        JButton buttonCancel = new JButton("Annuler");
+        buttonCancel.setBounds(200, 100, 80, 25);
+        contentPanel.add(buttonCancel);
 
-        // OK button action
+
+        // Bouton OK
         buttonOK.addActionListener(e -> {
-            // add if statement to check if the text field is empty
             Department department = new Department();
             department.setName(textFieldName.getText());
             DepartmentController departmentController = new DepartmentController();
@@ -54,10 +78,5 @@ public class DepartmentUI extends JDialog {
         buttonCancel.addActionListener(e -> dispose());
     }
 
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            DepartmentUI dialog = new DepartmentUI();
-            dialog.setVisible(true);
-        });
-    }
+
 }

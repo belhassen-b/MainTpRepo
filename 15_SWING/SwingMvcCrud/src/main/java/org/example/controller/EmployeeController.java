@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import org.example.dao.EmployeeDAO;
 import org.example.model.Employee;
 import org.example.model.Role;
 import org.example.utils.ConnectionDB;
@@ -15,8 +16,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class EmployeeController {
-
-
     private final Connection connectionDB;
 
     private PreparedStatement preparedStatement;
@@ -32,19 +31,20 @@ public class EmployeeController {
         employeeController.getAllEmployees();
     }
 
+    // Suppression d'un salarié
     public void deleteEmployee(Long id) {
         try {
             preparedStatement = connectionDB.prepareStatement("DELETE FROM employee WHERE id = ?");
             preparedStatement.setLong(1, id);
             preparedStatement.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Employee deleted successfully");
+            JOptionPane.showMessageDialog(null, "Suppression effectuée avec succès");
         } catch (SQLException e) {
             Logger logger = Logger.getLogger(DepartmentController.class.getName());
             logger.log(Level.SEVERE, ERROR_MESSAGE, e);
         }
     }
 
-    // Create a new employee
+    // Creation d'un salarié
     public void addEmployee(Employee employee) {
         try {
             preparedStatement = connectionDB.prepareStatement("INSERT INTO employee (first_Name, last_Name, role, department) VALUES (?,?,?, ?)");
@@ -60,26 +60,25 @@ public class EmployeeController {
 
     }
 
-
-    // Update an employee
-    public void updateEmployee(Employee employee) {
+    // Mis à jour d'un salarié
+    public void updateEmployee(EmployeeDAO employeeDAO) {
         try {
             preparedStatement = connectionDB.prepareStatement("UPDATE employee SET first_name = ?, last_Name = ?, role = ? ,  department = ? WHERE id = ?");
-            preparedStatement.setString(1, employee.getFirstName());
-            preparedStatement.setString(2, employee.getLastName());
-            preparedStatement.setString(3, employee.getRole().toString());
-            preparedStatement.setString(4, employee.getDepartments());
-            preparedStatement.setLong(5, employee.getId());
+            preparedStatement.setString(1, employeeDAO.getFirstName());
+            preparedStatement.setString(2, employeeDAO.getLastName());
+            preparedStatement.setString(3, employeeDAO.getRole().toString());
+            preparedStatement.setString(4, employeeDAO.getDepartment());
+            preparedStatement.setLong(5, employeeDAO.getId());
             preparedStatement.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Employee updated successfully");
+            JOptionPane.showMessageDialog(null, "Mise à jour effectuée avec succès");
         } catch (SQLException e) {
             Logger logger = Logger.getLogger(DepartmentController.class.getName());
             logger.log(Level.SEVERE, ERROR_MESSAGE, e);
         }
     }
 
-    public Employee getEmployee(Long id) {
-        Employee employee = null;
+    public EmployeeDAO getEmployee(Long id) {
+        EmployeeDAO employeeDAO = null;
         try {
             preparedStatement = connectionDB.prepareStatement("SELECT * FROM employee WHERE id = ?");
             preparedStatement.setLong(1, id);
@@ -90,13 +89,13 @@ public class EmployeeController {
                 String lastName = resultSet.getString("last_name");
                 Role role = Role.valueOf(resultSet.getString("role"));
                 String department = resultSet.getString("department");
-                employee = new Employee(id, firstName, lastName, role, department);
+                employeeDAO = new EmployeeDAO(id, firstName, lastName, role, department);
             }
         } catch (SQLException e) {
             Logger logger = Logger.getLogger(DepartmentController.class.getName());
             logger.log(Level.SEVERE, ERROR_MESSAGE, e);
         }
-        return employee;
+        return employeeDAO;
     }
 
     public List<Employee> getAllEmployees() {

@@ -2,8 +2,11 @@ package org.example.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.logging.Logger;
 
 public class ConnectionDB {
+
+    private static final String ERROR_MESSAGE = "An exception occurred";
 
 
     public static Connection getConnection() {
@@ -13,8 +16,17 @@ public class ConnectionDB {
             String URL = "jdbc:mysql://localhost:3306/";
             return DriverManager.getConnection(URL + database, "root", "password");
         } catch (ClassNotFoundException | java.sql.SQLException e) {
-            e.printStackTrace();
+            Logger logger = Logger.getLogger(ConnectionDB.class.getName());
+            logger.severe(ERROR_MESSAGE);
             return null;
         }
+    }
+
+    public static void closeConnection() {
+        try {
+            getConnection().close();
+        } catch (java.sql.SQLException e) {
+            Logger logger = Logger.getLogger(ConnectionDB.class.getName());
+            logger.severe(ERROR_MESSAGE);        }
     }
 }

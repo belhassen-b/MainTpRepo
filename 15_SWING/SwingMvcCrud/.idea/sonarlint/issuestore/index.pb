@@ -1,25 +1,7 @@
 
-S
-#src/main/java/org/example/Main.java,0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b
 H
 TP_Employe_Department.md,b/a/bafa643eed27d79f6a0f0c443434f7aebf48f250
-g
-7src/main/java/org/example/utils/EmployeeEditDialog.java,a/2/a231b962256dd3ae6dae86802a4bf9fc631643b7
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-]
--src/main/java/org/example/model/Employee.java,c/4/c49498268aed13f46c2ce2f35f235241c02157ce
 Y
 )src/main/java/org/example/model/Role.java,d/a/dad3d85aa4d9584feb42e9d3c1aa6f13c7bf8442
-^
-.src/main/java/org/example/dao/EmployeeDAO.java,5/2/5270a1a9c488954e655ac45cc2488645b7493c96
-`
-0src/main/java/org/example/dao/DepartmentDAO.java,5/b/5b8ce803f6159f8faaaee96fbc305c690f5038ad
-g
-7src/main/java/org/example/view/dialog/InsertDialog.java,6/7/67ce2c8d99afdbdadd72d6ec0e5345f780751309
-g
-7src/main/java/org/example/view/dialog/UpdateDialog.java,1/9/1927f2eb8b7b816f963729d2de309c652ef9770a
-g
-7src/main/java/org/example/view/dialog/DeleteDialog.java,6/a/6a96432333ef1a3f088713948d3ab5201e763e71
-c
-3src/main/java/org/example/utils/ShowDepartment.java,1/a/1ab0eeaa08f836ecd115dc0a10d850bd1aa72436

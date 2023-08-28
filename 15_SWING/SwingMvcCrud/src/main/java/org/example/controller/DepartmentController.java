@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import org.example.dao.DepartmentDAO;
 import org.example.model.Department;
 import org.example.utils.ConnectionDB;
 
@@ -11,9 +12,11 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import static org.example.utils.ConnectionDB.closeConnection;
+
 public class DepartmentController  {
     private Connection connectionDB;
-    private PreparedStatement preparedStatement;
+    private PreparedStatement preparedSt;
     private static final String ERROR_MESSAGE = "An exception occurred";
 
     public DepartmentController() {
@@ -24,9 +27,9 @@ public class DepartmentController  {
         connectionDB = ConnectionDB.getConnection();
         try {
             assert connectionDB != null;
-            preparedStatement = connectionDB.prepareStatement("INSERT INTO department (name) VALUES (?)");
-            preparedStatement.setString(1, department.getName());
-       preparedStatement.executeUpdate();
+            preparedSt = connectionDB.prepareStatement("INSERT INTO department (name) VALUES (?)");
+            preparedSt.setString(1, department.getName());
+            preparedSt.executeUpdate();
         } catch (Exception e) {
             Logger logger = Logger.getLogger(DepartmentController.class.getName());
             logger.log(Level.SEVERE, ERROR_MESSAGE, e);
@@ -36,43 +39,26 @@ public class DepartmentController  {
         connectionDB = ConnectionDB.getConnection();
         try {
             assert connectionDB != null;
-            preparedStatement = connectionDB.prepareStatement("DELETE FROM department WHERE id = ?");
-            preparedStatement.setLong(1, id);
-            preparedStatement.executeUpdate();
+            preparedSt = connectionDB.prepareStatement("DELETE FROM department WHERE id = ?");
+            preparedSt.setLong(1, id);
+            preparedSt.executeUpdate();
         } catch (Exception e) {
             Logger logger = Logger.getLogger(DepartmentController.class.getName());
             logger.log(Level.SEVERE, ERROR_MESSAGE, e);
         }
     }
-//    public Department departmentById(Long id) {
-//        Department department = null;
-//        try {
-//            preparedStatement = connectionDB.prepareStatement("SELECT * FROM employee WHERE id = ?");
-//            preparedStatement.setLong(1, id);
-//            ResultSet resultSet = preparedStatement.executeQuery();
-//
-//            if (resultSet.next()) {
-//                String name = resultSet.getString("name");
-//                department = new Department(id, name);
-//            }
-//        }catch (Exception e) {
-//            Logger logger = Logger.getLogger(DepartmentController.class.getName());
-//            logger.log(Level.SEVERE, ERROR_MESSAGE, e);
-//        }
-//        return department;
-//    }
 
-    public List<Department> getAllDepartments() {
-        ArrayList<Department> departments = new ArrayList<>();
+    public List<DepartmentDAO> getAllDepartments() {
+        ArrayList<DepartmentDAO> departments = new ArrayList<>();
         try {
-            preparedStatement = connectionDB.prepareStatement("SELECT * FROM department");
-            ResultSet resultSet = preparedStatement.executeQuery();
+            preparedSt = connectionDB.prepareStatement("SELECT * FROM department");
+            ResultSet resultSet = preparedSt.executeQuery();
 
             while (resultSet.next()) {
-                Department department = new Department();
-                department.setId(resultSet.getLong("id"));
-                department.setName(resultSet.getString("name"));
-                departments.add(department);
+                DepartmentDAO departmentDAO = new DepartmentDAO();
+                departmentDAO.setId(resultSet.getLong("id"));
+                departmentDAO.setName(resultSet.getString("name"));
+                departments.add(departmentDAO);
             }
 
         } catch (Exception e) {
@@ -93,8 +79,9 @@ public class DepartmentController  {
         } catch (Exception e) {
             Logger logger = Logger.getLogger(DepartmentController.class.getName());
             logger.log(Level.SEVERE, ERROR_MESSAGE, e);
+        } finally {
+            closeConnection();
         }
         return departmentNames;
     }
-
 }
