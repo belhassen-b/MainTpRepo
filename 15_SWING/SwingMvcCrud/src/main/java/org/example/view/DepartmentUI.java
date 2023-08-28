@@ -1,6 +1,7 @@
 package org.example.view;
 
 import org.example.controller.DepartmentController;
+import org.example.dao.DepartmentDAO;
 import org.example.model.Department;
 import org.example.utils.DepartmentTableModel;
 
@@ -19,6 +20,8 @@ public class DepartmentUI extends JDialog {
         });
     }
     private final JTextField textFieldName;
+
+    private DepartmentDAO departmentDAO;
     private DepartmentTableModel departmentTableModel;
 
     public DepartmentUI() {
@@ -30,8 +33,8 @@ public class DepartmentUI extends JDialog {
         textFieldName = new JTextField();
 
         // Model de la table basé sur la liste des départements
-        table.setModel(new DepartmentTableModel(new DepartmentController().getAllDepartments()));
-        table.setBounds(10, 10, 400, 300);
+        table.setModel(new DepartmentTableModel (new DepartmentDAO().getAllDepartments()));
+                table.setBounds(10, 10, 400, 300);
         JScrollPane jScrollPane = new JScrollPane(table);
         getContentPane().add(jScrollPane, BorderLayout.CENTER);
 

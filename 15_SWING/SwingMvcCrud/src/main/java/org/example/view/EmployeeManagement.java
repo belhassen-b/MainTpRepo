@@ -1,7 +1,6 @@
 package org.example.view;
 
 import org.example.controller.EmployeeController;
-import org.example.dao.EmployeeDAO;
 import org.example.model.Employee;
 import org.example.view.dialog.EmployeeEditDialog;
 
@@ -77,9 +76,9 @@ public class EmployeeManagement extends JDialog {
             } else {
                 long id = Integer.parseInt(table.getValueAt(row, 0).toString());
                 EmployeeController employeeController = new EmployeeController();
-                EmployeeDAO employeeDAO = employeeController.getEmployee(id);
-                if (employeeDAO != null) {
-                    openEditDialog(employeeDAO);
+                Employee employee = employeeController.getEmployee(id);
+                if (employee != null) {
+                    openEditDialog(employee);
                     setVisible(false);
                     EmployeeManagement employeeManagement = new EmployeeManagement();
                     employeeManagement.setVisible(true);
@@ -128,9 +127,9 @@ public class EmployeeManagement extends JDialog {
 
     }
 
-    private void openEditDialog(EmployeeDAO employeeDAO) {
+    private void openEditDialog(Employee employee) {
         // Create and show the edit dialog, passing the employee data
-        EmployeeEditDialog editDialog = new EmployeeEditDialog(this, employeeDAO);
+        EmployeeEditDialog editDialog = new EmployeeEditDialog(this, employee);
         editDialog.setVisible(true);
     }
         public static void showEmployees(JTable table) {

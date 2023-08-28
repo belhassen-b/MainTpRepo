@@ -1,8 +1,8 @@
 package org.example.view.dialog;
 
-import org.example.controller.DepartmentController;
 import org.example.controller.EmployeeController;
-import org.example.dao.EmployeeDAO;
+import org.example.dao.DepartmentDAO;
+import org.example.model.Employee;
 import org.example.model.Role;
 import org.example.view.EmployeeManagement;
 
@@ -12,12 +12,12 @@ import java.util.Enumeration;
 import java.util.List;
 
 public class EmployeeEditDialog extends JDialog {
-       private EmployeeDAO employeeDAO;
+       private Employee employee = new Employee();
     private JComboBox<String> txtDepartment;
 
-    public EmployeeEditDialog(EmployeeManagement employeeManagement, EmployeeDAO employeeDAO) {
+    public EmployeeEditDialog(EmployeeManagement employeeManagement, Employee employee) {
         super(employeeManagement, "Modification d'un salarié", true);
-        this.employeeDAO = employeeDAO;
+        this.employee = employee;
         initComponents();
     }
 
@@ -66,8 +66,8 @@ public class EmployeeEditDialog extends JDialog {
         contentPanel.add(lblRole);
 
         // champs Departement
-        DepartmentController departmentController = new DepartmentController();
-        List<String> departmentNames = departmentController.getAllDepartementNames();
+        DepartmentDAO departmentDAO = new DepartmentDAO();
+        List<String> departmentNames = departmentDAO.getAllDepartementNames();
 
         txtDepartment = new JComboBox<>();
         for (String departmentName : departmentNames) {
@@ -90,30 +90,30 @@ public class EmployeeEditDialog extends JDialog {
 
 
         // Remplissage des champs
-        txtName.setText(employeeDAO.getFirstName());
-        txtLastName.setText(employeeDAO.getLastName());
+        txtName.setText(employee.getFirstName());
+        txtLastName.setText(employee.getLastName());
         for (Enumeration<AbstractButton> buttons = roleButtonGroup.getElements(); buttons.hasMoreElements(); ) {
             AbstractButton button = buttons.nextElement();
-            if (button.getText().equals(employeeDAO.getRole().toString())) {
+            if (button.getText().equals(employee.getRole().toString())) {
                 button.setSelected(true);
             }
         }
-        txtDepartment.setSelectedItem(employeeDAO.getDepartment());
+        txtDepartment.setSelectedItem(employee.getDepartments() );
 
         // Bouton Valider
         btnSave.addActionListener(e -> {
             EmployeeController employeeController = new EmployeeController();
-            employeeDAO.setFirstName(txtName.getText());
-            employeeDAO.setLastName(txtLastName.getText());
+            employee.setFirstName(txtName.getText());
+            employee.setLastName(txtLastName.getText());
             for (Enumeration<AbstractButton> buttons = roleButtonGroup.getElements(); buttons.hasMoreElements(); ) {
                 AbstractButton button = buttons.nextElement();
                 if (button.isSelected()) {
-                    employeeDAO.setRole(Role.valueOf(button.getText()));
+                    employee.setRole(Role.valueOf(button.getText()));
                 }
             }
-            employeeDAO.setDepartment(String.valueOf(txtDepartment.getSelectedItem()));
+            employee.setDepartments(String.valueOf(txtDepartment.getSelectedItem()));
             if( txtName != null && !txtName.getText().isEmpty() && txtLastName != null && !txtLastName.getText().isEmpty() && txtDepartment != null && !txtDepartment.getSelectedItem().toString().isEmpty() && roleButtonGroup.getSelection() != null ) {
-                employeeController.updateEmployee(employeeDAO);
+                employeeController.updateEmployee(employee);
                 dispose();
             } else {
                 JOptionPane.showMessageDialog(null, "Merci de remplir tous les champs", "Error", JOptionPane.ERROR_MESSAGE);

@@ -2,6 +2,7 @@ package org.example.view;
 
 import org.example.controller.DepartmentController;
 import org.example.controller.EmployeeController;
+import org.example.dao.DepartmentDAO;
 import org.example.model.Employee;
 import org.example.model.Role;
 import org.example.utils.EmployeeTableModel;
@@ -86,8 +87,8 @@ public class EmployeeUI extends JDialog {
         }
 
         // champs Département depuis la liste des départements
-        DepartmentController departmentController = new DepartmentController();
-        List<String> departmentNames = departmentController.getAllDepartementNames();
+        DepartmentDAO departmentDAO = new DepartmentDAO();
+        List<String> departmentNames = departmentDAO.getAllDepartementNames();
 
 
 

@@ -2,6 +2,7 @@ package org.example.view;
 
 import org.example.controller.DepartmentController;
 import org.example.dao.DepartmentDAO;
+import org.example.model.Department;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -30,12 +31,12 @@ public class DepartmentManagement extends JDialog {
     }
 
     private void showDepartments(JTable table) {
-        DepartmentController departmentController = new DepartmentController();
+        DepartmentDAO departmentDAO = new DepartmentDAO();
         DefaultTableModel model = (DefaultTableModel) table.getModel();
         Object[] row = new Object[2];
-        for (DepartmentDAO departmentDAO : departmentController.getAllDepartments()) {
-            row[0] = departmentDAO.getId();
-            row[1] = departmentDAO.getName();
+        for (Department department : departmentDAO.getAllDepartments()) {
+            row[0] = department.getId();
+            row[1] = department.getName();
             model.addRow(row);
         }
     }

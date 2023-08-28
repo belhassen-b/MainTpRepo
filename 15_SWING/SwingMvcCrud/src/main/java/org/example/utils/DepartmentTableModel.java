@@ -8,11 +8,11 @@ import java.util.List;
 
 public class DepartmentTableModel extends AbstractTableModel {
 
-    private final List<DepartmentDAO> departmentsData;
+    private final List<Department> departmentsData;
 
     private final String[] columnNames = {"Id", "Nom Département"};
 
-    public DepartmentTableModel(List<DepartmentDAO> departmentsData) {
+    public DepartmentTableModel(List<Department> departmentsData) {
         this.departmentsData = departmentsData;
     }
 
@@ -28,7 +28,7 @@ public class DepartmentTableModel extends AbstractTableModel {
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        DepartmentDAO department = departmentsData.get(rowIndex);
+        Department department = departmentsData.get(rowIndex);
         return switch (columnIndex) {
             case 0 -> department.getId();
             case 1 -> department.getName();
