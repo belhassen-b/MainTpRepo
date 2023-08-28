@@ -15,14 +15,7 @@ import java.util.logging.Logger;
 
 public class SelectDialog extends JDialog {
 
-    private JScrollPane jScrollPane1;
     private JTable jTable1;
-
-    private Connection connection;
-
-    private PreparedStatement preparedStatement;
-
-    private ResultSet resultSet;
 
     public void closeSelectDialog() {
         setVisible(false);
@@ -39,7 +32,7 @@ public class SelectDialog extends JDialog {
 
     private void initComponents() {
 
-        jScrollPane1 = new JScrollPane();
+        JScrollPane jScrollPane1 = new JScrollPane();
         jTable1 = new JTable();
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         jTable1.setModel(new DefaultTableModel(new Object[][]{}, new String[]{"Id", "Name", "Number"}));
@@ -95,11 +88,11 @@ public class SelectDialog extends JDialog {
 
     private ArrayList<Contact> contactList() {
         ArrayList<Contact> contactList = new ArrayList<>();
-        connection = ConnectionUtil.getConnection();
+        Connection connection = ConnectionUtil.getConnection();
         String query = "SELECT * FROM contact";
         try {
-            preparedStatement = connection.prepareStatement(query);
-            resultSet = preparedStatement.executeQuery();
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            ResultSet resultSet = preparedStatement.executeQuery();
             Contact contact;
             while (resultSet.next()) {
                 contact = new Contact(resultSet.getLong("id"), resultSet.getString("name"), resultSet.getString("number"));

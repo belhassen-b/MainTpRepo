@@ -10,17 +10,9 @@ import java.awt.event.ActionListener;
 
 public class DeleteDialog extends JDialog {
 
-    private InsertDialog insertDialog;
-
-    private JPanel contentPanel;
-
-
-
 
     private JTextField id;
 
-
-    private JButton btnDelete;
 
     private JButton btnOk;
 
@@ -36,7 +28,7 @@ public class DeleteDialog extends JDialog {
         setSize(300, 200);
         setLocationRelativeTo(insertDialog);
 
-        contentPanel = new JPanel();
+        JPanel contentPanel = new JPanel();
         contentPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
         contentPanel.setLayout(null);
         getContentPane().add(contentPanel, BorderLayout.CENTER);
@@ -50,7 +42,7 @@ public class DeleteDialog extends JDialog {
         lblId.setBounds(10, 20, 80, 20);
         contentPanel.add(lblId);
 
-        btnDelete = new JButton("Delete");
+        JButton btnDelete = new JButton("Delete");
         btnDelete.setBounds(170, 20, 80, 20);
         contentPanel.add(btnDelete);
 
@@ -67,8 +59,6 @@ public class DeleteDialog extends JDialog {
         jPanelButton.add(btnOk);
         jPanelButton.add(btnCancel);
         getContentPane().add(jPanelButton, BorderLayout.SOUTH);
-
-        this.insertDialog = insertDialog;
 
         btnDelete.addActionListener(new ActionListener() {
             @Override

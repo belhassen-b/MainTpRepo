@@ -10,10 +10,6 @@ import java.awt.event.ActionListener;
 
 public class InsertDialog extends JDialog {
 
-    private JPanel contentPanel;
-
-    private JButton crudButton;
-
     private JTextField txtName;
     private JTextField txtNumber;
 
@@ -24,7 +20,7 @@ public class InsertDialog extends JDialog {
     }
 
     public InsertDialog() {
-        contentPanel = new JPanel();
+        JPanel contentPanel = new JPanel();
         setTitle("Insertion Contact");
         setSize(300, 200);
         setLocationRelativeTo(null);
@@ -53,7 +49,7 @@ public class InsertDialog extends JDialog {
         lblNumber.setBounds(10, 50, 80, 20);
         contentPanel.add(lblNumber);
 
-        crudButton = new JButton("CRUD");
+        JButton crudButton = new JButton("CRUD");
         crudButton.setBounds(170, 20, 80, 20);
         contentPanel.add(crudButton);
 

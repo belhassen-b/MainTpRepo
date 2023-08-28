@@ -1,0 +1,9 @@
+
+q
+java:S1450"TRemove the "model" field and declare it as a local variable in the relevant methods.(Åá¬ò8’³‰¾£1
+|
+java:S1450"`Remove the "salarieController" field and declare it as a local variable in the relevant methods.(¨·µ8’³‰¾£1
+‚
+java:S1450"`Remove the "salarieTableModel" field and declare it as a local variable in the relevant methods.(ÅäÏûÿÿÿÿ8’³‰¾£1
+f
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢¡´8Ó«Š¾£1
