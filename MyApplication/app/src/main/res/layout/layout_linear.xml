@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/linear"
+              android:padding="25dp"
+>
+
+    <EditText android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/nom"
+              android:hint="@string/nom_complet"
+              android:inputType="textPersonName"
+              android:textSize="20sp"
+              android:textColor="@color/black"
+              android:gravity="center"
+              android:autofillHints=""
+              android:textColorHint="#A1887F"/>
+
+    <EditText android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/email"
+              android:hint="@string/adresse_email"
+              android:inputType="textEmailAddress"
+              android:textSize="20sp"
+              android:textColor="@color/black"
+              android:gravity="center"
+              android:layout_marginTop="8dp"
+              android:autofillHints=""
+              android:textColorHint="#A1887F"/>
+
+    <RadioGroup android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/genre"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+        <RadioButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/homme"
+                     android:text="@string/homme"
+                     android:textSize="20sp"
+                     android:textColor="@color/black"/>
+
+        <RadioButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/femme"
+                     android:text="@string/femme"
+                     android:textSize="20sp"
+                     android:textColor="@color/black"
+                     android:checked="false"/>
+    </RadioGroup>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/options"
+              android:hint="@string/options"
+              android:textSize="20sp"
+              android:textColor="@color/black"
+              android:layout_marginTop="8dp"
+              android:textColorHint="#A1887F"/>
+
+    <CheckBox android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/option1"
+              android:text="@string/offre_commerciale"
+              android:textSize="20sp"
+              android:textColor="@color/black"
+              android:layout_marginTop="4dp"/>
+    <CheckBox android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/option2"
+              android:text="@string/accepter_les_conditions"
+              android:textSize="20sp"
+              android:textColor="@color/black"
+              android:layout_marginTop="8dp"/>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/valider"
+            android:text="@string/valider"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"/>
+
+</LinearLayout>
+
