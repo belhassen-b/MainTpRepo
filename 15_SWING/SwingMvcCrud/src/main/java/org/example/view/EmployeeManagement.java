@@ -119,7 +119,7 @@ public class EmployeeManagement extends JDialog {
 
         });
 
-        // Ajout des boutons au footerPanel
+        // Ajout des boutons au footerPanela
         footerPanel.add(btnAdd);
         footerPanel.add(btnEdit);
         footerPanel.add(btnDelete);
@@ -134,7 +134,7 @@ public class EmployeeManagement extends JDialog {
     }
         public static void showEmployees(JTable table) {
             EmployeeController employeeController = new EmployeeController();
-            List<Employee> employees = employeeController.getAllEmployees();
+            List<Employee> employees = employeeController.  getAllEmployees();
             DefaultTableModel model = (DefaultTableModel) table.getModel();
             model.setRowCount(0);
             for (Employee employee : employees) {

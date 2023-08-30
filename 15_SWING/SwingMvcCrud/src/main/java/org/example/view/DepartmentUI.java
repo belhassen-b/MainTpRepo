@@ -34,7 +34,7 @@ public class DepartmentUI extends JDialog {
 
         // Model de la table basé sur la liste des départements
         table.setModel(new DepartmentTableModel (new DepartmentDAO().getAllDepartments()));
-                table.setBounds(10, 10, 400, 300);
+        table.setBounds(10, 10, 400, 300);
         JScrollPane jScrollPane = new JScrollPane(table);
         getContentPane().add(jScrollPane, BorderLayout.CENTER);
 

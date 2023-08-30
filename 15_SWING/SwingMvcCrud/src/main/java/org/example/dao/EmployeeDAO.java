@@ -35,7 +35,8 @@ public class EmployeeDAO {
 
         public void addEmployee(Employee employee) {
                 try {
-                        preparedStatement = connectionDB.prepareStatement("INSERT INTO employee (first_Name, last_Name, role, department) VALUES (?,?,?, ?)");
+                        preparedStatement = connectionDB.prepareStatement("INSERT INTO employee " +
+                                "(first_Name, last_Name, role, department) VALUES (?,?,?, ?)");
                         preparedStatement.setString(1, employee.getFirstName());
                         preparedStatement.setString(2, employee.getLastName());
                         preparedStatement.setString(3, employee.getRole().toString());
