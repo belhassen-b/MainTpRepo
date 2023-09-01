@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/wallpaper">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="French Teacher App"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="280dp"
+            tools:ignore="MissingConstraints"/>
+    <Button
+            android:id="@+id/btnBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal|center_vertical">
+    </Button>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGreen"
+            android:text="Green"
+            android:textSize="15sp"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center_horizontal|center_vertical">
+    </Button>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPurple"
+            android:text="Purple"
+            android:textSize="15sp"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:layout_marginTop="110dp"
+            android:layout_gravity="center_horizontal|center_vertical">
+    </Button>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRed"
+            android:text="Red"
+            android:textSize="15sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:layout_marginTop="160dp"
+            android:layout_gravity="center_horizontal|center_vertical">
+    </Button>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnYellow"
+            android:text="Yellow"
+            android:textSize="15sp"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:layout_marginTop="210dp"
+            android:layout_gravity="center_horizontal|center_vertical">
+    </Button>
+
+
+</FrameLayout>
