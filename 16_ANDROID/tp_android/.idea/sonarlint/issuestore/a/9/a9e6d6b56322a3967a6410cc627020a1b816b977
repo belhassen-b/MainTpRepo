@@ -1,0 +1,46 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(·ÑÃÎúÿÿÿÿ8­â×’¥1
+H
+java:S1172 "+Remove this unused method parameter "view".(áöÿ8¡«˜’¥1
+ƒ
+java:S1221'"aEither override Object.equals(Object obj), or totally rename the method to prevent any confusion.(¨äøÿÿÿÿ8¢«˜’¥1
+M
+java:S1172'"+Remove this unused method parameter "view".(¨äøÿÿÿÿ8£«˜’¥1
+M
+java:S6035+"0Replace this alternation with a character class.(£‡—¶8ìŸı’¥1
+\
+java:S1117/":Rename "result" which hides the field declared at line 17.(à½‡¹ÿÿÿÿÿ8¬×’¥1
+M
+java:S1172A"+Remove this unused method parameter "view".(œÚ¹÷ıÿÿÿÿ8§«˜’¥1
+H
+java:S1172K"+Remove this unused method parameter "view".(Ïº°¡8©«˜’¥1
+H
+java:S1172U"+Remove this unused method parameter "view".(ÁéÃˆ8ª«˜’¥1
+M
+java:S1172`"+Remove this unused method parameter "view".(¸ã¡ıÿÿÿÿ8««˜’¥1
+M
+java:S1172j"+Remove this unused method parameter "view".(¦ä«¦ÿÿÿÿÿ8­«˜’¥1
+M
+java:S1172o"+Remove this unused method parameter "view".(Îä–üÿÿÿÿ8­«˜’¥1
+G
+java:S1172t"+Remove this unused method parameter "view".(ğÊŒ	8®«˜’¥1
+M
+java:S1172y"+Remove this unused method parameter "view".(¸ÏóÕüÿÿÿÿ8¯«˜’¥1
+H
+java:S1172"+Remove this unused method parameter "view".(Œõ¹õ8¯«˜’¥1
+N
+java:S1172„"+Remove this unused method parameter "view".(ôçÆçûÿÿÿÿ8°«˜’¥1
+I
+java:S1172‰"+Remove this unused method parameter "view".(‹ËõÛ8±«˜’¥1
+N
+java:S1172"+Remove this unused method parameter "view".(¢¼¥ıÿÿÿÿ8±«˜’¥1
+I
+java:S1172“"+Remove this unused method parameter "view".(‡óµô8²«˜’¥1
+N
+java:S1172˜"+Remove this unused method parameter "view".(•ì—¹üÿÿÿÿ8²«˜’¥1
+N
+java:S1172"+Remove this unused method parameter "view".(“î×‡ùÿÿÿÿ8³«˜’¥1
+N
+java:S1172¨"+Remove this unused method parameter "view".(úÜ ¸ÿÿÿÿÿ8´«˜’¥1
+I
+java:S1172´"+Remove this unused method parameter "view".(¼ËúÙ8µ«˜’¥1

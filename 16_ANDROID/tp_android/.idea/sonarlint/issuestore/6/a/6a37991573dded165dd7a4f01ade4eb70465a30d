@@ -1,0 +1,7 @@
+
+x
+java:S1450"VRemove the "btnSave" field and declare it as a local variable in the relevant methods.(ÿ£×ˆüÿÿÿÿ8˜Ë×ÿ¤1
+}
+java:S1450"[Remove the "editTextTask" field and declare it as a local variable in the relevant methods.(Ý°Ü”üÿÿÿÿ8˜Ë×ÿ¤1
+X
+java:S1874"<Remove this use of "getSerializableExtra"; it is deprecated.(Ø“Ñ`8Ë×ÿ¤1

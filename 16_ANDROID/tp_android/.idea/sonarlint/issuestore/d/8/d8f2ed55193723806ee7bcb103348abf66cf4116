@@ -1,0 +1,33 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(İ¶œ¸ûÿÿÿÿ8„±øÜ¤1
+t
+java:S1450	"WRemove the "btnBlack" field and declare it as a local variable in the relevant methods.(ÂÔ¥ñ8’±øÜ¤1
+t
+java:S1450
+"WRemove the "btnGreen" field and declare it as a local variable in the relevant methods.(·Ò¼Û8’±øÜ¤1
+z
+java:S1450"XRemove the "btnPurple" field and declare it as a local variable in the relevant methods.(Î¹°¬ùÿÿÿÿ8“±øÜ¤1
+r
+java:S1450"URemove the "btnRed" field and declare it as a local variable in the relevant methods.(‹Û‘°8“±øÜ¤1
+u
+java:S1450"XRemove the "btnYellow" field and declare it as a local variable in the relevant methods.(“åïæ8“±øÜ¤1
+L
+java:S1611!"/Remove the parentheses around the "e" parameter(Ì·ˆ8¨±øÜ¤1
+I
+java:S1602!",Remove useless curly braces around statement(Ì·ˆ8¨±øÜ¤1
+L
+java:S1611$"/Remove the parentheses around the "e" parameter(ì¢ÔÄ8©±øÜ¤1
+I
+java:S1602$",Remove useless curly braces around statement(ì¢ÔÄ8©±øÜ¤1
+L
+java:S1611'"/Remove the parentheses around the "e" parameter(™æô8ª±øÜ¤1
+I
+java:S1602'",Remove useless curly braces around statement(™æô8ª±øÜ¤1
+K
+java:S1611*"/Remove the parentheses around the "e" parameter(Ì³šI8«±øÜ¤1
+H
+java:S1602*",Remove useless curly braces around statement(Ì³šI8«±øÜ¤1
+L
+java:S1611-"/Remove the parentheses around the "e" parameter(±à¤—8¬±øÜ¤1
+I
+java:S1602-",Remove useless curly braces around statement(±à¤—8¬±øÜ¤1

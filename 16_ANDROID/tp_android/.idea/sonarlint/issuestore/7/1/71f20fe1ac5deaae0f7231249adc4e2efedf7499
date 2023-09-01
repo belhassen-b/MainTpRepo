@@ -1,0 +1,11 @@
+
+h
+java:S1192 "FDefine a constant instead of duplicating this literal "tasks" 3 times.(¬®ııÿÿÿÿ8 ›Ÿ€¥1
+J
+java:S1604-"(Make this anonymous inner class a lambda(šªŞ®øÿÿÿÿ8õÊêÿ¤1
+r
+java:S1450"URemove the "btnAdd" field and declare it as a local variable in the relevant methods.(ª´ªÓ8‡Ëêÿ¤1
+x
+java:S1450"[Remove the "editTextTask" field and declare it as a local variable in the relevant methods.(ß³Æ8ˆËêÿ¤1
+^
+java:S1874 "<Remove this use of "getSerializableExtra"; it is deprecated.(¬®ııÿÿÿÿ8ŒËêÿ¤1

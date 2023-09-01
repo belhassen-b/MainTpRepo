@@ -1,0 +1,11 @@
+
+r
+java:S1450"URemove the "retour" field and declare it as a local variable in the relevant methods.(±Óîô8©´—Þ¤1
+_
+java:S1117"BRename "textViewPrenom" which hides the field declared at line 12.(Ã÷ô÷8 ûÀÝ¤1
+g
+java:S1117"ERename "textViewTelephone" which hides the field declared at line 13.(“Ì”¢üÿÿÿÿ8¥ÅÊÝ¤1
+L
+java:S1611&"/Remove the parentheses around the "e" parameter(‘ÆÐ¿8ëƒ˜Þ¤1
+I
+java:S1602&",Remove useless curly braces around statement(‘ÆÐ¿8ëƒ˜Þ¤1
