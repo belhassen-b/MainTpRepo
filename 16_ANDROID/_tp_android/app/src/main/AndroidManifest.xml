@@ -19,20 +19,21 @@
                 android:name=".TodoActivity2"
                 android:exported="false"/>
         <activity
-                android:name=".Form2"
+                android:name=".AppSoundActivity"
+
                 android:exported="false"/>
         <activity
                 android:name=".Form2Result"
                 android:exported="false"/>
         <activity
-                android:name=".App_sound"
+                android:name=".CalcActivity"
                 android:exported="false"/>
         <activity
                 android:name=".MainActivity"
                 android:exported="false">
         </activity>
         <activity
-                android:name=".CalcActivity"
+                android:name=".Form2"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

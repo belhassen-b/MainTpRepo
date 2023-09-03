@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class App_sound extends AppCompatActivity {
+public class AppSoundActivity extends AppCompatActivity {
     private Button btnBlack;
     private Button btnGreen;
     private Button btnRed;
