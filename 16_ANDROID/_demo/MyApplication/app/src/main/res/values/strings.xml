@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="nom_complet">Nom Complet</string>
+    <string name="options">Options</string>
+    <string name="accepter_les_conditions">Accepter les conditions</string>
+    <string name="femme">Femme</string>
+    <string name="valider">Valider</string>
+    <string name="offre_commerciale">Offre Commerciale</string>
+    <string name="homme">Homme</string>
+    <string name="adresse_email">Adresse Email</string>
+</resources>
